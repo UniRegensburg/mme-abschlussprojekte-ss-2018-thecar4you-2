@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de" class="home">
+	<head>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="node_modules/smartwizard/dist/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
+	<link href="node_modules/smartwizard/dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css"/>
+	<link href="node_modules/smartwizard/dist/css/s" rel="stylesheet" type="text/css"/>
+	<meta charset="utf-8">
+		<title>TheCar4You</title>
+		<meta name="author" content="Lucas Haberl, Monika Richter, Fabian Feldmeier">
+		<meta name="description" content="Autosuche">
+		<meta name="keywords" content="Auto, KFZ, Suche">
+		<link rel="stylesheet" href="css/layout.css">
+	</head>
+	<body class="">
+		<header>
+			<h1>TheCar4You</h1>
+		</header>
+		<main>
+				<div id="smartwizard">
+						<ul>
+							<li><a href="#step-1">Step Title<br /><small>Step description</small></a></li>
+							<li><a href="#step-2">Step Title<br /><small>Step description</small></a></li>
+							<li><a href="#step-3">Step Title<br /><small>Step description</small></a></li>
+							<li><a href="#step-4">Step Title<br /><small>Step description</small></a></li>
+							<li><a href="#step-5">Step Title<br /><small>Step description</small></a></li>
+						</ul>
+					 
+						<div>
+							<div id="step-1" class="">
+								Step Content hallo i bims 1 neue seite
+							</div>
+							<div id="step-2" class="">
+								Step Content
+							</div>
+							<div id="step-3" class="">
+								Step Content
+							</div>
+							<div id="step-4" class="">
+								Step Content
+							</div>
+							<div id="step-5" class="">
+								StepContent
+							</div>
+						</div>
+					</div>
+		</main>
+		<footer>
+			<p>von Fabian Feldmeier, Lucas Haberl, Monika Richter</p>
+		</footer>
+		<!-- Skripte-->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/smartwizard/dist/js/jquery.smartWizard.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('#smartwizard').smartWizard();
+			});
+			</script>
+
+	</body>
+</html>
