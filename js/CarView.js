@@ -1,12 +1,12 @@
 /* eslint-env browser */
 
 var CarApp = CarApp || {};
-CarApp.CarView = function(view) {
+CarApp.CarView = function() {
   "use strict";
 
   var that;
-	
+
 	//function
-	
+
   return that;
 };
