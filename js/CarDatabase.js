@@ -4,7 +4,7 @@ var CarApp = CarApp || {};
 CarApp.CarDatabase = function() {
   "use strict";
 
-  var that;
+  var that = {};
 
 	//function
 

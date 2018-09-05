@@ -5,6 +5,7 @@
 	<link href="node_modules/smartwizard/dist/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
 	<link href="node_modules/smartwizard/dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css"/>
 	<link href="node_modules/smartwizard/dist/css/s" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="utf-8">
 		<title>TheCar4You</title>
 		<meta name="author" content="Lucas Haberl, Monika Richter, Fabian Feldmeier">
@@ -29,30 +30,79 @@
 							<li><a href="#step-8">Getriebe & Kraftstoff<br /></a></li>
 						</ul>
 					 
-						<div>
+						<div class="wizard-content">
+						<!--Jeder Schritt ist aufgeteilt in 2 Hauptbereiche: Bilder und Nutzerinteraktionen-->
 							<div id="step-1" class="">
-								Step Content hallo i bims 1 neue seite
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-2" class="">
-								Step Content
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-3" class="">
-								Step Content
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-4" class="">
-								Step Content
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-5" class="">
-								StepContent
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-6" class="">
-								StepContent
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-7" class="">
-								StepContent
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 							<div id="step-8" class="">
-								StepContent
+								<div class="step-description">
+									Beschreibung
+								</div>
+								<div class="user-interface">
+									<div class="pictures"></div>
+									<div class="user-action"></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -73,5 +123,8 @@
 		<script src="js/CarModel.js"></script>
 		<script src="js/CarView.js"></script>
 		<script src="js/CarDatabase.js"></script>
+		<script>
+			CarApp.init();
+		</script>
 	</body>
 </html>

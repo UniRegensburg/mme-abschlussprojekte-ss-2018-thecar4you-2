@@ -4,9 +4,9 @@ var CarApp = CarApp || {};
 CarApp.CarController = function() {
   "use strict";
 
-  var that;
+  var that = {};
 
-	//function
+	//Hier Funktionen einfügen, die die Interaktion mit den View Elementen ermöglichen
 
   return that;
 };

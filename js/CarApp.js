@@ -11,10 +11,28 @@ CarApp = (function() {
   CarView;
 
   function init() {
-    CarController = new CarApp.CarController();
-    CarDatabase = new CarApp.CarDatabase();
-    CarModel = new CarApp.CarModel();
-    CarView = new CarApp.CarView();
+    initCarController();
+    initCarDatabase();
+    initCarModel();
+    initCarView();
+  }
+  
+  function initCarController(){
+	CarController = new CarApp.CarController();
+  }
+  
+  function initCarDatabase(){
+	CarDatabase = new CarApp.CarDatabase();
+  }
+  
+  function initCarModel(){
+	CarModel = new CarApp.CarModel();
+  }
+  
+  function initCarView(){
+	CarView = new CarApp.CarView();
+	CarView.setPictures();
+	CarView.setUserActions();
   }
 
   that.init = init;

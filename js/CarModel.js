@@ -4,9 +4,9 @@ var CarApp = CarApp || {};
 CarApp.CarModel = function() {
   "use strict";
 
-  var that;
+  var that = {};
 
-	//function
-
+	//Hier Funktionen einfügen, die View verändern bzw. Updaten
+	
   return that;
 };
