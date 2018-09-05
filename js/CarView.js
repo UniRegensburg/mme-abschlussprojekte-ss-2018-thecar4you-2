@@ -18,6 +18,12 @@ CarApp.CarView = function() {
   
   //Beinhaltet alle Bilder für den Wizardschritt Preis
   function setPricePictures(){
+	  imageGenerator("Pictures/Money500.png","money500","lowMoney", 0);
+	  imageGenerator("Pictures/Money1000.png","money1000","lowMoney", 0);
+	  imageGenerator("Pictures/Money5000.png","money5000","lowMoney", 0);
+	  imageGenerator("Pictures/Money10000.png","money10000","highMoney", 0);
+	  imageGenerator("Pictures/Money50000.png","money50000","highMoney", 0);
+	  imageGenerator("Pictures/Money100000.png","money100000","highMoney", 0);
 	  imageGenerator("Pictures/Sparschwein2.png", "piggybank", "pictures", 0);
   }
   

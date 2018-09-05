@@ -1,7 +1,5 @@
-#wizard { 
-	height: 720px; 
-	width: 1280px;
-	background-color: #D3D3D3;
+body{
+	background-color: white;
 }
 
 h1{
@@ -11,44 +9,64 @@ h1{
 #piggybank{
 	height: 400px;
 	display: block;
-	margin-top: 30px;
+	margin-top: 3%;
 	margin-left: auto;
 	margin-right: auto;
 	opacity: 0.3;
 }
 
+#money500 ,#money1000, #money5000, #money10000, #money50000, #money100000 {
+	height: 110px;
+	display: block;
+	margin-top: 8%;
+	opacity: 0.85;
+}
+
+.lowMoney{
+	float: left;
+	margin-left: 5%;
+}
+
+.highMoney{
+	float: right;
+	margin-right: 5%;
+}
+
 .wizard-content{
-	height: 500px ! important;
+	min-height: 600px ! important;
 }
 
 .step-description {
-	font-size: 17px;
+	font-size: 130%;
+	text-align: center;
 }
 
 .budget {
 	display: block;
-	width: 150px;
+	width: 10%;
 	height: 30px;
-	margin-top: 30px;
+	margin-top: 2%;
 	margin-left: auto;
 	margin-right: auto;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 3%;
 	border-color: #BFBFBF;
 	text-align: center;
-	font-size: 18px;
+	font-size: 130%;
 }
 
 .delete-button, .replay-button{
 	position: absolute;
-	font-size: 40px;
+	font-size: 250%;
 	color: #BFBFBF;
 }
 
 .delete-button {
-	margin-left: 800px;
+	float: left;
+	margin-left: 38%;
 }
 
 .replay-button {
-	margin-left: 500px;
+	float: right;
+	margin-left: 58%;
 }
