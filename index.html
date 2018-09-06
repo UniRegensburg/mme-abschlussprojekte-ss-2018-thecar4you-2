@@ -28,7 +28,7 @@
 							<li><a href="#step-7">Verbrauch<br /></a></li>
 							<li><a href="#step-8">Getriebe & Kraftstoff<br /></a></li>
 						</ul>
-					 
+
 						<div class="wizard-content">
 						<!--Jeder Schritt ist aufgeteilt in 2 Hauptbereiche: Bilder und Nutzerinteraktionen-->
 							<div id="step-1" class="">
@@ -38,6 +38,7 @@
 								<div class="user-interface">
 									<div class="pictures">
 										<div class="lowMoney"></div>
+										<div class="bank" ondrop="CarApp.CarView.drop(event)" ondragover="CarApp.CarView.allowDrop(event)"></div>
 										<div class="highMoney"></div>
 									</div>
 									<div class="user-action"></div>
@@ -45,11 +46,15 @@
 							</div>
 							<div id="step-2" class="">
 								<div class="step-description">
-									Beschreibung
+									Wählen Sie das Baujahr des Fahrzeugs durch Klicken auf die Audiomedien <br> bzw. Verschieben des Reglers aus.
 								</div>
 								<div class="user-interface">
-									<div class="pictures"></div>
-									<div class="user-action"></div>
+									<div class="picturesAlter"></div>
+									<div class="user-action">
+										<div class="slidecontainer">
+											<input type="range" min="1998" max="2018" value="2013" class="slider" id="alterSlider">
+										</div>
+									</div>
 								</div>
 							</div>
 							<div id="step-3" class="">
@@ -57,7 +62,7 @@
 									Beschreibung
 								</div>
 								<div class="user-interface">
-									<div class="pictures"></div>
+									<div class="picturesKM"></div>
 									<div class="user-action"></div>
 								</div>
 							</div>

@@ -4,9 +4,20 @@ var CarApp = CarApp || {};
 CarApp.CarModel = function() {
   "use strict";
 
-  var that = {};
+  var that = {},
+  savedAlter;
 
-	//Hier Funktionen einfügen, die View verändern bzw. Updaten
-	
+	function initCarModel() {
+    //
+  }
+
+  function updateAlter(alter) {
+    savedAlter = alter;
+    console.log(savedAlter)
+    document.getElementById("alterSlider").value = alter; // TODO: in view!!!
+  }
+
+  that.updateAlter = updateAlter;
+  that.initCarModel = initCarModel;
   return that;
 };
