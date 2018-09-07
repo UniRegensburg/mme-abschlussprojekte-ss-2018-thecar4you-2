@@ -76,10 +76,10 @@ CarApp.CarView = function() {
 /*km**************************************************************************************** */
 
   function setKMPictures() {
-    imageGenerator("Pictures/PlanetMars1.png", "20", "picturesKM", 0);
-    imageGenerator("Pictures/PlanetErde3.png", "40", "picturesKM", 0);
-    imageGenerator("Pictures/MoonPhobos.png", "70", "picturesKM", 0);
-    imageGenerator("Pictures/PlanetNeptun.png", "155", "picturesKM", 0);
+    imageGenerator("Pictures/PlanetMars1.png", "mars", "picturesKM", 0);
+    imageGenerator("Pictures/PlanetErde3.png", "erde", "picturesKM", 0);
+    imageGenerator("Pictures/MoonPhobos.png", "phobos", "picturesKM", 0);
+    imageGenerator("Pictures/PlanetNeptun.png", "neptun", "picturesKM", 0);
   }
 
 	that.initCarView = initCarView;

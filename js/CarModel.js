@@ -5,7 +5,8 @@ CarApp.CarModel = function() {
   "use strict";
 
   var that = {},
-  savedAlter;
+  savedAlter,
+  savedKm;
 
 	function initCarModel() {
     //
@@ -13,11 +14,18 @@ CarApp.CarModel = function() {
 
   function updateAlter(alter) {
     savedAlter = alter;
-    console.log(savedAlter)
+    console.log(savedAlter);
     document.getElementById("alterSlider").value = alter; // TODO: in view!!!
   }
 
+  function updateKm(alter) {
+    savedKm = alter;
+    console.log(savedKm);
+    document.getElementById("kmSlider").value = savedKm; // TODO: in view!!!
+  }
+
   that.updateAlter = updateAlter;
+  that.updateKm = updateKm;
   that.initCarModel = initCarModel;
   return that;
 };
