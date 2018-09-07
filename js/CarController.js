@@ -13,7 +13,44 @@ CarApp.CarController = function() {
   }
 
   function setStep1Listeners(CarView, CarModel) {
-    //
+    //init Drag&Drop Listeners
+    let pig = document.getElementById("piggybank"),
+    fifeC = document.getElementById("money500"),
+    oneK = document.getElementById("money1000"),
+    fifeK = document.getElementById("money5000"),
+    tenK = document.getElementById("money10000"),
+    fiftyK = document.getElementById("money50000"),
+    hundretK = document.getElementById("money100000");
+    fifeC.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",500);
+    });
+    oneK.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",1000);
+    });
+    fifeK.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",5000);
+    });
+    tenK.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",10000);
+    });
+    fiftyK.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",50000);
+    });
+    hundretK.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("amount",100000);
+    });
+    pig.addEventListener("dragover", function(e){
+      e.preventDefault();
+    });
+    pig.addEventListener("drop",function(e){
+      //increase sum
+      let amount= e.dataTransfer.getData("amount"),
+      budget= document.getElementsByClassName("budget");
+      budget[0].innerHTML =parseInt(budget[0].innerHTML)+parseInt(amount);
+      console.log(parseInt(budget[0].innerHTML));
+      console.log("ERFOLGREISCH GEDROPPT MIT "+amount+"GELD!");
+    });
+
   }
 
   function setStep2Listeners(CarView, CarModel) {
