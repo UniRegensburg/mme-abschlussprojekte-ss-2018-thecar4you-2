@@ -10,9 +10,18 @@ CarApp.CarView = function() {
     setPictures();
     setUserActions();
   }
+  
+  function startWizard(){
+	  let startPage = document.getElementsByClassName("start-page");
+	  let wizard = document.getElementById("smartwizard");
+	  startPage[0].style.display = "none";
+	  wizard.style.display = "block";
+	  
+  }
 
   //Beinhaltet alle Bilder der einzelnen Wizardschritte und gibt diese gemeinsam an CarApp.js
   function setPictures(){
+	setStartPictures();
     setPricePictures();
     setAlterPictures();
     setKMPictures();
@@ -45,6 +54,11 @@ CarApp.CarView = function() {
       //newImg.ondragstart="CarView.drag(event)";
     }
     getParent.appendChild(newImg);
+  }
+  
+  //Beinhaltet das Bild für den Startbildschirm
+  function setStartPictures(){
+	  imageGenerator("Pictures/StartImg1.png","startImg","picturesStart",0)
   }
 
 /**preis***************************************************************************************************/
@@ -111,7 +125,8 @@ CarApp.CarView = function() {
     newHeight = liter * 30;
     drop[0].style.height = newHeight + "px";
   }
-
+  
+	that.startWizard = startWizard;
   that.adjustDrop = adjustDrop;
 	that.initCarView = initCarView;
   return that;

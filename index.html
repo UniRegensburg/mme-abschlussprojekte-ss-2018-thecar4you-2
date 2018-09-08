@@ -4,6 +4,7 @@
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="node_modules/smartwizard/dist/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
 	<link href="node_modules/smartwizard/dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="utf-8">
 		<title>TheCar4You</title>
@@ -13,11 +14,17 @@
 		<link rel="stylesheet" href="css/layout.css">
 	</head>
 	<body class="">
-		<header>
-			<h1>TheCar4You</h1>
-		</header>
 		<main>
+				<div class="start-page">
+					<p>Herzlich Willkommen <br> bei </p>
+					<p id="page-name">TheCar4You</p>
+					<div class="picturesStart"></div>
+					<p id="start-info">Infotext: Platzhalter: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+					<span class="start-button">Start</span>
+				</div>
 				<div id="smartwizard">
+					<h1>TheCar4You</h1>
 						<ul>
 							<li><a href="#step-1">Preis<br /></a></li>
 							<li><a href="#step-2">Alter<br /></a></li>
@@ -34,20 +41,20 @@
 						<!--Jeder Schritt ist aufgeteilt in 2 Hauptbereiche: Bilder und Nutzerinteraktionen-->
 							<div id="step-1" class="">
 								<div class="step-description">
-									Ziehen Sie die Geldscheine auf das Sparschwein um die maximalen Kosten in € (EUR) für Ihr Wunschauto anzugeben.<br>Mit Klick auf den <b>Pfeil</b> können Sie Ihre letzte Eingabe rückgängig machen. Mit Klick auf die <b>Mülltonne</b> setzen Sie den Preis auf 0 zurück.
+									Ziehen Sie die Geldscheine auf das Sparschwein um die maximalen Kosten in € (EUR) für Ihr Wunschauto zu addieren.<br>Mit Klick auf den <b>Pfeil</b> können Sie Ihre letzte Eingabe rückgängig machen. Mit Klick auf die <b>Mülltonne</b> setzen Sie den Preis auf 0 zurück.
 								</div>
 								<div class="user-interface">
 									<div class="pictures">
 										<div class="lowMoney" draggable="true"></div>
-										<div class="bank" ></div>
 										<div class="highMoney" draggable="true"></div>
+										<div class="bank"></div>
 									</div>
 									<div class="user-action-price"></div>
 								</div>
 							</div>
 							<div id="step-2" class="">
 								<div class="step-description">
-									Wählen Sie das Baujahr des Fahrzeugs durch Klicken auf die Audiomedien <br> bzw. Verschieben des Reglers aus.
+									Wählen Sie das Baujahr des Fahrzeugs durch Klick auf die Audiomedien. <br> Durch verschieben des Reglers können Sie das Baujahr genauer anpassen.
 								</div>
 								<div class="user-interface">
 									<div class="picturesAlter"></div>
@@ -61,7 +68,7 @@
 							</div>
 							<div id="step-3" class="">
 								<div class="step-description">
-									Wählen Sie die maximalen KM des Fahrzeugs durch Klicken auf die Planeten / Mond <br> bzw. Verschieben des Reglers aus.
+									Wählen Sie die maximalen KM des Fahrzeugs durch Klick auf die Planeten bzw. den Mond. <br> Durch verschieben des Reglers können Sie die maximalen KM genauer anpassen.
 								</div>
 								<div class="user-interface">
 									<div class="picturesKM"></div>
@@ -84,7 +91,7 @@
 							</div>
 							<div id="step-5" class="">
 								<div class="step-description">
-									Wählen Sie die minimale Leistung des Fahrzeugs durch Klicken auf die Fahrzeuge <br> bzw. Verschieben des Reglers aus.
+									Wählen Sie die minimale Leistung des Fahrzeugs durch Klick auf die abgebildeten Autos aus. <br> Durch verschieben des Reglers können Sie die minimale Leistung genauer anpassen.
 								</div>
 								<div class="user-interface">
 									<div class="picturesPs"></div>
@@ -107,7 +114,7 @@
 							</div>
 							<div id="step-7" class="">
 								<div class="step-description">
-									Geben Sie den maximalen Verbrauch in Liter/100KM durch Klicken auf die "-" und "+" Buttons an.
+									Geben Sie den maximalen Verbrauch in Liter/100KM an <br> Durch Klick auf <b>Minus</b> und <b>Plus</b> können Sie den Verbrauch verringern bzw. erhöhen.
 								</div>
 								<div class="user-interface">
 									<div class="verbrauchSpace">

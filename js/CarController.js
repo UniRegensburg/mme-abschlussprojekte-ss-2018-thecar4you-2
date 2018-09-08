@@ -7,6 +7,7 @@ CarApp.CarController = function() {
   var that = {};
 
   function initCarController(CarView, CarModel) {
+	setStartPageListener(CarView, CarModel);
     setStep1Listeners(CarView, CarModel);
     setStep2Listeners(CarView, CarModel);
     setStep3Listeners(CarView, CarModel);
@@ -14,6 +15,13 @@ CarApp.CarController = function() {
     setStep5Listeners(CarView, CarModel);
 
     setStep7Listeners(CarView, CarModel);
+  }
+  
+  function setStartPageListener(CarView, CarModel){
+	  let startButton = document.getElementsByClassName("start-button");
+	  startButton[0].addEventListener("click",function(){
+		CarView.startWizard();
+	  });
   }
 
   function setStep1Listeners(CarView, CarModel) {
@@ -91,7 +99,7 @@ CarApp.CarController = function() {
     document.getElementById("cd").addEventListener("click",
     function() {
       CarModel.updateAlter(2002);
-      alterOut.innerHTML = 20002;
+      alterOut.innerHTML = 2002;
     } );
 
     document.getElementById("mp3").addEventListener("click",

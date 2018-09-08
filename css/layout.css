@@ -4,6 +4,62 @@ body{
 
 h1{
 	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+.start-page {
+	min-height: 450px;
+	font-size: 170%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+#page-name {
+	font-size: 200%;
+	margin: 0 auto 2% auto;
+	font-family: 'Lobster', cursive;
+}
+
+#startImg {
+	width: 30%;
+}
+
+#start-info {
+	font-size: 80%;
+	text-align: justify;
+	margin: 3% 5% 1% 5%;
+}
+
+.start-button{
+	cursor: pointer;
+	display: block;
+	width: 15%;
+	height: 40px;
+	margin: 2% auto;
+	border-style: solid;
+	border-width: 3%;
+	border-color: #BFBFBF;
+	background-color: #BFBFBF;
+	text-align: center;
+	font-size: 90%;
+}
+
+.start-button:hover{
+	background-color: #DBDBDB;
+	font-size: 87%;
+}
+
+#smartwizard {
+	display: none;
+}
+
+.wizard-content{
+	min-height: 450px ! important;
+}
+
+.step-description {
+	font-size: 130%;
+	text-align: center;
 }
 
 #piggybank{
@@ -15,21 +71,17 @@ h1{
 	opacity: 0.3;
 }
 
-#money500 ,#money1000, #money5000, #money10000, #money50000, #money100000 {
+.lowMoney img, .highMoney img{
 	height: 110px;
 	display: block;
 	margin-top: 8%;
 	opacity: 0.85;
+	cursor: pointer;
 }
 
 .lowMoney{
 	float: left;
 	margin-left: 5%;
-}
-
-.bank {
-	margin-left: 30%;
-	margin-right: 30%;
 }
 
 .highMoney{
@@ -38,20 +90,10 @@ h1{
 	z-index: 2;
 }
 
-.wizard-content{
-	min-height: 600px ! important;
-}
-
-.step-description {
-	font-size: 130%;
-	text-align: center;
-}
-
-.budget, .verbrauch {
+.budget, .verbrauch{
 	display: block;
 	width: 10%;
 	height: 30px;
-	margin-top: 2%;
 	margin-left: auto;
 	margin-right: auto;
 	border-style: solid;
@@ -59,6 +101,10 @@ h1{
 	border-color: #BFBFBF;
 	text-align: center;
 	font-size: 130%;
+}
+
+.budget {
+	margin-top: 2%;
 }
 
 .delete-button, .replay-button, .remove-button, .add-button {
@@ -79,27 +125,44 @@ h1{
 }
 
 .picturesAlter, .picturesKM, .picturesPs {
-	height: 300px;
+	height: 200px;
+	text-align: center;
 }
 
 .picturesAlter img {
 	max-height: 100%;
 	max-width: 20%;
-}
-
-.picturesAlter img {
-	max-height: 100%;
-	max-width: 20%;
+	margin: 5% 2%;
+	cursor: pointer;
 }
 
 .picturesKM img {
-	max-height: 100%;
 	max-width: 25%;
+	margin: 5% 4%;
+	cursor: pointer;
+}
+
+#mars {
+	max-height: 70%;
+}
+
+#erde {
+	max-height: 80%;
+}
+
+#phobos {
+	max-height: 110%;
+}
+
+#neptun {
+	max-height: 130%;
 }
 
 .picturesPs img {
 	max-height: 100%;
 	max-width: 33%;
+	margin: 5% 4%;
+	cursor: pointer;
 }
 
 .verbrauchSpace {
@@ -116,6 +179,7 @@ h1{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 5%;
 }
 
 .slider {
@@ -128,6 +192,12 @@ h1{
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+	margin-top: 15%;
+}
+
+.slidecontainer p {
+	font-size: 150%;
+	margin: 1%;
 }
 
 .slider::-webkit-slider-thumb {
