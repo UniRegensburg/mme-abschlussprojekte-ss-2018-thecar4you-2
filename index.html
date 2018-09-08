@@ -27,6 +27,7 @@
 							<li><a href="#step-6">Sitzplätze<br /></a></li>
 							<li><a href="#step-7">Verbrauch<br /></a></li>
 							<li><a href="#step-8">Getriebe & Kraftstoff<br /></a></li>
+							<li><a href="#step-9">Ergebnis<br /></a></li>
 						</ul>
 
 						<div class="wizard-content">
@@ -41,7 +42,7 @@
 										<div class="bank" ></div>
 										<div class="highMoney" draggable="true"></div>
 									</div>
-									<div class="user-action"></div>
+									<div class="user-action-price"></div>
 								</div>
 							</div>
 							<div id="step-2" class="">
@@ -60,7 +61,7 @@
 							</div>
 							<div id="step-3" class="">
 								<div class="step-description">
-									Beschreibung
+									Wählen Sie die maximalen KM des Fahrzeugs durch Klicken auf die Planeten / Mond <br> bzw. Verschieben des Reglers aus.
 								</div>
 								<div class="user-interface">
 									<div class="picturesKM"></div>
@@ -74,7 +75,7 @@
 							</div>
 							<div id="step-4" class="">
 								<div class="step-description">
-									Beschreibung
+									TODO Strecken
 								</div>
 								<div class="user-interface">
 									<div class="pictures"></div>
@@ -83,16 +84,21 @@
 							</div>
 							<div id="step-5" class="">
 								<div class="step-description">
-									Beschreibung
+									Wählen Sie die minimale Leistung des Fahrzeugs durch Klicken auf die Fahrzeuge <br> bzw. Verschieben des Reglers aus.
 								</div>
 								<div class="user-interface">
-									<div class="pictures"></div>
-									<div class="user-action"></div>
+									<div class="picturesPs"></div>
+									<div class="user-action">
+										<div class="slidecontainer">
+											<input type="range" min="0" max="400" value="100" class="slider" id="psSlider">
+											<p>minimale Ps: <span id="psOut"></span>Ps</p>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div id="step-6" class="">
 								<div class="step-description">
-									Beschreibung
+									TODO Sitzplätze
 								</div>
 								<div class="user-interface">
 									<div class="pictures"></div>
@@ -101,6 +107,17 @@
 							</div>
 							<div id="step-7" class="">
 								<div class="step-description">
+									Geben Sie den maximalen Verbrauch in Liter/100KM durch Klicken auf die "-" und "+" Buttons an.
+								</div>
+								<div class="user-interface">
+									<div class="verbrauchSpace">
+										<div class="picturesVerbrauch"></div>
+									</div>
+									<div class="user-action-verbrauch"></div>
+								</div>
+							</div>
+							<div id="step-8" class="">
+								<div class="step-description">
 									Beschreibung
 								</div>
 								<div class="user-interface">
@@ -108,7 +125,7 @@
 									<div class="user-action"></div>
 								</div>
 							</div>
-							<div id="step-8" class="">
+							<div id="step-9" class="">
 								<div class="step-description">
 									Beschreibung
 								</div>

@@ -10,6 +10,10 @@ CarApp.CarController = function() {
     setStep1Listeners(CarView, CarModel);
     setStep2Listeners(CarView, CarModel);
     setStep3Listeners(CarView, CarModel);
+
+    setStep5Listeners(CarView, CarModel);
+
+    setStep7Listeners(CarView, CarModel);
   }
 
   function setStep1Listeners(CarView, CarModel) {
@@ -20,7 +24,9 @@ CarApp.CarController = function() {
     fifeK = document.getElementById("money5000"),
     tenK = document.getElementById("money10000"),
     fiftyK = document.getElementById("money50000"),
-    hundretK = document.getElementById("money100000");
+    hundretK = document.getElementById("money100000"),
+    moneyDeleteButton = document.getElementsByClassName("material-icons delete-button"),
+    moneyBackButton = document.getElementsByClassName("material-icons replay-button");
     fifeC.addEventListener("dragstart", function(e){
       e.dataTransfer.setData("amount",500);
     });
@@ -44,13 +50,19 @@ CarApp.CarController = function() {
     });
     pig.addEventListener("drop",function(e){
       //increase sum
-      let amount= e.dataTransfer.getData("amount"),
-      budget= document.getElementsByClassName("budget");
-      budget[0].innerHTML =parseInt(budget[0].innerHTML)+parseInt(amount);
-      console.log(parseInt(budget[0].innerHTML));
-      console.log("ERFOLGREISCH GEDROPPT MIT "+amount+"GELD!");
+      let amount= e.dataTransfer.getData("amount");
+      CarModel.updateMoney(amount);
+      //budget= document.getElementsByClassName("budget");
+      //budget[0].innerHTML =parseInt(budget[0].innerHTML)+parseInt(amount);
+      //console.log(parseInt(budget[0].innerHTML));
+      //console.log("ERFOLGREISCH GEDROPPT MIT "+amount+"GELD!");
     });
-
+    moneyDeleteButton[0].addEventListener("click", function() {
+      CarModel.deleteMoney();
+    });
+    moneyBackButton[0].addEventListener("click", function() {
+      CarModel.backMoney();
+    });
   }
 
   function setStep2Listeners(CarView, CarModel) {
@@ -90,9 +102,9 @@ CarApp.CarController = function() {
 
     document.getElementById("smartspeaker").addEventListener("click",
     function() {
-      CarModel.updateAlter(2018)
+      CarModel.updateAlter(2018);
       alterOut.innerHTML = 2018;
-      ;} );
+      } );
   }
 
   function setStep3Listeners(CarView, CarModel) {
@@ -129,6 +141,50 @@ CarApp.CarController = function() {
       CarModel.updateKm(155);
       kmOut.innerHTML = 155;
     } );
+  }
+
+  function setStep5Listeners(CarView, CarModel) {
+    let psSlider, psOut;
+    psOut = document.getElementById("psOut");
+    psSlider = document.getElementById("psSlider");
+    psOut.innerHTML = psSlider.value;
+
+    psSlider.oninput = function() {
+      CarModel.updatePs(this.value);
+      psOut.innerHTML = this.value;
+    };
+
+    document.getElementById("corsa").addEventListener("click",
+    function() {
+      CarModel.updatePs(75);
+      psOut.innerHTML = 75;
+    } );
+
+    document.getElementById("bmw").addEventListener("click",
+    function() {
+      CarModel.updatePs(200);
+      psOut.innerHTML = 200;
+    } );
+
+    document.getElementById("truck").addEventListener("click",
+    function() {
+      CarModel.updatePs(400);
+      psOut.innerHTML = 400;
+    } );
+  }
+
+  function setStep7Listeners(CarView, CarModel) {
+    let verbrauchDecreaseButton = document.getElementsByClassName("material-icons remove-button"),
+    verbrauchIncreaseButton = document.getElementsByClassName("material-icons add-button");
+
+    verbrauchDecreaseButton[0].addEventListener("click", function() {
+      CarModel.updateVerbrauch(-1);
+      CarView.adjustDrop();
+    });
+    verbrauchIncreaseButton[0].addEventListener("click", function() {
+      CarModel.updateVerbrauch(1);
+      CarView.adjustDrop();
+    });
   }
 
   that.initCarController = initCarController;

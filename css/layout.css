@@ -47,7 +47,7 @@ h1{
 	text-align: center;
 }
 
-.budget {
+.budget, .verbrauch {
 	display: block;
 	width: 10%;
 	height: 30px;
@@ -61,24 +61,61 @@ h1{
 	font-size: 130%;
 }
 
-.delete-button, .replay-button{
+.delete-button, .replay-button, .remove-button, .add-button {
 	position: absolute;
 	font-size: 250%;
 	color: #BFBFBF;
+	cursor: pointer;
 }
 
-.delete-button {
+.delete-button, .remove-button {
 	float: left;
 	margin-left: 38%;
 }
 
-.replay-button {
+.replay-button, .add-button {
 	float: right;
 	margin-left: 58%;
 }
 
-.picturesAlter {
-	height: 25%;
+.picturesAlter, .picturesKM, .picturesPs {
+	height: 300px;
+}
+
+.picturesAlter img {
+	max-height: 100%;
+	max-width: 20%;
+}
+
+.picturesAlter img {
+	max-height: 100%;
+	max-width: 20%;
+}
+
+.picturesKM img {
+	max-height: 100%;
+	max-width: 25%;
+}
+
+.picturesPs img {
+	max-height: 100%;
+	max-width: 33%;
+}
+
+.verbrauchSpace {
+	height: 480px;
+}
+
+.picturesVerbrauch {
+	height: 300px;
+}
+
+.picturesVerbrauch img {
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .slider {

@@ -16,11 +16,14 @@ CarApp.CarView = function() {
     setPricePictures();
     setAlterPictures();
     setKMPictures();
+    setPsPictures();
+    setVerbrauchPictures();
   }
 
   //zeigt für jeden Wizardschritt die benötigten User Actions wie Slider, Buttons, Counter etc. an
   function setUserActions(){
     setPriceUserActions();
+    setPsUserActions();
   }
 
   //Die Funktion erzeugt dynamisch Spans
@@ -58,9 +61,9 @@ CarApp.CarView = function() {
 
   //Beinhaltet alle User Actions für den Wizardschritt Preis
   function setPriceUserActions(){
-    spanGenerator("user-action", "material-icons replay-button", 0, "replay");
-    spanGenerator("user-action", "material-icons delete-button", 0, "delete");
-    spanGenerator("user-action", "budget", 0, "0");
+    spanGenerator("user-action-price", "material-icons replay-button", 0, "replay");
+    spanGenerator("user-action-price", "material-icons delete-button", 0, "delete");
+    spanGenerator("user-action-price", "budget", 0, "0");
   }
 
 /*alter************************************************************************************** */
@@ -82,6 +85,34 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/PlanetNeptun.png", "neptun", "picturesKM", 0);
   }
 
+/*ps*************************************************************************************** */
+
+  function setPsPictures() {
+    imageGenerator("Pictures/AutoCorsa.jpg", "corsa", "picturesPs", 0);
+    imageGenerator("Pictures/AutoBMW3er.jpg", "bmw", "picturesPs", 0);
+    imageGenerator("Pictures/AutoTruck.jpg", "truck", "picturesPs", 0);
+  }
+
+  function setPsUserActions(){
+    spanGenerator("user-action-verbrauch", "material-icons remove-button", 0, "remove");
+    spanGenerator("user-action-verbrauch", "material-icons add-button", 0, "add");
+    spanGenerator("user-action-verbrauch", "verbrauch", 0, "10");
+  }
+
+/*verbrauch********************************************************************************** */
+
+  function setVerbrauchPictures() {
+    imageGenerator("Pictures/Tropfen2.png", "tropfen", "picturesVerbrauch", 0);
+  }
+
+  function adjustDrop() {
+    let drop = document.getElementsByClassName("picturesVerbrauch"),
+    liter = document.getElementsByClassName("verbrauch")[0].innerHTML,
+    newHeight = liter * 30;
+    drop[0].style.height = newHeight + "px";
+  }
+
+  that.adjustDrop = adjustDrop;
 	that.initCarView = initCarView;
   return that;
 };
