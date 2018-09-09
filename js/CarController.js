@@ -11,7 +11,7 @@ CarApp.CarController = function() {
     setStep1Listeners(CarView, CarModel);
     setStep2Listeners(CarView, CarModel);
     setStep3Listeners(CarView, CarModel);
-
+	setStep4Listeners(CarView, CarModel);
     setStep5Listeners(CarView, CarModel);
 
     setStep7Listeners(CarView, CarModel);
@@ -149,6 +149,10 @@ CarApp.CarController = function() {
       CarModel.updateKm(155);
       kmOut.innerHTML = 155;
     } );
+  }
+  
+  function setStep4Listeners(CarView, CarModel) {
+	  //TODO Drag&Drop Listener Setzen für die Distanz Icons
   }
 
   function setStep5Listeners(CarView, CarModel) {

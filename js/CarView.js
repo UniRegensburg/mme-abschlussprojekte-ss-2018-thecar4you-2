@@ -33,6 +33,7 @@ CarApp.CarView = function() {
   function setUserActions(){
     setPriceUserActions();
     setPsUserActions();
+	setDistanceUserActions();
   }
 
   //Die Funktion erzeugt dynamisch Spans
@@ -97,6 +98,21 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/PlanetErde3.png", "erde", "picturesKM", 0);
     imageGenerator("Pictures/MoonPhobos.png", "phobos", "picturesKM", 0);
     imageGenerator("Pictures/PlanetNeptun.png", "neptun", "picturesKM", 0);
+  }
+  
+  function setDistanceUserActions(){
+	  spanGenerator("work-strecke", "material-icons work-buttonT", 0, "work");
+	  spanGenerator("work-strecke", "material-icons work-buttonO", 0, "work");
+	  spanGenerator("work-strecke", "material-icons work-buttonS", 0, "work");
+	  spanGenerator("shopping-strecke", "material-icons shopping-buttonT", 0, "shopping_cart");
+	  spanGenerator("shopping-strecke", "material-icons shopping-buttonO", 0, "shopping_cart");
+	  spanGenerator("shopping-strecke", "material-icons shopping-buttonS", 0, "shopping_cart");
+	  spanGenerator("school-strecke", "material-icons school-buttonT", 0, "school");
+	  spanGenerator("school-strecke", "material-icons school-buttonO", 0, "school");
+	  spanGenerator("school-strecke", "material-icons school-buttonS", 0, "school");
+	  spanGenerator("hobby-strecke", "material-icons hobby-buttonT", 0, "fitness_center");
+	  spanGenerator("hobby-strecke", "material-icons hobby-buttonO", 0, "fitness_center");
+	  spanGenerator("hobby-strecke", "material-icons hobby-buttonS", 0, "fitness_center");
   }
 
 /*ps*************************************************************************************** */

@@ -158,6 +158,72 @@ h1{
 	max-height: 130%;
 }
 
+.symbol-def, .frequency {
+	color: black;
+	font-size: 120%;
+}
+
+.symbol-def {
+	margin-top: 5%;
+	right: 3%;
+	position: absolute;
+}
+
+.frequency {
+	margin-right: 10%;
+}
+
+.work-strecke, .shopping-strecke, .school-strecke, .hobby-strecke {
+	float: right;
+	margin-right: 3%;
+	width: 35%;
+	text-align: center;
+	position: absolute;
+	right: 0;
+}
+
+.work-strecke {
+	margin-top: 5%;
+}
+
+.shopping-strecke {
+	margin-top: 9%;
+}
+
+.school-strecke {
+	margin-top: 13%;
+}
+
+.hobby-strecke {
+	margin-top: 17%;
+}
+
+.symbol-def p {
+	margin: 0 0 40% 0;
+}
+
+.frequency p {
+	float: right;
+	margin: 2% 2% 0 2%;
+}
+
+.work-strecke span, .shopping-strecke span, .school-strecke span, .hobby-strecke span {
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.work-buttonT, .shopping-buttonT, .school-buttonT, .hobby-buttonT {
+	color: green;
+}
+
+.work-buttonO, .shopping-buttonO, .school-buttonO, .hobby-buttonO {
+	color: yellow;
+}
+
+.work-buttonS, .shopping-buttonS, .school-buttonS, .hobby-buttonS {
+	color: red;
+}
+
 .picturesPs img {
 	max-height: 100%;
 	max-width: 33%;
