@@ -107,7 +107,7 @@ h1{
 	margin-top: 2%;
 }
 
-.delete-button, .replay-button, .remove-button, .add-button, .parent-icon, .child-icon {
+.delete-button, .replay-button, .remove-button, .add-button, .parent-icon, .child-icon, .delete_forever-button {
 	position: absolute;
 	font-size: 250%;
 	color: #BFBFBF;
@@ -122,6 +122,11 @@ h1{
 .replay-button, .add-button, .child-icon {
 	float: right;
 	margin-left: 58%;
+}
+
+.delete_forever-button {
+	float: right;
+	margin-left: 68%;
 }
 
 .picturesAlter, .picturesKM, .picturesPs, .picturesSitze {
@@ -248,6 +253,14 @@ h1{
 	cursor: grab;
 }
 
+.delete_forever-button {
+	color: black;
+	font-size: 350%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	cursor: pointer;
+}
+
 .seat-spans {
 	position: absolute;
 	display: inline;
@@ -257,7 +270,7 @@ h1{
 	display: block;
 }
 
-.two-seats-span, .five-seats-span-front, .five-seats-span-back, 
+.two-seats-span, .five-seats-span-front, .five-seats-span-back,
 .seven-seats-span-front, .seven-seats-span-middle, .seven-seats-span-back {
 	opacity: 0.7;
 	font-size: 350%;

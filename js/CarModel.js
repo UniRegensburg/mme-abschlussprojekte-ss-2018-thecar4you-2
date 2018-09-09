@@ -12,10 +12,12 @@ CarApp.CarModel = function() {
   savedPs,
   savedVerbrauch = 10,
   benzin = true,
-  diesel = true;
+  diesel = true,
+  savedCarType = 0,
+  savedSeats;
 
 	function initCarModel() {
-    //
+    createSavedSeats();
   }
 
   function updateAlter(alter) {
@@ -42,6 +44,7 @@ CarApp.CarModel = function() {
 
   function backMoney() {
     savedMoney -= lastMoney;
+    lastMoney = 0; // TODO: -> nur einmal nutzen mgl bzw. nicht zurück auf 0 mgl
     updateMoneyInHtml(savedMoney);
   }
 
@@ -55,6 +58,28 @@ CarApp.CarModel = function() {
     document.getElementById("psSlider").value = savedPs; // TODO: in view!!!
   }
 
+  function updateSeat(car, seat, type) {
+    savedCarType = car; //2=small, 5=normal, 7=van
+    savedSeats[seat-1][1] = type;
+    console.log(savedSeats);
+  }
+
+  function deleteSeats() {
+    savedCarType = 0;
+    for (let i=0; i<savedSeats.length; i++) {
+      savedSeats[i][1] = "";
+    }
+  }
+
+  function createSavedSeats() {
+    savedSeats = new Array(7);
+    for (let i=0; i<savedSeats.length; i++) {
+      savedSeats[i] = new Array(2);
+      savedSeats[i][0] = i;
+      savedSeats[i][1] = "";
+    }
+  }
+
   function updateVerbrauch(amount) {
     let newVerbrauch = savedVerbrauch + parseInt(amount),
     verbrauchHTML;
@@ -62,8 +87,13 @@ CarApp.CarModel = function() {
     if (newVerbrauch > 4 && newVerbrauch < 17) {
       savedVerbrauch = newVerbrauch;
       verbrauchHTML= document.getElementsByClassName("verbrauch"); // TODO: in view!!!
-      verbrauchHTML[0].innerHTML = savedVerbrauch; // TODO: in view!!!
+      verbrauchHTML[0].innerHTML = String(savedVerbrauch) + "L/100Km"; // TODO: in view!!!
     }
+  }
+
+  function updateFuel(benzinbool, dieselbool) {
+    benzin = benzinbool;
+    diesel = dieselbool;
   }
 
   that.updateAlter = updateAlter;
@@ -72,7 +102,10 @@ CarApp.CarModel = function() {
   that.deleteMoney = deleteMoney;
   that.backMoney = backMoney;
   that.updatePs = updatePs;
+  that.updateSeat = updateSeat;
+  that.deleteSeats = deleteSeats;
   that.updateVerbrauch = updateVerbrauch;
+  that.updateFuel = updateFuel;
   that.initCarModel = initCarModel;
   return that;
 };
