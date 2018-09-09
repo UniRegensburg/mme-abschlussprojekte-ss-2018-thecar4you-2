@@ -26,14 +26,16 @@ CarApp.CarView = function() {
     setAlterPictures();
     setKMPictures();
     setPsPictures();
+	setSeatPictures();
     setVerbrauchPictures();
   }
 
   //zeigt für jeden Wizardschritt die benötigten User Actions wie Slider, Buttons, Counter etc. an
   function setUserActions(){
     setPriceUserActions();
-    setPsUserActions();
 	setDistanceUserActions();
+	setSeatUserActions();
+	setPsUserActions();
   }
 
   //Die Funktion erzeugt dynamisch Spans
@@ -57,13 +59,14 @@ CarApp.CarView = function() {
     getParent.appendChild(newImg);
   }
   
-  //Beinhaltet das Bild für den Startbildschirm
+/*startscreen**************************************************************************************** */
+  
   function setStartPictures(){
 	  imageGenerator("Pictures/StartImg1.png","startImg","picturesStart",0)
   }
 
-/**preis***************************************************************************************************/
-  //Beinhaltet alle Bilder für den Wizardschritt Preis
+/*preis**************************************************************************************** */
+  
   function setPricePictures(){
     imageGenerator("Pictures/Money500.png","money500","lowMoney", 0);
     imageGenerator("Pictures/Money1000.png","money1000","lowMoney", 0);
@@ -74,7 +77,7 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/Sparschwein2.png", "piggybank", "bank", 0);
   }
 
-  //Beinhaltet alle User Actions für den Wizardschritt Preis
+  
   function setPriceUserActions(){
     spanGenerator("user-action-price", "material-icons replay-button", 0, "replay");
     spanGenerator("user-action-price", "material-icons delete-button", 0, "delete");
@@ -99,6 +102,8 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/MoonPhobos.png", "phobos", "picturesKM", 0);
     imageGenerator("Pictures/PlanetNeptun.png", "neptun", "picturesKM", 0);
   }
+  
+/*strecke**************************************************************************************** */
   
   function setDistanceUserActions(){
 	  spanGenerator("work-strecke", "material-icons work-buttonT", 0, "work");
@@ -127,6 +132,30 @@ CarApp.CarView = function() {
     spanGenerator("user-action-verbrauch", "material-icons remove-button", 0, "remove");
     spanGenerator("user-action-verbrauch", "material-icons add-button", 0, "add");
     spanGenerator("user-action-verbrauch", "verbrauch", 0, "10");
+  }
+  
+/*sitze********************************************************************************** */  
+  
+  function setSeatPictures() {
+	imageGenerator("Pictures/SitzplätzeZweier.png", "zweierSitz", "picturesSitze", 0);
+	imageGenerator("Pictures/SitzplätzeFünfer.png", "fünferSitz", "picturesSitze", 0);
+	imageGenerator("Pictures/SitzplätzeSiebener.png", "siebenerSitz", "picturesSitze", 0);
+  }
+  
+  function setSeatUserActions() {
+	for(let i = 0; i < 2; i++){
+		spanGenerator("2Seat", "material-icons two-seats-span", 0, "crop_square");
+		spanGenerator("5Seat-front", "material-icons five-seats-span-front", 0, "crop_square");
+		spanGenerator("7Seat-front", "material-icons seven-seats-span-front", 0, "crop_square");
+		spanGenerator("7Seat-middle", "material-icons seven-seats-span-middle", 0, "crop_square");
+	}
+	
+	for(let i = 0; i < 3; i++){
+		spanGenerator("5Seat-back", "material-icons five-seats-span-back", 0, "crop_square");
+		spanGenerator("7Seat-back", "material-icons seven-seats-span-back", 0, "crop_square");
+	}
+	spanGenerator("person-icons", "material-icons parent-icon", 0, "person");
+	spanGenerator("person-icons", "material-icons child-icon", 0, "child_care");
   }
 
 /*verbrauch********************************************************************************** */

@@ -76,7 +76,7 @@ h1{
 	display: block;
 	margin-top: 8%;
 	opacity: 0.85;
-	cursor: pointer;
+	cursor: grab;
 }
 
 .lowMoney{
@@ -107,24 +107,24 @@ h1{
 	margin-top: 2%;
 }
 
-.delete-button, .replay-button, .remove-button, .add-button {
+.delete-button, .replay-button, .remove-button, .add-button, .parent-icon, .child-icon {
 	position: absolute;
 	font-size: 250%;
 	color: #BFBFBF;
 	cursor: pointer;
 }
 
-.delete-button, .remove-button {
+.delete-button, .remove-button, .parent-icon {
 	float: left;
 	margin-left: 38%;
 }
 
-.replay-button, .add-button {
+.replay-button, .add-button, .child-icon {
 	float: right;
 	margin-left: 58%;
 }
 
-.picturesAlter, .picturesKM, .picturesPs {
+.picturesAlter, .picturesKM, .picturesPs, .picturesSitze {
 	height: 200px;
 	text-align: center;
 }
@@ -156,6 +156,13 @@ h1{
 
 #neptun {
 	max-height: 130%;
+}
+
+.picturesPs img, .picturesSitze img {
+	max-height: 100%;
+	max-width: 33%;
+	margin: 5% 4%;
+	cursor: pointer;
 }
 
 .symbol-def, .frequency {
@@ -224,11 +231,67 @@ h1{
 	color: red;
 }
 
-.picturesPs img {
-	max-height: 100%;
-	max-width: 33%;
-	margin: 5% 4%;
-	cursor: pointer;
+.user-interface-seats {
+	position: relative;
+}
+
+.picturesSitze img {
+	margin: 1%;
+	cursor: default;
+}
+
+.parent-icon, .child-icon {
+	color: black;
+	font-size: 350%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	cursor: grab;
+}
+
+.seat-spans {
+	position: absolute;
+	display: inline;
+}
+
+.seat-spans div {
+	display: block;
+}
+
+.two-seats-span, .five-seats-span-front, .five-seats-span-back, 
+.seven-seats-span-front, .seven-seats-span-middle, .seven-seats-span-back {
+	opacity: 0.7;
+	font-size: 350%;
+	cursor: default;
+}
+
+.\32 Seat  {
+    margin-top: -95%;
+    margin-left: 155%;
+}
+
+.\35 Seat-front {
+    margin-left: 420%;
+    margin-top: -75%;
+}
+
+.\35 Seat-back {
+    margin-left: 470%;
+    margin-top: -90%;
+}
+
+.\37 Seat-front {
+    margin-left: 680%;
+    margin-top: -90%;
+}
+
+.\37 Seat-middle {
+    margin-left: 745%;
+    margin-top: -73%;
+}
+
+.\37 Seat-back {
+    margin-left: 785%;
+    margin-top: -90%;
 }
 
 .verbrauchSpace {
