@@ -54,7 +54,7 @@ h1{
 }
 
 .wizard-content{
-	min-height: 450px ! important;
+	height: 650px ! important;
 }
 
 .step-description {
@@ -104,7 +104,7 @@ h1{
 }
 
 .budget {
-	margin-top: 2%;
+	margin-top: 4%;
 }
 
 .delete-button, .replay-button, .remove-button, .add-button, .parent-icon, .child-icon, .delete_forever-button {
@@ -129,7 +129,7 @@ h1{
 	margin-left: 68%;
 }
 
-.picturesAlter, .picturesKM, .picturesPs, .picturesSitze {
+.picturesAlter, .picturesKM, .picturesPs {
 	height: 200px;
 	text-align: center;
 }
@@ -163,10 +163,10 @@ h1{
 	max-height: 130%;
 }
 
-.picturesPs img, .picturesSitze img {
+.picturesPs img {
 	max-height: 100%;
 	max-width: 33%;
-	margin: 5% 4%;
+	margin: 5% 3%;
 	cursor: pointer;
 }
 
@@ -236,13 +236,72 @@ h1{
 	color: red;
 }
 
-.user-interface-seats {
-	position: relative;
+.picturesSitze {
+	height: 200px;
+	text-align: center;
 }
 
-.picturesSitze img {
-	margin: 1%;
+.zwei-sitzer, .fünf-sitzer, .sieben-sitzer {
+	position: relative;
+	display: inline;
+}
+
+#zweierSitz, #fünferSitz, #siebenerSitz {
+	max-height: 100%;
+	max-width: 33%;
+	margin: 1% 0;
 	cursor: default;
+}
+
+.ZweiSitz-icons, .FünfSitz-front-icons, .FünfSitz-back-icons, .SiebenSitz-front-icons, .SiebenSitz-middle-icons, .SiebenSitz-back-icons {
+	position: absolute;
+	display: inline;
+}
+
+.ZweiSitz-icons {
+	margin-left: 48%;
+	margin-top: 10%;
+}
+
+.FünfSitz-front-icons {
+	margin-left: 40%;
+	margin-top: 10%;
+}
+
+.FünfSitz-back-icons {
+	margin-left: 62%;
+	margin-top: 12%;
+}
+
+.SiebenSitz-front-icons {
+	margin-left: 32%;
+	margin-top: 10%;
+}
+
+.SiebenSitz-middle-icons {
+	margin-left: 55%;
+	margin-top: 10%;
+}
+
+.SiebenSitz-back-icons {
+	margin-left: 68%;
+	margin-top: 12%;
+}
+
+.two-seats-span, .five-seats-span-front, .five-seats-span-back,
+.seven-seats-span-front, .seven-seats-span-middle, .seven-seats-span-back {
+	opacity: 0.7;
+	font-size: 350%;
+	cursor: default;
+	display: block;
+}
+
+.two-seats-span, .five-seats-span-front, .seven-seats-span-front, .seven-seats-span-middle {
+	margin-top: 35%;
+}
+
+.five-seats-span-back, .seven-seats-span-back {
+	margin-top: -10%;
 }
 
 .parent-icon, .child-icon {
@@ -261,54 +320,8 @@ h1{
 	cursor: pointer;
 }
 
-.seat-spans {
-	position: absolute;
-	display: inline;
-}
-
-.seat-spans div {
-	display: block;
-}
-
-.two-seats-span, .five-seats-span-front, .five-seats-span-back,
-.seven-seats-span-front, .seven-seats-span-middle, .seven-seats-span-back {
-	opacity: 0.7;
-	font-size: 350%;
-	cursor: default;
-}
-
-.\32 Seat  {
-    margin-top: -95%;
-    margin-left: 155%;
-}
-
-.\35 Seat-front {
-    margin-left: 420%;
-    margin-top: -75%;
-}
-
-.\35 Seat-back {
-    margin-left: 470%;
-    margin-top: -90%;
-}
-
-.\37 Seat-front {
-    margin-left: 680%;
-    margin-top: -90%;
-}
-
-.\37 Seat-middle {
-    margin-left: 745%;
-    margin-top: -73%;
-}
-
-.\37 Seat-back {
-    margin-left: 785%;
-    margin-top: -90%;
-}
-
 .verbrauchSpace {
-	height: 480px;
+	height: 450px;
 }
 
 .picturesVerbrauch {

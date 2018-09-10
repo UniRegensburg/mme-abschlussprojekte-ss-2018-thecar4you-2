@@ -131,22 +131,22 @@ CarApp.CarView = function() {
 /*sitze********************************************************************************** */
 
   function setSeatPictures() {
-	imageGenerator("Pictures/SitzplätzeZweier.png", "zweierSitz", "picturesSitze", 0);
-	imageGenerator("Pictures/SitzplätzeFünfer.png", "fünferSitz", "picturesSitze", 0);
-	imageGenerator("Pictures/SitzplätzeSiebener.png", "siebenerSitz", "picturesSitze", 0);
+	imageGenerator("Pictures/SitzplätzeZweier.png", "zweierSitz", "zwei-sitzer", 0);
+	imageGenerator("Pictures/SitzplätzeFünfer.png", "fünferSitz", "fünf-sitzer", 0);
+	imageGenerator("Pictures/SitzplätzeSiebener.png", "siebenerSitz", "sieben-sitzer", 0);
   }
 
   function setSeatUserActions() {
     for(let i = 0; i < 2; i++){
-      spanGenerator("2Seat", "material-icons two-seats-span", 0, "crop_square");
-      spanGenerator("5Seat-front", "material-icons five-seats-span-front", 0, "crop_square");
-      spanGenerator("7Seat-front", "material-icons seven-seats-span-front", 0, "crop_square");
-      spanGenerator("7Seat-middle", "material-icons seven-seats-span-middle", 0, "crop_square");
+      spanGenerator("ZweiSitz-icons", "material-icons two-seats-span", 0, "crop_square");
+      spanGenerator("FünfSitz-front-icons", "material-icons five-seats-span-front", 0, "crop_square");
+      spanGenerator("SiebenSitz-front-icons", "material-icons seven-seats-span-front", 0, "crop_square");
+      spanGenerator("SiebenSitz-middle-icons", "material-icons seven-seats-span-middle", 0, "crop_square");
     }
 
     for(let i = 0; i < 3; i++){
-      spanGenerator("5Seat-back", "material-icons five-seats-span-back", 0, "crop_square");
-      spanGenerator("7Seat-back", "material-icons seven-seats-span-back", 0, "crop_square");
+      spanGenerator("FünfSitz-back-icons", "material-icons five-seats-span-back", 0, "crop_square");
+      spanGenerator("SiebenSitz-back-icons", "material-icons seven-seats-span-back", 0, "crop_square");
     }
   spanGenerator("person-icons", "material-icons delete_forever-button", 0 ,"seat_delete");
 	spanGenerator("person-icons", "material-icons parent-icon", 0, "person");
