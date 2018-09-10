@@ -61,6 +61,7 @@ CarApp.CarModel = function() {
   function updateSeat(car, seat, type) {
     savedCarType = car; //2=small, 5=normal, 7=van
     savedSeats[seat-1][1] = type;
+    //console.log(savedCarType);
     console.log(savedSeats);
   }
 
@@ -94,6 +95,10 @@ CarApp.CarModel = function() {
   function updateFuel(benzinbool, dieselbool) {
     benzin = benzinbool;
     diesel = dieselbool;
+    if (benzin === false && diesel === false) {
+      benzin = true;
+      diesel = true;
+    }
   }
 
   that.updateAlter = updateAlter;

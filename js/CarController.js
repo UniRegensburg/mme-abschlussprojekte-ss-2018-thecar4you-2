@@ -220,13 +220,42 @@ CarApp.CarController = function() {
       e.dataTransfer.setData("type", "child");
     });
 
+    step6DragAndDrop(seatArray, CarView, CarModel);
+
+    seatDelete.addEventListener("click", function() {
+      CarModel.deleteSeats();
+      CarView.deleteSeatPics(seatArray);
+    });
+  }
+
+  function step6DragAndDrop(seatArray, CarView, CarModel) {
+    let seat2_1 = seatArray[0],
+    seat2_2 = seatArray[1],
+    seat5_1 = seatArray[2],
+    seat5_2 = seatArray[3],
+    seat5_3 = seatArray[4],
+    seat5_4 = seatArray[5],
+    seat5_5 = seatArray[6],
+    seat7_1 = seatArray[7],
+    seat7_2 = seatArray[8],
+    seat7_3 = seatArray[9],
+    seat7_4 = seatArray[10],
+    seat7_5 = seatArray[11],
+    seat7_6 = seatArray[12],
+    seat7_7 = seatArray[13];
+
     seat2_1.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
     seat2_1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
-      CarModel.updateSeat(2, 1, type);
-      CarView.updateSeatPic(seat2_1, type);
+      if (type === "adult") {
+        CarModel.updateSeat(2, 1, type);
+        CarView.updateSeatPic(seat2_1, type);
+        for (let i=2; i<seatArray.length; i++) {
+          CarView.deleteSeatSpan(seatArray[i]);
+        }
+      }
     });
 
     seat2_2.addEventListener("dragover", function(e) {
@@ -236,6 +265,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(2, 2, type);
       CarView.updateSeatPic(seat2_2, type);
+      for (let i=2; i<seatArray.length; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat5_1.addEventListener("dragover", function(e) {
@@ -243,8 +275,16 @@ CarApp.CarController = function() {
     });
     seat5_1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
-      CarModel.updateSeat(5, 1, type);
-      CarView.updateSeatPic(seat5_1, type);
+      if (type === "adult") {
+        CarModel.updateSeat(5, 1, type);
+        CarView.updateSeatPic(seat5_1, type);
+        for (let i=0; i<2; i++) {
+          CarView.deleteSeatSpan(seatArray[i]);
+        }
+        for (let i=7; i<seatArray.length; i++) {
+          CarView.deleteSeatSpan(seatArray[i]);
+        }
+      }
     });
 
     seat5_2.addEventListener("dragover", function(e) {
@@ -254,6 +294,12 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 2, type);
       CarView.updateSeatPic(seat5_2, type);
+      for (let i=0; i<2; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
+      for (let i=7; i<seatArray.length; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat5_3.addEventListener("dragover", function(e) {
@@ -263,6 +309,12 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 3, type);
       CarView.updateSeatPic(seat5_3, type);
+      for (let i=0; i<2; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
+      for (let i=7; i<seatArray.length; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat5_4.addEventListener("dragover", function(e) {
@@ -272,6 +324,12 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 4, type);
       CarView.updateSeatPic(seat5_4, type);
+      for (let i=0; i<2; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
+      for (let i=7; i<seatArray.length; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat5_5.addEventListener("dragover", function(e) {
@@ -281,6 +339,12 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 5, type);
       CarView.updateSeatPic(seat5_5, type);
+      for (let i=0; i<2; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
+      for (let i=7; i<seatArray.length; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_1.addEventListener("dragover", function(e) {
@@ -288,8 +352,13 @@ CarApp.CarController = function() {
     });
     seat7_1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
-      CarModel.updateSeat(7, 1, type);
-      CarView.updateSeatPic(seat7_1, type);
+      if (type === "adult") {
+        CarModel.updateSeat(7, 1, type);
+        CarView.updateSeatPic(seat7_1, type);
+        for (let i=0; i<7; i++) { //evtl falsch
+          CarView.deleteSeatSpan(seatArray[i]);
+        }
+      }
     });
 
     seat7_2.addEventListener("dragover", function(e) {
@@ -299,6 +368,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 2, type);
       CarView.updateSeatPic(seat7_2, type);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_3.addEventListener("dragover", function(e) {
@@ -308,6 +380,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 3, type);
       CarView.updateSeatPic(seat7_3, type);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_4.addEventListener("dragover", function(e) {
@@ -317,6 +392,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 4, type);
       CarView.updateSeatPic(seat7_4, type);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_5.addEventListener("dragover", function(e) {
@@ -326,6 +404,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 5, type);
       CarView.updateSeatPic(seat7_5, type);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_6.addEventListener("dragover", function(e) {
@@ -335,6 +416,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 6, type);
       CarView.updateSeatPic(seat7_6, type);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
 
     seat7_7.addEventListener("dragover", function(e) {
@@ -344,11 +428,9 @@ CarApp.CarController = function() {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 7, type);
       CarView.updateSeatPic(seat7_7, type);
-    });
-
-    seatDelete.addEventListener("click", function() {
-      CarModel.deleteSeats();
-      CarView.deleteSeatPics(seatArray);
+      for (let i=0; i<7; i++) {
+        CarView.deleteSeatSpan(seatArray[i]);
+      }
     });
   }
 

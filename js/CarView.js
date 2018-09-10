@@ -167,6 +167,10 @@ CarApp.CarView = function() {
     }
   }
 
+  function deleteSeatSpan(seat) {
+    seat.innerHTML = "";
+  }
+
 /*verbrauch********************************************************************************** */
 
   function setVerbrauchPictures() {
@@ -191,6 +195,7 @@ CarApp.CarView = function() {
 	that.startWizard = startWizard;
   that.updateSeatPic = updateSeatPic;
   that.deleteSeatPics = deleteSeatPics;
+  that.deleteSeatSpan = deleteSeatSpan;
   that.adjustDrop = adjustDrop;
 	that.initCarView = initCarView;
   return that;
