@@ -85,9 +85,14 @@
 							<div id="step-4" class="">
 								<div class="step-description">
 									<p>TODO Strecken</p>
+									<img id="ctest1" src="Pictures/baseline_person_black_36dp.png">
+									<img id="ctest2" src="Pictures/baseline_child_care_black_36dp.png">
 								</div>
 								<div class="user-interface">
-									<div class="pictures"></div>
+									<div class="cdiv">
+										<canvas class="canvas" width="550" height="550"></canvas>
+										<button type="button" id="canvasDel">Clear</button>
+									</div>
 									<div class="text-info">
 										<div class="frequency">
 											<p>Selten</p>
@@ -100,12 +105,12 @@
 											<p>Bildung</p>
 											<p>Freizeit</p>
 										</div>
-									</div>
-									<div class="user-action">
-										<div class="work-strecke" draggable="true"></div>
-										<div class="shopping-strecke" draggable="true"></div>
-										<div class="school-strecke" draggable="true"></div>
-										<div class="hobby-strecke" draggable="true"></div>
+										<div class="user-action">
+											<div class="work-strecke" draggable="true"></div>
+											<div class="shopping-strecke" draggable="true"></div>
+											<div class="school-strecke" draggable="true"></div>
+											<div class="hobby-strecke" draggable="true"></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -202,6 +207,7 @@
 		<script src="js/CarModel.js"></script>
 		<script src="js/CarView.js"></script>
 		<script src="js/CarDatabase.js"></script>
+		<script src="js/CanvasController.js"></script>
 		<script>
 			CarApp.init();
 		</script>

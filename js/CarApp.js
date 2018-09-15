@@ -8,7 +8,8 @@ CarApp = (function() {
   CarController,
   CarDatabase,
   CarModel,
-  CarView;
+  CarView,
+  canvasEl;
 
   function init() {
     CarController = new CarApp.CarController();
@@ -18,6 +19,12 @@ CarApp = (function() {
     CarView.initCarView();
     CarModel.initCarModel();
     CarController.initCarController(CarView, CarModel);
+    initCanvas();
+  }
+
+  function initCanvas() {
+    canvasEl = document.querySelector(".canvas");
+    CarApp.CanvasController(canvasEl);
   }
 
   that.init = init;

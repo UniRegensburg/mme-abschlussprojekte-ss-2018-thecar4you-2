@@ -372,3 +372,19 @@ h1{
     background: #4CAF50;
     cursor: pointer;
 }
+
+/* canvas */
+.cdiv {
+	float: left;
+}
+
+.text-info {
+	float: right;
+}
+
+.canvas {
+	display: inline-block;
+	margin: 0;
+	background-color: #FFF;
+	vertical-align: top;
+}
