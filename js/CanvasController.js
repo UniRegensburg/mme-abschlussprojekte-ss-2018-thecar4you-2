@@ -19,54 +19,54 @@ CarApp.CanvasController = function(canvasNode) {
     chosenIcon="";
 
   function addIcons() {
-    workG = document.getElementsByClassName("material-icons work-buttonT")[0];
+    workG = document.getElementById("work-buttonT");
     workG.addEventListener("click", function() {
       chosenIcon = workG;
     });
-    workY = document.getElementsByClassName("material-icons work-buttonO")[0];
+    workY = document.getElementById("work-buttonO");
     workY.addEventListener("click", function() {
       chosenIcon = workY;
     });
-    workR = document.getElementsByClassName("material-icons work-buttonS")[0];
+    workR = document.getElementById("work-buttonS");
     workR.addEventListener("click", function() {
       chosenIcon = workR;
     });
 
-    kaufG = document.getElementsByClassName("material-icons shopping-buttonT")[0];
+    kaufG = document.getElementById("shopping-buttonT");
     kaufG.addEventListener("click", function() {
       chosenIcon = kaufG;
     });
-    kaufY = document.getElementsByClassName("material-icons shopping-buttonO")[0];
+    kaufY = document.getElementById("shopping-buttonO");
     kaufY.addEventListener("click", function() {
       chosenIcon = kaufY;
     });
-    kaufR = document.getElementsByClassName("material-icons shopping-buttonS")[0];
+    kaufR = document.getElementById("shopping-buttonS");
     kaufR.addEventListener("click", function() {
       chosenIcon = kaufR;
     });
 
-    bildG = document.getElementsByClassName("material-icons school-buttonT")[0];
+    bildG = document.getElementById("school-buttonT");
     bildG.addEventListener("click", function() {
       chosenIcon = bildG;
     });
-    bildY = document.getElementsByClassName("material-icons school-buttonO")[0];
+    bildY = document.getElementById("school-buttonO");
     bildY.addEventListener("click", function() {
       chosenIcon = bildY;
     });
-    bildR = document.getElementsByClassName("material-icons school-buttonS")[0];
+    bildR = document.getElementById("school-buttonS");
     bildR.addEventListener("click", function() {
       chosenIcon = bildR;
     });
 
-    freiG = document.getElementsByClassName("material-icons hobby-buttonT")[0];
+    freiG = document.getElementById("hobby-buttonT");
     freiG.addEventListener("click", function() {
       chosenIcon = freiG;
     });
-    freiY = document.getElementsByClassName("material-icons hobby-buttonO")[0];
+    freiY = document.getElementById("hobby-buttonO");
     freiY.addEventListener("click", function() {
       chosenIcon = freiY;
     });
-    freiR = document.getElementsByClassName("material-icons hobby-buttonS")[0];
+    freiR = document.getElementById("hobby-buttonS");
     freiR.addEventListener("click", function() {
       chosenIcon = freiR;
     });
