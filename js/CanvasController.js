@@ -1,13 +1,12 @@
 /* eslint-env browser  */
 // TODO: kein eraser?
 var CarApp = CarApp || {};
-CarApp.CanvasController = function(canvasNode) {
+CarApp.CanvasController = function(canvasNode, CarModel) {
   "use strict";
 
   var that = {},
     canvas,
     context,
-    options,
     xPos = 0,
     yPos = 0,
     iconArray=[],
@@ -81,12 +80,14 @@ CarApp.CanvasController = function(canvasNode) {
     context.clearRect(0,0,canvas.width,canvas.height);
     iconArray=[];
     chosenIcon="";
+    CarModel.clearDist();
   }
 
   function onMouseClickCanvas(event) {
     xPos = event.offsetX;
     yPos = event.offsetY;
     draw(xPos, yPos);
+    CarModel.calculateDist(iconArray);
   }
 
   function draw(x, y) {
@@ -104,16 +105,16 @@ CarApp.CanvasController = function(canvasNode) {
     }
     */
     if (chosenIcon === workG) {
-      let id = "ctest1",
-      img = document.getElementById(id);
-      context.drawImage(img, x, y);
-      iconArray.push([id, x, y]);
+      //let id = "ctest1",
+      //img = document.getElementById(id);
+      context.drawImage(workG, x, y);
+      iconArray.push(["workG", x, y]);
       //console.log(iconArray);
     } else if (chosenIcon === workY) {
-      let id = "ctest2",
-      img = document.getElementById(id);
-      context.drawImage(img, x, y);
-      iconArray.push([id, x, y]);
+      //let id = "ctest2",
+      //img = document.getElementById(id);
+      context.drawImage(workY, x, y);
+      iconArray.push(["workY", x, y]);
     } else if (chosenIcon === workR) {
       //      console.log(1);
     } else if (chosenIcon === kaufG) {

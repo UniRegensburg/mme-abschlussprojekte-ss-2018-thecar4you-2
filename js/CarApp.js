@@ -18,13 +18,14 @@ CarApp = (function() {
     CarView = new CarApp.CarView();
     CarView.initCarView();
     CarModel.initCarModel();
-    CarController.initCarController(CarView, CarModel);
+    CarDatabase.initDB();
+    CarController.initCarController(CarView, CarModel, CarDatabase);
     initCanvas();
   }
 
   function initCanvas() {
     canvasEl = document.querySelector(".canvas");
-    CarApp.CanvasController(canvasEl);
+    CarApp.CanvasController(canvasEl, CarModel);
   }
 
   that.init = init;

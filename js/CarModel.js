@@ -5,16 +5,20 @@ CarApp.CarModel = function() {
   "use strict";
 
   var that = {},
-  savedAlter,
-  savedKm,
+  savedAlter = 2013,
+  savedKm = 100, //in tausend km
   savedMoney = 0,
   lastMoney,
-  savedPs,
+  savedPs = 100,
   savedVerbrauch = 10,
   benzin = true,
   diesel = true,
   savedCarType = 0,
-  savedSeats;
+  savedSeats,
+  distArray=[],
+  distIndex=0,
+  hardData=[],
+  softData=[];
 
 	function initCarModel() {
     createSavedSeats();
@@ -51,6 +55,20 @@ CarApp.CarModel = function() {
   function updateMoneyInHtml(money) { // TODO: in view!!!
     let budget= document.getElementsByClassName("budget");
     budget[0].innerHTML = money;
+  }
+
+  function calculateDist(iconArray) {
+    let x = Math.abs(550/2 - iconArray[distIndex][1]),
+    y = Math.abs(550/2 - iconArray[distIndex][2]),
+    dist = Math.round(Math.sqrt(x*x + y*y)); //dist in pixeln, muss noch zu km gerechnet werden, dazu bild nötig
+    distArray.push(iconArray[distIndex], dist);
+    distIndex +=1;
+    //console.log(distArray);
+  }
+
+  function clearDist() {
+    distArray = [];
+    distIndex = 0;
   }
 
   function updatePs(ps) {
@@ -101,16 +119,45 @@ CarApp.CarModel = function() {
     }
   }
 
+  function returnHardData() {
+    hardData=[];
+    hardData.push(savedMoney);
+    hardData.push(savedAlter);
+    hardData.push(savedPs);
+    hardData.push(savedVerbrauch);
+    hardData.push(benzin, diesel);
+
+    console.log(hardData);
+
+    return(hardData);
+  }
+
+  function returnSoftData() {
+    softData=[];
+    softData.push(savedKm);
+    softData.push(distArray);
+    softData.push(savedCarType);
+    softData.push(savedSeats);
+
+    console.log(softData);
+
+    return(softData);
+  }
+
   that.updateAlter = updateAlter;
   that.updateKm = updateKm;
   that.updateMoney = updateMoney;
   that.deleteMoney = deleteMoney;
   that.backMoney = backMoney;
+  that.calculateDist = calculateDist;
+  that.clearDist = clearDist;
   that.updatePs = updatePs;
   that.updateSeat = updateSeat;
   that.deleteSeats = deleteSeats;
   that.updateVerbrauch = updateVerbrauch;
   that.updateFuel = updateFuel;
+  that.returnHardData = returnHardData;
+  that.returnSoftData = returnSoftData;
   that.initCarModel = initCarModel;
   return that;
 };

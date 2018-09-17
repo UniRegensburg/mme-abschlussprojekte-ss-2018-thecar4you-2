@@ -6,7 +6,7 @@ CarApp.CarController = function() {
 
   var that = {};
 
-  function initCarController(CarView, CarModel) {
+  function initCarController(CarView, CarModel, CarDatabase) {
     setStartPageListener(CarView);
     setStep1Listeners(CarView, CarModel); //Preis
     setStep2Listeners(CarView, CarModel); //Alter
@@ -16,6 +16,7 @@ CarApp.CarController = function() {
     setStep6Listeners(CarView, CarModel); //Sitzplätze
     setStep7Listeners(CarView, CarModel); //Verbrauch
     setStep8Listeners(CarView, CarModel); //Kraftstoff
+    setStep9Listeners(CarView, CarModel, CarDatabase); //Ergebnis
   }
 
   function setStartPageListener(CarView){
@@ -457,6 +458,13 @@ CarApp.CarController = function() {
     dieselCheck.addEventListener("click", function() {
       CarModel.updateFuel(benzinCheck.checked, dieselCheck.checked);
     });
+    }
+
+    function setStep9Listeners(CarView, CarModel, CarDatabase) {
+      let ergButton = document.getElementById("ergButton");
+      ergButton.addEventListener("click", function() {
+        CarDatabase.wizardDone(CarModel);
+      });
     }
 
   that.initCarController = initCarController;
