@@ -27,9 +27,9 @@ CarApp.CarModel = function() {
   function updateAlter(alter) {
     savedAlter = alter;
     document.getElementById("alterSlider").value = savedAlter; // TODO: in view!!!
-    if (savedAlter === 1998) {
-      savedAlter = 0;
-    }
+    //if (savedAlter === 1998) {
+    //  savedAlter = 0;
+    //}
   }
 
   function updateKm(alter) {

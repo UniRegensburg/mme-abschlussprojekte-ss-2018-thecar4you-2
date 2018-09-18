@@ -30,7 +30,7 @@ CarApp.CarDatabase = function() {
     smallArray.push("https://de.wikipedia.org/wiki/BMW_E46","BMW","E46" ,"['1998', '2007']","['mittelklasse', 'kompaktklasse']","['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']","[105, 360]","[116, 204]","[9, 7]","[700, 28000]");
     DbCarArray.push(smallArray);
     smallArray=[];
-    smallArray.push("https://de.wikipedia.org/wiki/Corvette_C7","Corvette","C7" ,"['seit 2013', 'pro']","['sportwagen']","['coupe', 'cabriolet']","[455, 765]","[0, 0]","[12, 0]","[50000, 70000]");
+    smallArray.push("https://de.wikipedia.org/wiki/Corvette_C7","Corvette","C7" ,"['2013', 'pro']","['sportwagen']","['coupe', 'cabriolet']","[455, 765]","[0, 0]","[12, 0]","[50000, 70000]");
     DbCarArray.push(smallArray);
     smallArray=[];
     smallArray.push("https://de.wikipedia.org/wiki/BMW_E85","BMW","E85" ,"['2002', '2008']","['sportwagen']","['kombicoupe', 'roadster']","[150, 343]","[0, 0]","[10, 0]","[5000, 35000]");
@@ -45,8 +45,9 @@ CarApp.CarDatabase = function() {
   function getPossibleCars() { //buggy
     posCarArray = [];
     for (let i=0; i<DbCarArray.length; i++) {
-      let pMin = parseInt(getFirstIndex(DbCarArray[i][9]));
-      if (hardData[0] >= pMin) { //fahrzeugpreis < budget
+      let calcPrice = adjustPrice(i);
+      //let pMin = parseInt(getFirstIndex(DbCarArray[i][9])); // TODO: was ist besser?
+      if (hardData[0] >= calcPrice) { //fahrzeugpreis < budget - alt (pMin in if);;; neu: checked auf ca preis
         let ageMax = getSecondIndex(DbCarArray[i][3]);
         if (ageMax === "pro" || parseInt(ageMax) >= hardData[1]) { //kfz max baujahr >= max bj
           let benzinMax = parseInt(getSecondIndex(DbCarArray[i][6])),
@@ -58,7 +59,7 @@ CarApp.CarDatabase = function() {
         }
       }
     }
-    console.log(posCarArray);
+    //console.log(posCarArray);
     checkBodyTyp(); //unschön
   }
 
@@ -86,7 +87,12 @@ CarApp.CarDatabase = function() {
     benzinMin = parseInt(getFirstIndex(DbCarArray[index][6])),
     dieselMin = parseInt(getFirstIndex(DbCarArray[index][7])),
     benzinFaktor = 1,
-    dieselFaktor = 1;
+    dieselFaktor = 1,
+    altBenzin,
+    altDiesel,
+    neuBenzin,
+    neuDiesel,
+    neuerVerbrauch;
 
     if (hardData[2] >= benzinMin) { //realistisch halten, 200ps min, corvette avg 550ps, min 400, faktor = 0,3x und corvette verbrauch = 4-5l
       benzinFaktor = hardData[2] / ((benzinMax+benzinMin)/2);
@@ -95,11 +101,11 @@ CarApp.CarDatabase = function() {
       dieselFaktor = hardData[2] / ((dieselMax+dieselMin)/2);
     }
 
-    let altBenzin = parseInt(getFirstIndex(DbCarArray[index][8])),
-    altDiesel = parseInt(getSecondIndex(DbCarArray[index][8])),
-    neuBenzin = parseInt(benzinFaktor * altBenzin), //combine nicht mgl, weil if abfrage nötig ist
-    neuDiesel = parseInt(dieselFaktor * altDiesel),
-    neuerVerbrauch = "["+neuBenzin+", "+neuDiesel+"]"; //muss mit '' sein
+    altBenzin = parseInt(getFirstIndex(DbCarArray[index][8]));
+    altDiesel = parseInt(getSecondIndex(DbCarArray[index][8]));
+    neuBenzin = parseInt(benzinFaktor * altBenzin);
+    neuDiesel = parseInt(dieselFaktor * altDiesel);
+    neuerVerbrauch = "["+neuBenzin+", "+neuDiesel+"]";
     DbCarArray[index][8] = neuerVerbrauch;
   }
 
@@ -122,12 +128,74 @@ CarApp.CarDatabase = function() {
     }
   }
 
+  function adjustPrice(index) {
+    let benzinMax = parseInt(getSecondIndex(DbCarArray[index][6])),
+    dieselMax = parseInt(getSecondIndex(DbCarArray[index][7])),
+    benzinMin = parseInt(getFirstIndex(DbCarArray[index][6])),
+    dieselMin = parseInt(getFirstIndex(DbCarArray[index][7])),
+    benzinFaktor = 1,
+    dieselFaktor = 1,
+    psFaktor = 1,
+    baujahrMin = parseInt(getFirstIndex(DbCarArray[index][3])),
+    baujahrMax = getSecondIndex(DbCarArray[index][3]),
+    bjFaktor = 1,
+    kmFaktor = 1,
+    preisFaktor = 0,
+    lowPrice = parseInt(getFirstIndex(DbCarArray[index][9])),
+    highPrice = parseInt(getSecondIndex(DbCarArray[index][9])),
+    avgPrice = (2*lowPrice+highPrice)/3,
+    calcPrice;
+
+    //console.log(benzinMin);
+    if (hardData[2] >= benzinMin && benzinMin > 0) { //realistisch halten, 200ps min, corvette avg 550ps, min 400, faktor = 0,3x und corvette verbrauch = 4-5l
+      benzinFaktor = hardData[2] / ((benzinMax+benzinMin)/2);
+      //console.log("benz");
+      //console.log(benzinFaktor);
+    }
+    //console.log(dieselMin);
+    if (hardData[2] >= dieselMin && dieselMin > 0) {
+      dieselFaktor = hardData[2] / ((dieselMax+dieselMin)/2);
+      //console.log("diesel");
+      //console.log(dieselFaktor);
+    }
+    psFaktor = (benzinFaktor+dieselFaktor)/2;
+    //console.log("ps");
+    //console.log(psFaktor);
+
+    if (baujahrMax === "pro") {
+      baujahrMax = 2018;
+    } else {
+      baujahrMax = parseInt(baujahrMax);
+    }
+    //console.log(baujahrMax);
+    if (baujahrMin < 1998) { //fängt buggy csv ab
+      baujahrMin = baujahrMax - 10;
+    }
+    //console.log(baujahrMin);
+    bjFaktor = ((hardData[1]-1950) / (((baujahrMax+baujahrMin)/2)-1950)); // abzug um wirkung zu erhöhen
+    //problem: hier differenz bei älteren baujahren -> größere faktor, echt: andersrum
+    //console.log("bj");
+    //console.log(bjFaktor);
+
+    kmFaktor = ((2018-hardData[1])*10000) / (softData[0]*1000);
+    //console.log("km");
+    //console.log(kmFaktor);
+
+    preisFaktor = (2*psFaktor + 2*bjFaktor + kmFaktor) / 3; //mit faktoren spielen
+    //console.log(preisFaktor);
+
+    calcPrice = preisFaktor*avgPrice;
+
+    return(calcPrice);
+  }
+
 /*
 verbrauch nach update: kfz max ps - kfz min ps (für kraftstoff)
 d1 = user min ps / kfz avg
 verbrauchupdate = d1* avg verbrauch für kraftstoff <- adjustVerbrauch
 
-km + ps + baujahr (im vgl zu produktionszeit): auswirkung auf preis // TODO: schwer / ungenau, weil zustand etc
+km + ps + baujahr (im vgl zu produktionszeit): auswirkung auf preis // TODO: schwer / ungenau, weil zustand etc - buggy
+ps und bj wie verbrauch, km: wenn mehr als 10k/jahr billiger, sonst mehr?
 
 (strecken: viel lang -> diesel mehr wertung) - wenn wir werten?
 
