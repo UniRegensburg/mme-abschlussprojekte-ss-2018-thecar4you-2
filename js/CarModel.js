@@ -13,7 +13,7 @@ CarApp.CarModel = function() {
   savedVerbrauch = 10,
   benzin = true,
   diesel = true,
-  savedCarType = 0,
+  savedCarType = 5,
   savedSeats,
   distArray=[],
   distIndex=0,
@@ -27,6 +27,9 @@ CarApp.CarModel = function() {
   function updateAlter(alter) {
     savedAlter = alter;
     document.getElementById("alterSlider").value = savedAlter; // TODO: in view!!!
+    if (savedAlter === 1998) {
+      savedAlter = 0;
+    }
   }
 
   function updateKm(alter) {
@@ -80,11 +83,11 @@ CarApp.CarModel = function() {
     savedCarType = car; //2=small, 5=normal, 7=van
     savedSeats[seat-1][1] = type;
     //console.log(savedCarType);
-    console.log(savedSeats);
+    //console.log(savedSeats);
   }
 
   function deleteSeats() {
-    savedCarType = 0;
+    savedCarType = 5;
     for (let i=0; i<savedSeats.length; i++) {
       savedSeats[i][1] = "";
     }

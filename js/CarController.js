@@ -11,7 +11,8 @@ CarApp.CarController = function() {
     setStep1Listeners(CarView, CarModel); //Preis
     setStep2Listeners(CarView, CarModel); //Alter
     setStep3Listeners(CarView, CarModel); //KM
-    setStep4Listeners(CarView, CarModel); //Strecken
+    //setStep4Listeners(CarView, CarModel); //Strecken
+    //Canvas für step4
     setStep5Listeners(CarView, CarModel); //Leistung
     setStep6Listeners(CarView, CarModel); //Sitzplätze
     setStep7Listeners(CarView, CarModel); //Verbrauch
@@ -153,9 +154,9 @@ CarApp.CarController = function() {
     } );
   }
 
-  function setStep4Listeners(CarView, CarModel) {
+  //function setStep4Listeners(CarView, CarModel) {
     //TODO Drag&Drop Listener Setzen für die Distanz Icons
-  }
+  //}
 
   function setStep5Listeners(CarView, CarModel) {
     let psSlider, psOut;
