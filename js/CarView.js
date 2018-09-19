@@ -192,11 +192,19 @@ CarApp.CarView = function() {
     drop[0].style.height = newHeight + "px";
   }
 
+/*erg*************************************************************************************** */
+
+  function setErgLink(str) {
+    let link = document.getElementById("ergLink");
+    link.setAttribute("href", str);
+  }
+
 	that.startWizard = startWizard;
   that.updateSeatPic = updateSeatPic;
   that.deleteSeatPics = deleteSeatPics;
   that.deleteSeatSpan = deleteSeatSpan;
   that.adjustDrop = adjustDrop;
+  that.setErgLink = setErgLink;
 	that.initCarView = initCarView;
   return that;
 };

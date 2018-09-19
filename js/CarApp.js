@@ -18,7 +18,7 @@ CarApp = (function() {
     CarView = new CarApp.CarView();
     CarView.initCarView();
     CarModel.initCarModel();
-    CarDatabase.initDB();
+    CarDatabase.initDB(CarView);
     CarController.initCarController(CarView, CarModel, CarDatabase);
     initCanvas();
   }

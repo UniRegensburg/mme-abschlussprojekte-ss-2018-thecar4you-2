@@ -8,10 +8,12 @@ CarApp.CarDatabase = function() {
   DbCarArray=[],
   hardData=[],
   softData=[],
+  //CarView, //eslint fehler mit this und that
   posCarArray=[];
 
-	function initDB() { //unnütz?
+	function initDB(CarView) { //unnütz?
     loadDbData();
+    that.CarView = CarView; //that und this mgl?
   }
 
   function wizardDone(CarModel) {
@@ -46,8 +48,9 @@ CarApp.CarDatabase = function() {
     posCarArray = [];
     for (let i=0; i<DbCarArray.length; i++) {
       let calcPrice = adjustPrice(i);
-      //let pMin = parseInt(getFirstIndex(DbCarArray[i][9])); // TODO: was ist besser?
-      if (hardData[0] >= calcPrice) { //fahrzeugpreis < budget - alt (pMin in if);;; neu: checked auf ca preis
+      //let pMin = parseInt(getFirstIndex(DbCarArray[i][9]));
+      // TODO: was ^ ist besser?
+      if (hardData[0] >= calcPrice) { //fahrzeugpreis < budget - alt (pMin in if für calcPrice);;; neu: checked auf ca preis
         let ageMax = getSecondIndex(DbCarArray[i][3]);
         if (ageMax === "pro" || parseInt(ageMax) >= hardData[1]) { //kfz max baujahr >= max bj
           let benzinMax = parseInt(getSecondIndex(DbCarArray[i][6])),
@@ -61,6 +64,7 @@ CarApp.CarDatabase = function() {
     }
     //console.log(posCarArray);
     checkBodyTyp(); //unschön
+    createMobileLink();
   }
 
   function checkVerbrauch(index) {
@@ -207,6 +211,49 @@ soft typ: 2,5,7
 
 soft sitze: eig egal?
 */
+
+  function createMobileLink() {
+    let preis = hardData[0],
+    bj = hardData[1],
+    ps = hardData[2],
+    verbrauch = hardData[3],
+    benzin = hardData[4],
+    diesel = hardData[5],
+    km = softData[0]*1000,
+    typ = softData[2],
+    str="";
+
+    if (typ === 5) {
+      if (benzin && diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (benzin) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=PETROL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=DIESEL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      }
+    } else if (typ === 7) {
+      if (benzin && diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=OffRoad&categories=Van&damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (benzin) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=OffRoad&categories=Van&damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=PETROL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=OffRoad&categories=Van&damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=DIESEL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      }
+    } else if (typ === 2) {
+      if (benzin && diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=Cabrio&categories=SportsCar&damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (benzin) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=Cabrio&categories=SportsCar&damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=PETROL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      } else if (diesel) {
+        str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=Cabrio&categories=SportsCar&damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=DIESEL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
+      }
+    }
+
+    that.CarView.setErgLink(str); //nur that
+
+    //console.log(str);
+    return(str);
+  }
 
   function getFirstIndex(arrString) {
     let min = arrString.split(", ")[0];
