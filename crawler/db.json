@@ -1,0 +1,5563 @@
+[
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_147",
+    "marke": "Alfa",
+    "modell": "Romeo 147",
+    "bau": "['2000', '2010']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      105,
+      250
+    ],
+    "diesel": [
+      101,
+      170
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      500,
+      18500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_156",
+    "marke": "Alfa",
+    "modell": "Romeo 156",
+    "bau": "['1997', '2007']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      120,
+      250
+    ],
+    "diesel": [
+      105,
+      175
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      600,
+      18000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_166",
+    "marke": "Alfa",
+    "modell": "Romeo 166",
+    "bau": "['1998', '2007']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      150,
+      241
+    ],
+    "diesel": [
+      136,
+      185
+    ],
+    "verbrauch": [
+      11,
+      7
+    ],
+    "preis": [
+      1500,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_Giulietta_(Typ_940)",
+    "marke": "Alfa",
+    "modell": "Romeo Giulietta (Typ 940)",
+    "bau": "['2010', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      105,
+      241
+    ],
+    "diesel": [
+      105,
+      175
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      6000,
+      33000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_GT",
+    "marke": "Alfa",
+    "modell": "Romeo GT",
+    "bau": "['2003', '2010']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe']",
+    "benzin": [
+      140,
+      239
+    ],
+    "diesel": [
+      150,
+      170
+    ],
+    "verbrauch": [
+      11,
+      7
+    ],
+    "preis": [
+      1850,
+      19000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_MiTo",
+    "marke": "Alfa",
+    "modell": "Romeo MiTo",
+    "bau": "['2008', '2018']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      69,
+      170
+    ],
+    "diesel": [
+      84,
+      120
+    ],
+    "verbrauch": [
+      8,
+      5
+    ],
+    "preis": [
+      3200,
+      24000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A1_8X",
+    "marke": "Audi",
+    "modell": "A1 8X",
+    "bau": "['2010', '2018']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      82,
+      256
+    ],
+    "diesel": [
+      90,
+      143
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      6500,
+      33000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A2",
+    "marke": "Audi",
+    "modell": "A2",
+    "bau": "['1999', '2002']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      75,
+      110
+    ],
+    "diesel": [
+      61,
+      90
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      1400,
+      10000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A3_8L",
+    "marke": "Audi",
+    "modell": "A3 8L",
+    "bau": "['1996', '2006']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      101,
+      224
+    ],
+    "diesel": [
+      90,
+      131
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      500,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A3_8P",
+    "marke": "Audi",
+    "modell": "A3 8P",
+    "bau": "['2003', '2013']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'cabriolet']",
+    "benzin": [
+      102,
+      340
+    ],
+    "diesel": [
+      90,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1500,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A3_8V",
+    "marke": "Audi",
+    "modell": "A3 8V",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'cabriolet']",
+    "benzin": [
+      105,
+      400
+    ],
+    "diesel": [
+      105,
+      184
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      7200,
+      58000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A4_B5",
+    "marke": "Audi",
+    "modell": "A4 B5",
+    "bau": "['1994', '2001']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      101,
+      381
+    ],
+    "diesel": [
+      75,
+      150
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      400,
+      9000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A4_B6",
+    "marke": "Audi",
+    "modell": "A4 B6",
+    "bau": "['2000', '2004']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      102,
+      344
+    ],
+    "diesel": [
+      101,
+      179
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      700,
+      12500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A4_B7",
+    "marke": "Audi",
+    "modell": "A4 B7",
+    "bau": "['2004', '2008']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      102,
+      420
+    ],
+    "diesel": [
+      116,
+      232
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      1700,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A4_B8",
+    "marke": "Audi",
+    "modell": "A4 B8",
+    "bau": "['2007', '2015']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      120,
+      450
+    ],
+    "diesel": [
+      120,
+      245
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      3200,
+      41000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A4_B9",
+    "marke": "Audi",
+    "modell": "A4 B9",
+    "bau": "['2015', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      150,
+      450
+    ],
+    "diesel": [
+      122,
+      272
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      11700,
+      73000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A5_8T",
+    "marke": "Audi",
+    "modell": "A5 8T",
+    "bau": "['2007', '2016']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['coupe', 'cabriolet', 'kombilimousine']",
+    "benzin": [
+      144,
+      450
+    ],
+    "diesel": [
+      136,
+      245
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      8000,
+      39000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A5_F5",
+    "marke": "Audi",
+    "modell": "A5 F5",
+    "bau": "['2016', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['coupe', 'kombilimousine', 'cabriolet']",
+    "benzin": [
+      150,
+      450
+    ],
+    "diesel": [
+      150,
+      272
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      19000,
+      90000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A6_C5",
+    "marke": "Audi",
+    "modell": "A6 C5",
+    "bau": "['1997', '2005']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      125,
+      480
+    ],
+    "diesel": [
+      110,
+      179
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      700,
+      15000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A6_C6",
+    "marke": "Audi",
+    "modell": "A6 C6",
+    "bau": "['2004', '2011']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      170,
+      579
+    ],
+    "diesel": [
+      136,
+      239
+    ],
+    "verbrauch": [
+      12,
+      8
+    ],
+    "preis": [
+      2000,
+      32000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A6_C7",
+    "marke": "Audi",
+    "modell": "A6 C7",
+    "bau": "['2010', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      179,
+      560
+    ],
+    "diesel": [
+      136,
+      326
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      7000,
+      80000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A6_C8",
+    "marke": "Audi",
+    "modell": "A6 C8",
+    "bau": "['2018', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      340
+    ],
+    "diesel": [
+      204,
+      286
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      28000,
+      107000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A7_C7",
+    "marke": "Audi",
+    "modell": "A7 C7",
+    "bau": "['2010', 'pro']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      190,
+      605
+    ],
+    "diesel": [
+      190,
+      326
+    ],
+    "verbrauch": [
+      12,
+      8
+    ],
+    "preis": [
+      17000,
+      115000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_A8_D5",
+    "marke": "Audi",
+    "modell": "A8 D5",
+    "bau": "['2017', 'pro']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      340,
+      585
+    ],
+    "diesel": [
+      286,
+      435
+    ],
+    "verbrauch": [
+      0,
+      8
+    ],
+    "preis": [
+      47500,
+      155000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_Q3_8U",
+    "marke": "Audi",
+    "modell": "Q3 8U",
+    "bau": "['2011', '2018']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      125,
+      367
+    ],
+    "diesel": [
+      120,
+      184
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      13000,
+      52000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_Q5_8R",
+    "marke": "Audi",
+    "modell": "Q5 8R",
+    "bau": "['2008', '2017']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      179,
+      354
+    ],
+    "diesel": [
+      143,
+      340
+    ],
+    "verbrauch": [
+      11,
+      9
+    ],
+    "preis": [
+      10000,
+      70000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_Q5_FY",
+    "marke": "Audi",
+    "modell": "Q5 FY",
+    "bau": "['2017', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      252,
+      354
+    ],
+    "diesel": [
+      150,
+      286
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      31000,
+      95000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_Q7_4L",
+    "marke": "Audi",
+    "modell": "Q7 4L",
+    "bau": "['2005', '2015']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      272,
+      349
+    ],
+    "diesel": [
+      204,
+      500
+    ],
+    "verbrauch": [
+      16,
+      11
+    ],
+    "preis": "[8000, 62000"
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_TT_8N",
+    "marke": "Audi",
+    "modell": "TT 8N",
+    "bau": "['1998', '2006']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      150,
+      250
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      2700,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_TT_8J",
+    "marke": "Audi",
+    "modell": "TT 8J",
+    "bau": "['2006', '2014']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      160,
+      360
+    ],
+    "diesel": [
+      170
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      7400,
+      44500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Audi_TT_FV",
+    "marke": "Audi",
+    "modell": "TT FV",
+    "bau": "['2014', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      179,
+      400
+    ],
+    "diesel": [
+      184
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      18500,
+      82000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E87",
+    "marke": "BMW",
+    "modell": "E87",
+    "bau": "['2004', '2002']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'coupe', 'cabriolet']",
+    "benzin": [
+      116,
+      340
+    ],
+    "diesel": [
+      116,
+      204
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      2800,
+      54000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F20",
+    "marke": "BMW",
+    "modell": "F20",
+    "bau": "['2011', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      102,
+      340
+    ],
+    "diesel": [
+      95,
+      224
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      6000,
+      60000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F22/F23",
+    "marke": "BMW",
+    "modell": "F22/F23",
+    "bau": "[''2013 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_2er_Active_Tourer",
+    "marke": "BMW",
+    "modell": "2er Active Tourer",
+    "bau": "['03/2014', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      102,
+      231
+    ],
+    "diesel": [
+      95,
+      190
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      10000,
+      59000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_2er_Gran_Tourer",
+    "marke": "BMW",
+    "modell": "2er Gran Tourer",
+    "bau": "['03/2015', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      102,
+      192
+    ],
+    "diesel": [
+      116,
+      190
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      10000,
+      59000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E36",
+    "marke": "BMW",
+    "modell": "E36",
+    "bau": "['1990', '2000']",
+    "klasse": "['mittelklasse', 'kompaktklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "benzin": [
+      82,
+      333
+    ],
+    "diesel": [
+      90,
+      143
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      500,
+      22000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E46",
+    "marke": "BMW",
+    "modell": "E46",
+    "bau": "['1998', '2007']",
+    "klasse": "['mittelklasse', 'kompaktklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "benzin": [
+      105,
+      360
+    ],
+    "diesel": [
+      116,
+      204
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      700,
+      28000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E90",
+    "marke": "BMW",
+    "modell": "E90",
+    "bau": "['2005', '2013']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'coupe', 'cabriolet']",
+    "benzin": [
+      122,
+      420
+    ],
+    "diesel": [
+      116,
+      286
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      2900,
+      37000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F30",
+    "marke": "BMW",
+    "modell": "F30",
+    "bau": "['2013', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F32",
+    "marke": "BMW",
+    "modell": "F32",
+    "bau": "['2013', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['coupe', 'cabriolet', 'limousine']",
+    "benzin": [
+      184,
+      500
+    ],
+    "diesel": [
+      143,
+      313
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      16000,
+      81000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E39",
+    "marke": "BMW",
+    "modell": "E39",
+    "bau": "['1995', '2004']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      150,
+      400
+    ],
+    "diesel": [
+      116,
+      193
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      700,
+      18000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E60",
+    "marke": "BMW",
+    "modell": "E60",
+    "bau": "['2003', '2']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      170,
+      507
+    ],
+    "diesel": [
+      150,
+      286
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      3000,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F10",
+    "marke": "BMW",
+    "modell": "F10",
+    "bau": "['2010', '2017']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      184,
+      575
+    ],
+    "diesel": [
+      143,
+      381
+    ],
+    "verbrauch": [
+      11,
+      7
+    ],
+    "preis": [
+      10000,
+      85000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_G30",
+    "marke": "BMW",
+    "modell": "G30",
+    "bau": "['2017', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      184,
+      625
+    ],
+    "diesel": [
+      190,
+      400
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      28000,
+      100000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E63",
+    "marke": "BMW",
+    "modell": "E63",
+    "bau": "['2003', '2010']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      258,
+      507
+    ],
+    "diesel": [
+      286
+    ],
+    "verbrauch": [
+      13,
+      9
+    ],
+    "preis": [
+      8000,
+      33000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F12",
+    "marke": "BMW",
+    "modell": "F12",
+    "bau": "['2011', '2018']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['coupe', 'cabriolet', 'limousine']",
+    "benzin": [
+      320,
+      600
+    ],
+    "diesel": [
+      313
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      25000,
+      95000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_6er_Gran_Turismo",
+    "marke": "BMW",
+    "modell": "6er Gran Turismo",
+    "bau": "['2017', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      258,
+      340
+    ],
+    "diesel": [
+      190,
+      320
+    ],
+    "verbrauch": [
+      10,
+      9
+    ],
+    "preis": [
+      46000,
+      100000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E38",
+    "marke": "BMW",
+    "modell": "E38",
+    "bau": "['1994', '2001']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      193,
+      326
+    ],
+    "diesel": [
+      143,
+      245
+    ],
+    "verbrauch": [
+      12,
+      9
+    ],
+    "preis": [
+      1650,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E65",
+    "marke": "BMW",
+    "modell": "E65",
+    "bau": "['2001', '2008']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      231,
+      445
+    ],
+    "diesel": [
+      218,
+      329
+    ],
+    "verbrauch": [
+      13,
+      9
+    ],
+    "preis": [
+      3600,
+      22000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F01",
+    "marke": "BMW",
+    "modell": "F01",
+    "bau": "['2008', '2015']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      320,
+      544
+    ],
+    "diesel": [
+      245,
+      381
+    ],
+    "verbrauch": [
+      14,
+      9
+    ],
+    "preis": [
+      13000,
+      75000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_G11",
+    "marke": "BMW",
+    "modell": "G11",
+    "bau": "['2015', 'pro']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      258,
+      609
+    ],
+    "diesel": [
+      265,
+      400
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      31000,
+      150000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E84",
+    "marke": "BMW",
+    "modell": "E84",
+    "bau": "['2009', '2015']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      150,
+      258
+    ],
+    "diesel": [
+      116,
+      218
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      8000,
+      26000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F48",
+    "marke": "BMW",
+    "modell": "F48",
+    "bau": "['2015', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      136,
+      231
+    ],
+    "diesel": [
+      116,
+      231
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      11500,
+      62500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E83",
+    "marke": "BMW",
+    "modell": "E83",
+    "bau": "['2003', '2010']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      150,
+      272
+    ],
+    "diesel": [
+      150,
+      286
+    ],
+    "verbrauch": [
+      12,
+      8
+    ],
+    "preis": [
+      4300,
+      19000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F25",
+    "marke": "BMW",
+    "modell": "F25",
+    "bau": "['2010', '2017']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      184,
+      306
+    ],
+    "diesel": [
+      143,
+      313
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      11000,
+      50000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_G01",
+    "marke": "BMW",
+    "modell": "G01",
+    "bau": "['2017', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      184,
+      360
+    ],
+    "diesel": [
+      190,
+      326
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      33000,
+      85000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E53",
+    "marke": "BMW",
+    "modell": "E53",
+    "bau": "['1999', '2006']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      231,
+      360
+    ],
+    "diesel": [
+      184,
+      218
+    ],
+    "verbrauch": [
+      14,
+      10
+    ],
+    "preis": [
+      3700,
+      15000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_F15",
+    "marke": "BMW",
+    "modell": "F15",
+    "bau": "['2013', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E85",
+    "marke": "BMW",
+    "modell": "E85",
+    "bau": "['2002', '2008']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      150,
+      343
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      10,
+      0
+    ],
+    "preis": [
+      5000,
+      35000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/BMW_E89",
+    "marke": "BMW",
+    "modell": "E89",
+    "bau": "['2009', '2016']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['roadster']",
+    "benzin": [
+      156,
+      340
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      10,
+      0
+    ],
+    "preis": [
+      15000,
+      45000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Chevrolet_Captiva",
+    "marke": "Chevrolet",
+    "modell": "Captiva",
+    "bau": "['2006', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      136,
+      258
+    ],
+    "diesel": [
+      126,
+      184
+    ],
+    "verbrauch": [
+      12,
+      9
+    ],
+    "preis": [
+      5000,
+      19000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Corvette_C5",
+    "marke": "Corvette",
+    "modell": "C5",
+    "bau": "['1997', '2004']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      349,
+      412
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Corvette_C6",
+    "marke": "Corvette",
+    "modell": "C6",
+    "bau": "['2005', '2013']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      405,
+      647
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      13,
+      0
+    ],
+    "preis": [
+      30000,
+      55000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Corvette_C7",
+    "marke": "Corvette",
+    "modell": "C7",
+    "bau": "['2013', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      455,
+      765
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      12,
+      0
+    ],
+    "preis": [
+      50000,
+      70000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Chevrolet_Nubira",
+    "marke": "Chevrolet",
+    "modell": "Nubira",
+    "bau": "['2004', '2010']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      109,
+      122
+    ],
+    "diesel": [
+      121
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      2600,
+      5000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Chrysler_300_(2004)",
+    "marke": "Chrysler",
+    "modell": "300 (2004)",
+    "bau": "['2004', '2010']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      193,
+      431
+    ],
+    "diesel": [
+      218
+    ],
+    "verbrauch": [
+      13,
+      9
+    ],
+    "preis": [
+      7000,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Chrysler_PT_Cruiser",
+    "marke": "Chrysler",
+    "modell": "PT Cruiser",
+    "bau": "['2000', '2010']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombi', 'cabriolet']",
+    "benzin": [
+      116,
+      223
+    ],
+    "diesel": [
+      121,
+      150
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      700,
+      7000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_C2",
+    "marke": "Citro%C3%ABn",
+    "modell": "C2",
+    "bau": "['2003', '2009']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      60,
+      122
+    ],
+    "diesel": [
+      68,
+      109
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      750,
+      5000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_DS4",
+    "marke": "Citro%C3%ABn",
+    "modell": "DS4",
+    "bau": "['2011', '2018']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      120,
+      200
+    ],
+    "diesel": [
+      92,
+      163
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      8000,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+    "marke": "Citro%C3%ABn",
+    "modell": "Xsara",
+    "bau": "['1997', '2006']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombicoupe', 'kombi']",
+    "benzin": [
+      75,
+      163
+    ],
+    "diesel": [
+      68,
+      109
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      200,
+      3000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_500_(2007)",
+    "marke": "Fiat",
+    "modell": "500 (2007)",
+    "bau": "['2007', 'pro']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine', 'cabriolimousine']",
+    "benzin": [
+      69,
+      190
+    ],
+    "diesel": [
+      75,
+      95
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      3000,
+      22000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_500L",
+    "marke": "Fiat",
+    "modell": "500L",
+    "bau": "['2012', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      86,
+      120
+    ],
+    "diesel": [
+      84,
+      120
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      7000,
+      22000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_Barchetta",
+    "marke": "Fiat",
+    "modell": "Barchetta",
+    "bau": "['1995', '2005']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['cabriolet']",
+    "benzin": [
+      131
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      8,
+      0
+    ],
+    "preis": [
+      1500,
+      12000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_Croma_(Typ_194)",
+    "marke": "Fiat",
+    "modell": "Croma (Typ 194)",
+    "bau": "['2005', '2010']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_Stilo",
+    "marke": "Fiat",
+    "modell": "Stilo",
+    "bau": "['2001', '2008']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      80,
+      170
+    ],
+    "diesel": [
+      80,
+      150
+    ],
+    "verbrauch": [
+      900,
+      4000
+    ],
+    "preis": [
+      8,
+      6
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Fiat_Tipo_(Typ_356)",
+    "marke": "Fiat",
+    "modell": "Tipo (Typ 356)",
+    "bau": "['2015', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": "[, ]",
+    "preis": "[, ]"
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Accord_6._Generation",
+    "marke": "Honda",
+    "modell": "Accord 6. Generation",
+    "bau": "['1998', '2002']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe']",
+    "benzin": [
+      116,
+      200
+    ],
+    "diesel": [
+      105
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      1000,
+      7500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Accord_7._Generation",
+    "marke": "Honda",
+    "modell": "Accord 7. Generation",
+    "bau": "['2002', '2008']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'coupe']",
+    "benzin": [
+      155,
+      190
+    ],
+    "diesel": [
+      140
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      1600,
+      13000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Accord_8._Generation",
+    "marke": "Honda",
+    "modell": "Accord 8. Generation",
+    "bau": "['2008', '2015']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'coupe']",
+    "benzin": [
+      156,
+      201
+    ],
+    "diesel": [
+      150,
+      179
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      4000,
+      17000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Accord_9._Generation",
+    "marke": "Honda",
+    "modell": "Accord 9. Generation",
+    "bau": "['2012', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'coupe']",
+    "benzin": [
+      150,
+      281
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      9000,
+      18000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Accord_10._Generation",
+    "marke": "Honda",
+    "modell": "Accord 10. Generation",
+    "bau": "['2017', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      177,
+      256
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      8,
+      0
+    ],
+    "preis": [
+      23000,
+      35000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Civic_6._Generation",
+    "marke": "Honda",
+    "modell": "Civic 6. Generation",
+    "bau": "['1995', '2000']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe']",
+    "benzin": [
+      75,
+      185
+    ],
+    "diesel": [
+      86,
+      105
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      500,
+      7000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Civic_7._Generation",
+    "marke": "Honda",
+    "modell": "Civic 7. Generation",
+    "bau": "['2000', '2005']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'coupe']",
+    "benzin": [
+      90,
+      200
+    ],
+    "diesel": [
+      101
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      800,
+      11000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Civic_8._Generation",
+    "marke": "Honda",
+    "modell": "Civic 8. Generation",
+    "bau": "['2005', '2011']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'coupe']",
+    "benzin": [
+      83,
+      201
+    ],
+    "diesel": [
+      140
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      2300,
+      16000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Civic_9._Generation",
+    "marke": "Honda",
+    "modell": "Civic 9. Generation",
+    "bau": "['2011', '2017']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "benzin": [
+      99,
+      310
+    ],
+    "diesel": [
+      120,
+      150
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      6000,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_Civic_10._Generation",
+    "marke": "Honda",
+    "modell": "Civic 10. Generation",
+    "bau": "['2015', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'coupe', 'kombilimousine']",
+    "benzin": [
+      125,
+      320
+    ],
+    "diesel": [
+      120
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      10000,
+      40000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Honda_FR-V",
+    "marke": "Honda",
+    "modell": "FR-V",
+    "bau": "['2005', '2009']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      125,
+      150
+    ],
+    "diesel": [
+      140
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      2300,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_Getz",
+    "marke": "Hyundai",
+    "modell": "Getz",
+    "bau": "['2002', '2009']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      63,
+      106
+    ],
+    "diesel": [
+      82,
+      110
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      500,
+      5000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(FD)",
+    "marke": "Hyundai",
+    "modell": "i30 (FD)",
+    "bau": "['2007', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      109,
+      143
+    ],
+    "diesel": [
+      90,
+      140
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      2700,
+      10000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(GD)",
+    "marke": "Hyundai",
+    "modell": "i30 (GD)",
+    "bau": "['2011', '2017']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      99,
+      186
+    ],
+    "diesel": [
+      90,
+      136
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      4000,
+      23000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(PD)",
+    "marke": "Hyundai",
+    "modell": "i30 (PD)",
+    "bau": "['2017', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      101,
+      275
+    ],
+    "diesel": [
+      95,
+      136
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      12000,
+      37000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_i40",
+    "marke": "Hyundai",
+    "modell": "i40",
+    "bau": "['2011', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      135,
+      177
+    ],
+    "diesel": [
+      116,
+      141
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      7000,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_Matrix",
+    "marke": "Hyundai",
+    "modell": "Matrix",
+    "bau": "['2001', '2010']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      103,
+      122
+    ],
+    "diesel": [
+      82,
+      110
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      700,
+      5500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Hyundai_Trajet",
+    "marke": "Hyundai",
+    "modell": "Trajet",
+    "bau": "['1999', '2008']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      136,
+      173
+    ],
+    "diesel": [
+      113,
+      125
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      1200,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_S-Type",
+    "marke": "Jaguar",
+    "modell": "S-Type",
+    "bau": "['1999', '2007']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_X250",
+    "marke": "Jaguar",
+    "modell": "X250",
+    "bau": "['2008', '2015']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      238,
+      551
+    ],
+    "diesel": [
+      163,
+      275
+    ],
+    "verbrauch": [
+      13,
+      8
+    ],
+    "preis": [
+      8500,
+      50000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_X260",
+    "marke": "Jaguar",
+    "modell": "X260",
+    "bau": "['2015', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      200,
+      381
+    ],
+    "diesel": [
+      163,
+      300
+    ],
+    "verbrauch": [
+      13,
+      7
+    ],
+    "preis": [
+      19000,
+      90000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_X308",
+    "marke": "Jaguar",
+    "modell": "X308",
+    "bau": "['1997', '2003']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      241,
+      363
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      14,
+      0
+    ],
+    "preis": [
+      4000,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_X351",
+    "marke": "Jaguar",
+    "modell": "X351",
+    "bau": "['2009', 'pro']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      241,
+      575
+    ],
+    "diesel": [
+      275,
+      300
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      20000,
+      100000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Jaguar_X-Type",
+    "marke": "Jaguar",
+    "modell": "X-Type",
+    "bau": "['2001', '2009']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      156,
+      230
+    ],
+    "diesel": [
+      131,
+      155
+    ],
+    "verbrauch": [
+      11,
+      7
+    ],
+    "preis": [
+      1300,
+      10000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(ED)",
+    "marke": "Kia",
+    "modell": "ceed (ED)",
+    "bau": "['2006', '2']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      90,
+      143
+    ],
+    "diesel": [
+      90,
+      140
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      2500,
+      9000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(JD)",
+    "marke": "Kia",
+    "modell": "ceed (JD)",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      99,
+      204
+    ],
+    "diesel": [
+      90,
+      128
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      5500,
+      31500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_Ceed_(CD)",
+    "marke": "Kia",
+    "modell": "Ceed (CD)",
+    "bau": "['2018', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      99,
+      140
+    ],
+    "diesel": [
+      116,
+      136
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      13000,
+      31500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_BA/SA",
+    "marke": "Kia",
+    "modell": "Picanto BA/SA",
+    "bau": "['2004', '2011']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      65
+    ],
+    "diesel": [
+      75
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      1000,
+      5000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_TA",
+    "marke": "Kia",
+    "modell": "Picanto TA",
+    "bau": "['2011', '2017']",
+    "klasse": "['kleintwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      69,
+      86
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      6,
+      0
+    ],
+    "preis": [
+      4000,
+      12000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_JA",
+    "marke": "Kia",
+    "modell": "Picanto JA",
+    "bau": "['2017', 'pro']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      67,
+      101
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      6,
+      0
+    ],
+    "preis": [
+      7000,
+      18000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Kia_Venga",
+    "marke": "Kia",
+    "modell": "Venga",
+    "bau": "['2009', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      90,
+      125
+    ],
+    "diesel": [
+      75,
+      128
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      4000,
+      22000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lada_Kalina",
+    "marke": "Lada",
+    "modell": "Kalina",
+    "bau": "['2005', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "benzin": [
+      82,
+      136
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      8,
+      0
+    ],
+    "preis": [
+      1150,
+      12500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(843)",
+    "marke": "Lancia",
+    "modell": "Ypsilon (843)",
+    "bau": "['2003', '2011']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      60,
+      95
+    ],
+    "diesel": [
+      69,
+      105
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      900,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(846)",
+    "marke": "Lancia",
+    "modell": "Ypsilon (846)",
+    "bau": "['2011', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      69,
+      86
+    ],
+    "diesel": [
+      95
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      4850,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lexus_UCF20",
+    "marke": "Lexus",
+    "modell": "UCF20",
+    "bau": "['1994', '2000']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      264,
+      294
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      5000,
+      11500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lexus_UCF30",
+    "marke": "Lexus",
+    "modell": "UCF30",
+    "bau": "['2000', '2006']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      281
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      5500,
+      18000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lexus_USF40",
+    "marke": "Lexus",
+    "modell": "USF40",
+    "bau": "['2006', '2018']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      367,
+      387
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      13500,
+      50000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Lexus_USF50",
+    "marke": "Lexus",
+    "modell": "USF50",
+    "bau": "['2018', 'pro']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      315,
+      417
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mazda_Xedos_6",
+    "marke": "Mazda",
+    "modell": "Xedos 6",
+    "bau": "['1992', '1999']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      107,
+      144
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      9,
+      0
+    ],
+    "preis": [
+      1300,
+      1700
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mazda_Xedos_9",
+    "marke": "Mazda",
+    "modell": "Xedos 9",
+    "bau": "['1993', '2002']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      143,
+      213
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      1400,
+      3500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_168",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 168",
+    "bau": "['1997', '2004']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      82,
+      140
+    ],
+    "diesel": [
+      60,
+      95
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      350,
+      7000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_169",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 169",
+    "bau": "['2004', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      95,
+      193
+    ],
+    "diesel": [
+      82,
+      140
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1000,
+      15000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_176",
+    "marke": "Mercedes-Benz",
+    "modell": "W 176",
+    "bau": "['2012', '2018']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      102,
+      381
+    ],
+    "diesel": [
+      90,
+      177
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      5000,
+      60000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_177",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 177",
+    "bau": "['2018', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      109,
+      224
+    ],
+    "diesel": [
+      116
+    ],
+    "verbrauch": [
+      6,
+      0
+    ],
+    "preis": [
+      20000,
+      57000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_T_245",
+    "marke": "Mercedes-Benz",
+    "modell": "T 245",
+    "bau": "['2005', '2011']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      95,
+      193
+    ],
+    "diesel": [
+      109,
+      140
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      2600,
+      16000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_202",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 202",
+    "bau": "['1993', '2001']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      122,
+      347
+    ],
+    "diesel": [
+      75,
+      150
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      500,
+      26000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_203",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 203",
+    "bau": "['2000', '2007']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'kombicoupe']",
+    "benzin": [
+      129,
+      367
+    ],
+    "diesel": [
+      102,
+      231
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      750,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_204",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 204",
+    "bau": "['2007', '2015']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'kombicoupe']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_210",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 210",
+    "bau": "['1995', '2002']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      136,
+      405
+    ],
+    "diesel": [
+      75,
+      197
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      600,
+      50000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_211",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 211",
+    "bau": "['2002', '2009']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      163,
+      514
+    ],
+    "diesel": [
+      102,
+      314
+    ],
+    "verbrauch": [
+      11,
+      8
+    ],
+    "preis": [
+      1200,
+      32000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_212",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 212",
+    "bau": "['2009', '2016']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      156,
+      585
+    ],
+    "diesel": [
+      136,
+      265
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      3000,
+      80000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_213",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 213",
+    "bau": "['2016', 'pro']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      184,
+      612
+    ],
+    "diesel": [
+      150,
+      258
+    ],
+    "verbrauch": [
+      10,
+      9
+    ],
+    "preis": [
+      16000,
+      150000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_163",
+    "marke": "Mercedes-Benz",
+    "modell": "W 163",
+    "bau": "['1997', '2005']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      150,
+      347
+    ],
+    "diesel": [
+      163,
+      250
+    ],
+    "verbrauch": [
+      14,
+      10
+    ],
+    "preis": [
+      2200,
+      16000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_251",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 251",
+    "bau": "['2005', '2017']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      231,
+      510
+    ],
+    "diesel": [
+      190,
+      265
+    ],
+    "verbrauch": [
+      12,
+      8
+    ],
+    "preis": [
+      6000,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_220",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 220",
+    "bau": "['1998', '2005']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      204,
+      612
+    ],
+    "diesel": [
+      197,
+      260
+    ],
+    "verbrauch": [
+      12,
+      9
+    ],
+    "preis": [
+      1500,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_221",
+    "marke": "Mercedes-Benz",
+    "modell": "Baureihe 221",
+    "bau": "['2005', '2013']",
+    "klasse": "['oberklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      231,
+      630
+    ],
+    "diesel": [
+      204,
+      320
+    ],
+    "verbrauch": [
+      12,
+      12
+    ],
+    "preis": [
+      5000,
+      60000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_230",
+    "marke": "Mercedes-Benz",
+    "modell": "R 230",
+    "bau": "['2001', '2011']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['cabriolet']",
+    "benzin": [
+      231,
+      670
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      13,
+      0
+    ],
+    "preis": [
+      11000,
+      250000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_231",
+    "marke": "Mercedes-Benz",
+    "modell": "R 231",
+    "bau": "['2012', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['roadster']",
+    "benzin": [
+      306,
+      630
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      9,
+      0
+    ],
+    "preis": [
+      43000,
+      150000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_170",
+    "marke": "Mercedes-Benz",
+    "modell": "R 170",
+    "bau": "['1996', '2004']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['roadster']",
+    "benzin": [
+      136,
+      354
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      9,
+      0
+    ],
+    "preis": [
+      2000,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_171",
+    "marke": "Mercedes-Benz",
+    "modell": "R 171",
+    "bau": "['2004', '2011']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['roadster']",
+    "benzin": [
+      163,
+      400
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      9,
+      0
+    ],
+    "preis": [
+      6500,
+      4000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_172",
+    "marke": "Mercedes-Benz",
+    "modell": "R 172",
+    "bau": "['2011', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['roadster']",
+    "benzin": [
+      184,
+      421
+    ],
+    "diesel": [
+      204
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      17500,
+      60000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Mitsubishi_Space_Star",
+    "marke": "Mitsubishi",
+    "modell": "Space Star",
+    "bau": "['1998', '2005']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Nissan_350Z",
+    "marke": "Nissan",
+    "modell": "350Z",
+    "bau": "['2002', '2009']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      280,
+      313
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      12,
+      0
+    ],
+    "preis": [
+      7000,
+      29000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Nissan_370Z",
+    "marke": "Nissan",
+    "modell": "370Z",
+    "bau": "['2008', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['kombicoupe', 'roadster']",
+    "benzin": [
+      328,
+      344
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      16000,
+      42000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Nissan_Juke",
+    "marke": "Nissan",
+    "modell": "Juke",
+    "bau": "['2010', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      94,
+      218
+    ],
+    "diesel": [
+      110
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      7300,
+      28000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Nissan_Primera_P12",
+    "marke": "Nissan",
+    "modell": "Primera P12",
+    "bau": "['2002', '2007']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "benzin": [
+      109,
+      140
+    ],
+    "diesel": [
+      120,
+      139
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      600,
+      5300
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Adam",
+    "marke": "Opel",
+    "modell": "Adam",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Astra_G",
+    "marke": "Opel",
+    "modell": "Astra G",
+    "bau": "['1998', '2005']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe', 'cabriolet', 'lieferwagen']",
+    "benzin": [
+      65,
+      200
+    ],
+    "diesel": [
+      68,
+      125
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      450,
+      9000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Astra_H",
+    "marke": "Opel",
+    "modell": "Astra H",
+    "bau": "['2004', '2010']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      75,
+      241
+    ],
+    "diesel": [
+      80,
+      150
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1250,
+      15000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Astra_J",
+    "marke": "Opel",
+    "modell": "Astra J",
+    "bau": "['2009', '2015']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "benzin": [
+      87,
+      280
+    ],
+    "diesel": [
+      95,
+      194
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      2700,
+      23000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Astra_K",
+    "marke": "Opel",
+    "modell": "Astra K",
+    "bau": "['2015', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      101,
+      200
+    ],
+    "diesel": [
+      95,
+      160
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      7500,
+      35700
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_B",
+    "marke": "Opel",
+    "modell": "Corsa B",
+    "bau": "['1993', '2000']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      45,
+      109
+    ],
+    "diesel": [
+      50,
+      67
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      250,
+      4000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_C",
+    "marke": "Opel",
+    "modell": "Corsa C",
+    "bau": "['2000', '2006']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      58,
+      125
+    ],
+    "diesel": [
+      69,
+      101
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      450,
+      5000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_D",
+    "marke": "Opel",
+    "modell": "Corsa D",
+    "bau": "['2006', '2014']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      60,
+      211
+    ],
+    "diesel": [
+      75,
+      131
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      1200,
+      19500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_E",
+    "marke": "Opel",
+    "modell": "Corsa E",
+    "bau": "['2014', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      3600,
+      25500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Insignia_A",
+    "marke": "Opel",
+    "modell": "Insignia A",
+    "bau": "['2008', '2017']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "benzin": [
+      116,
+      325
+    ],
+    "diesel": [
+      110,
+      194
+    ],
+    "verbrauch": [
+      11,
+      7
+    ],
+    "preis": [
+      4000,
+      36500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Insignia_B",
+    "marke": "Opel",
+    "modell": "Insignia B",
+    "bau": "['2017', 'pro']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      140,
+      260
+    ],
+    "diesel": [
+      110,
+      209
+    ],
+    "verbrauch": [
+      10,
+      8
+    ],
+    "preis": [
+      14000,
+      53000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Meriva_A",
+    "marke": "Opel",
+    "modell": "Meriva A",
+    "bau": "['2003', '2009']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      87,
+      179
+    ],
+    "diesel": [
+      75,
+      125
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      900,
+      8500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Meriva_B",
+    "marke": "Opel",
+    "modell": "Meriva B",
+    "bau": "['2010', '2017']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      101,
+      140
+    ],
+    "diesel": [
+      95,
+      136
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      3700,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Mokka",
+    "marke": "Opel",
+    "modell": "Mokka",
+    "bau": "['2012', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      116,
+      152
+    ],
+    "diesel": [
+      110,
+      136
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      9500,
+      32000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Omega_B",
+    "marke": "Opel",
+    "modell": "Omega B",
+    "bau": "['1994', '2003']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      116,
+      218
+    ],
+    "diesel": [
+      101,
+      150
+    ],
+    "verbrauch": [
+      10,
+      9
+    ],
+    "preis": [
+      400,
+      10000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Signum",
+    "marke": "Opel",
+    "modell": "Signum",
+    "bau": "['2003', '2008']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      122,
+      250
+    ],
+    "diesel": [
+      101,
+      184
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      1000,
+      8500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Vectra_B",
+    "marke": "Opel",
+    "modell": "Vectra B",
+    "bau": "['1995', '2002']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "benzin": [
+      75,
+      220
+    ],
+    "diesel": [
+      82,
+      125
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      300,
+      5500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Opel_Vectra_C",
+    "marke": "Opel",
+    "modell": "Vectra C",
+    "bau": "['2002', '2008']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "benzin": [
+      101,
+      280
+    ],
+    "diesel": [
+      101,
+      184
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      800,
+      10000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_206",
+    "marke": "Peugeot",
+    "modell": 206,
+    "bau": "['1998', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
+    "benzin": [
+      60,
+      177
+    ],
+    "diesel": [
+      68,
+      109
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      350,
+      7500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_207",
+    "marke": "Peugeot",
+    "modell": 207,
+    "bau": "['2006', '2015']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_307",
+    "marke": "Peugeot",
+    "modell": 307,
+    "bau": "['2001', '2009']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      75,
+      177
+    ],
+    "diesel": [
+      68,
+      136
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      500,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_308_I",
+    "marke": "Peugeot",
+    "modell": "308 I",
+    "bau": "['2007', '2015']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      95,
+      200
+    ],
+    "diesel": [
+      90,
+      163
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      2800,
+      23000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_308_II",
+    "marke": "Peugeot",
+    "modell": "308 II",
+    "bau": "['2013', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'limousine']",
+    "benzin": [
+      82,
+      272
+    ],
+    "diesel": [
+      92,
+      181
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      5000,
+      35000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_406",
+    "marke": "Peugeot",
+    "modell": 406,
+    "bau": "['1995', '2005']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'coupe']",
+    "benzin": [
+      88,
+      207
+    ],
+    "diesel": [
+      75,
+      133
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      800,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_407",
+    "marke": "Peugeot",
+    "modell": 407,
+    "bau": "['2004', '2011']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi', 'coupe']",
+    "benzin": [
+      116,
+      211
+    ],
+    "diesel": [
+      109,
+      204
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      1300,
+      11000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Peugeot_607",
+    "marke": "Peugeot",
+    "modell": 607,
+    "bau": "['2000', '2010']",
+    "klasse": "['obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      158,
+      211
+    ],
+    "diesel": [
+      133,
+      204
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      1700,
+      8000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Porsche_996",
+    "marke": "Porsche",
+    "modell": 996,
+    "bau": "['1997', '2006']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      300,
+      483
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      12,
+      0
+    ],
+    "preis": [
+      15000,
+      260000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Porsche_997",
+    "marke": "Porsche",
+    "modell": 997,
+    "bau": "['2004', '2012']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet', 'roadster']",
+    "benzin": [
+      325,
+      620
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      13,
+      0
+    ],
+    "preis": [
+      25000,
+      450000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Porsche_991",
+    "marke": "Porsche",
+    "modell": 991,
+    "bau": "['2011', 'pro']",
+    "klasse": "['sportwagen']",
+    "karosserie": "['coupe', 'cabriolet', 'roadster']",
+    "benzin": [
+      349,
+      700
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      11,
+      0
+    ],
+    "preis": [
+      60000,
+      500000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_9PA)",
+    "marke": "Porsche",
+    "modell": "Cayenne (Typ 9PA)",
+    "bau": "['2002', '2010']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      250,
+      549
+    ],
+    "diesel": [
+      239
+    ],
+    "verbrauch": [
+      15,
+      12
+    ],
+    "preis": [
+      6000,
+      45000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_92A)",
+    "marke": "Porsche",
+    "modell": "Cayenne (Typ 92A)",
+    "bau": "['2010', '2017']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      300,
+      570
+    ],
+    "diesel": [
+      245,
+      385
+    ],
+    "verbrauch": [
+      14,
+      10
+    ],
+    "preis": [
+      23500,
+      140000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Captur",
+    "marke": "Renault",
+    "modell": "Captur",
+    "bau": "['2013', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      90,
+      118
+    ],
+    "diesel": [
+      90,
+      110
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      8000,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Clio_II",
+    "marke": "Renault",
+    "modell": "Clio II",
+    "bau": "['1998', '2004']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      58,
+      254
+    ],
+    "diesel": [
+      64,
+      101
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      300,
+      60000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Clio_III",
+    "marke": "Renault",
+    "modell": "Clio III",
+    "bau": "['2005', '2014']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      65,
+      201
+    ],
+    "diesel": [
+      68,
+      106
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      800,
+      15000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Clio_IV",
+    "marke": "Renault",
+    "modell": "Clio IV",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      65,
+      220
+    ],
+    "diesel": [
+      75,
+      90
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      2800,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Espace_III",
+    "marke": "Renault",
+    "modell": "Espace III",
+    "bau": "['1996', '2002']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      114,
+      190
+    ],
+    "diesel": [
+      98,
+      129
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      800,
+      2500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Espace_IV",
+    "marke": "Renault",
+    "modell": "Espace IV",
+    "bau": "['2002', '2014']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      136,
+      241
+    ],
+    "diesel": [
+      116,
+      181
+    ],
+    "verbrauch": [
+      13,
+      9
+    ],
+    "preis": [
+      1000,
+      21000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Espace_V",
+    "marke": "Renault",
+    "modell": "Espace V",
+    "bau": "['2015', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      200,
+      224
+    ],
+    "diesel": [
+      131,
+      160
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      15000,
+      47000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Laguna_II",
+    "marke": "Renault",
+    "modell": "Laguna II",
+    "bau": "['2001', '2007']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      107,
+      211
+    ],
+    "diesel": [
+      105,
+      173
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      600,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Laguna_III",
+    "marke": "Renault",
+    "modell": "Laguna III",
+    "bau": "['2007', '2015']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'coupe']",
+    "benzin": [
+      110,
+      238
+    ],
+    "diesel": [
+      110,
+      235
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      1500,
+      20000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_I",
+    "marke": "Renault",
+    "modell": "Megane I",
+    "bau": "['1995', '2003']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "benzin": [
+      69,
+      147
+    ],
+    "diesel": [
+      64,
+      102
+    ],
+    "verbrauch": [
+      8,
+      8
+    ],
+    "preis": [
+      300,
+      3500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_II",
+    "marke": "Renault",
+    "modell": "Megane II",
+    "bau": "['2002', '2009']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      82,
+      230
+    ],
+    "diesel": [
+      86,
+      173
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      700,
+      14000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_III",
+    "marke": "Renault",
+    "modell": "Megane III",
+    "bau": "['2008', '2016']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'kombicoupe', 'cabriolet']",
+    "benzin": [
+      101,
+      265
+    ],
+    "diesel": [
+      90,
+      163
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1500,
+      27000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_IV",
+    "marke": "Renault",
+    "modell": "Megane IV",
+    "bau": "['2016', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'limousine']",
+    "benzin": [
+      101,
+      300
+    ],
+    "diesel": [
+      90,
+      163
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      7700,
+      42500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Renault_Modus",
+    "marke": "Renault",
+    "modell": "Modus",
+    "bau": "['2004', '2012']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      65,
+      111
+    ],
+    "diesel": [
+      65,
+      106
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      1000,
+      9500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Altea",
+    "marke": "Seat",
+    "modell": "Altea",
+    "bau": "['2004', '2015']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      86,
+      211
+    ],
+    "diesel": [
+      90,
+      170
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      1950,
+      15500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Arosa",
+    "marke": "Seat",
+    "modell": "Arosa",
+    "bau": "['1997', '2004']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      50,
+      101
+    ],
+    "diesel": [
+      60,
+      75
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      300,
+      4000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Exeo",
+    "marke": "Seat",
+    "modell": "Exeo",
+    "bau": "['2008', '2013']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      102,
+      211
+    ],
+    "diesel": [
+      120,
+      170
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      4600,
+      13600
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Leon_I",
+    "marke": "Seat",
+    "modell": "Leon I",
+    "bau": "['1999', '2006']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      75,
+      224
+    ],
+    "diesel": [
+      68,
+      150
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      900,
+      11000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Leon_II",
+    "marke": "Seat",
+    "modell": "Leon II",
+    "bau": "['2005', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      86,
+      310
+    ],
+    "diesel": [
+      90,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1500,
+      21000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Leon_III",
+    "marke": "Seat",
+    "modell": "Leon III",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Mii",
+    "marke": "Seat",
+    "modell": "Mii",
+    "bau": "['2011', 'pro']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      60,
+      75
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      5,
+      0
+    ],
+    "preis": [
+      4000,
+      17000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_II",
+    "marke": "Seat",
+    "modell": "Toledo II",
+    "bau": "['1998', '2004']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      75,
+      179
+    ],
+    "diesel": [
+      90,
+      150
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      900,
+      5500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_III",
+    "marke": "Seat",
+    "modell": "Toledo III",
+    "bau": "['2004', '2009']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      86,
+      200
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      1850,
+      5500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_IV",
+    "marke": "Seat",
+    "modell": "Toledo IV",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      75,
+      125
+    ],
+    "diesel": [
+      90,
+      116
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      6000,
+      26000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_I",
+    "marke": "Skoda",
+    "modell": "Fabia I",
+    "bau": "['1999', '2007']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "benzin": [
+      50,
+      120
+    ],
+    "diesel": [
+      64,
+      131
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      700,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_II",
+    "marke": "Skoda",
+    "modell": "Fabia II",
+    "bau": "['2007', '2014']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      60,
+      179
+    ],
+    "diesel": [
+      69,
+      105
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      1500,
+      13000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_III",
+    "marke": "Skoda",
+    "modell": "Fabia III",
+    "bau": "['2014', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      60,
+      125
+    ],
+    "diesel": [
+      90,
+      105
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      5000,
+      24000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_I",
+    "marke": "Skoda",
+    "modell": "Octavia I",
+    "bau": "['1996', '2010']",
+    "klasse": "['kompaktklasse', 'mittelklasse']",
+    "karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
+    "benzin": [
+      60,
+      179
+    ],
+    "diesel": [
+      68,
+      131
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      600,
+      6000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_II",
+    "marke": "Skoda",
+    "modell": "Octavia II",
+    "bau": "['2004', '2013']",
+    "klasse": "['kompaktklasse', 'mittelklasse']",
+    "karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
+    "benzin": [
+      75,
+      200
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1400,
+      16000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_III",
+    "marke": "Skoda",
+    "modell": "Octavia III",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse', 'mittelklasse']",
+    "karosserie": "['kombilimousine', '', '&#91;1&#93;', 'kombi']",
+    "benzin": [
+      86,
+      245
+    ],
+    "diesel": [
+      90,
+      184
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      5000,
+      45000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Rapid_(2012)",
+    "marke": "Skoda",
+    "modell": "Rapid (2012)",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'flie\\\\xc3\\\\x9fheck', 'kombilimousine', 'schr\\\\xc3\\\\xa4gheck']",
+    "benzin": [
+      75,
+      125
+    ],
+    "diesel": [
+      90,
+      116
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      6500,
+      26000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Roomster",
+    "marke": "Skoda",
+    "modell": "Roomster",
+    "bau": "['2006', '2015']",
+    "klasse": "['utilities']",
+    "karosserie": "['hochdachkombi']",
+    "benzin": [
+      64,
+      105
+    ],
+    "diesel": [
+      69,
+      105
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      2000,
+      13000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_I",
+    "marke": "Skoda",
+    "modell": "Superb I",
+    "bau": "['2001', '2008']",
+    "klasse": "['mittelklasse', 'obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      116,
+      193
+    ],
+    "diesel": [
+      101,
+      163
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      1500,
+      11500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_II",
+    "marke": "Skoda",
+    "modell": "Superb II",
+    "bau": "['2008', '2015']",
+    "klasse": "['mittelklasse', 'obere mittelklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      125,
+      260
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      3500,
+      35000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_III",
+    "marke": "Skoda",
+    "modell": "Superb III",
+    "bau": "['2015', 'pro']",
+    "klasse": "['mittelklasse', 'obere mittelklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      125,
+      280
+    ],
+    "diesel": [
+      120,
+      190
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      10000,
+      53500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Yeti",
+    "marke": "Skoda",
+    "modell": "Yeti",
+    "bau": "['2009', '2017']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      105,
+      160
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      5000,
+      29000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Volvo_C30",
+    "marke": "Volvo",
+    "modell": "C30",
+    "bau": "['2006', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombicoupe']",
+    "benzin": [
+      101,
+      230
+    ],
+    "diesel": [
+      109,
+      179
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      3000,
+      14000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Volvo_S40/V40",
+    "marke": "Volvo",
+    "modell": "S40/V40",
+    "bau": "['1995', '2004']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      105,
+      200
+    ],
+    "diesel": [
+      90,
+      116
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      500,
+      5500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Volvo_S40/V50",
+    "marke": "Volvo",
+    "modell": "S40/V50",
+    "bau": "['2004', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      101,
+      230
+    ],
+    "diesel": [
+      109,
+      179
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1850,
+      12000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/Volvo_V40_(2012)",
+    "marke": "Volvo",
+    "modell": "V40 (2012)",
+    "bau": "['2012', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Golf_IV",
+    "marke": "VW",
+    "modell": "Golf IV",
+    "bau": "['1997', '2003']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      75,
+      241
+    ],
+    "diesel": [
+      68,
+      150
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      400,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Golf_V",
+    "marke": "VW",
+    "modell": "Golf V",
+    "bau": "['2003', '2008']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi']",
+    "benzin": [
+      75,
+      250
+    ],
+    "diesel": [
+      75,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      1500,
+      30000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Golf_VI",
+    "marke": "VW",
+    "modell": "Golf VI",
+    "bau": "['2008', '2012']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "benzin": [
+      80,
+      271
+    ],
+    "diesel": [
+      90,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      3000,
+      27500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Bora",
+    "marke": "VW",
+    "modell": "Bora",
+    "bau": "['2007', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Jetta_V",
+    "marke": "VW",
+    "modell": "Jetta V",
+    "bau": "['2005', '2010']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      101,
+      200
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      3000,
+      9000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Beetle",
+    "marke": "VW",
+    "modell": "Beetle",
+    "bau": "['2011', 'pro']",
+    "klasse": "['kompaktklasse']",
+    "karosserie": "['coupe', 'cabriolet']",
+    "benzin": [
+      105,
+      220
+    ],
+    "diesel": [
+      105,
+      150
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      9000,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Passat_B6",
+    "marke": "VW",
+    "modell": "Passat B6",
+    "bau": "['2005', '2010']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      102,
+      299
+    ],
+    "diesel": [
+      105,
+      170
+    ],
+    "verbrauch": [
+      9,
+      6
+    ],
+    "preis": [
+      2200,
+      23000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Passat_B7",
+    "marke": "VW",
+    "modell": "Passat B7",
+    "bau": "['2010', '2014']",
+    "klasse": "['mittelklasse']",
+    "karosserie": "['limousine', 'kombi']",
+    "benzin": [
+      122,
+      299
+    ],
+    "diesel": [
+      105,
+      177
+    ],
+    "verbrauch": [
+      8,
+      6
+    ],
+    "preis": [
+      4650,
+      31000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_CC",
+    "marke": "VW",
+    "modell": "CC",
+    "bau": "['2008', '2016']",
+    "klasse": "['mittelklasse', 'obere mittelklasse']",
+    "karosserie": "['limousine']",
+    "benzin": [
+      150,
+      299
+    ],
+    "diesel": [
+      140,
+      184
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      7000,
+      33000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Polo_III",
+    "marke": "VW",
+    "modell": "Polo III",
+    "bau": "['1994', '2001']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      0,
+      0
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      0,
+      0
+    ],
+    "preis": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Polo_V",
+    "marke": "VW",
+    "modell": "Polo V",
+    "bau": "['2008', '2017']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine', 'limousine']",
+    "benzin": [
+      60,
+      220
+    ],
+    "diesel": [
+      75,
+      105
+    ],
+    "verbrauch": [
+      7,
+      5
+    ],
+    "preis": [
+      1400,
+      26000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Polo_VI",
+    "marke": "VW",
+    "modell": "Polo VI",
+    "bau": "['2017', 'pro']",
+    "klasse": "['kleinwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      65,
+      200
+    ],
+    "diesel": [
+      80,
+      95
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      10000,
+      31000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Sharan_II",
+    "marke": "VW",
+    "modell": "Sharan II",
+    "bau": "['2010', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      150,
+      220
+    ],
+    "diesel": [
+      116,
+      184
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      7000,
+      55000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Tiguan_I",
+    "marke": "VW",
+    "modell": "Tiguan I",
+    "bau": "['2007', '2016']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      122,
+      211
+    ],
+    "diesel": [
+      110,
+      184
+    ],
+    "verbrauch": [
+      10,
+      7
+    ],
+    "preis": [
+      6000,
+      34000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Tiguan_II",
+    "marke": "VW",
+    "modell": "Tiguan II",
+    "bau": "['2016', 'pro']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      125,
+      220
+    ],
+    "diesel": [
+      116,
+      239
+    ],
+    "verbrauch": [
+      9,
+      7
+    ],
+    "preis": [
+      14500,
+      63000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Touareg_I",
+    "marke": "VW",
+    "modell": "Touareg I",
+    "bau": "['2002', '2010']",
+    "klasse": "['suv']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      220,
+      450
+    ],
+    "diesel": [
+      163,
+      351
+    ],
+    "verbrauch": [
+      16,
+      11
+    ],
+    "preis": [
+      4200,
+      28500
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Touran_I",
+    "marke": "VW",
+    "modell": "Touran I",
+    "bau": "['2003', '2015']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      102,
+      170
+    ],
+    "diesel": [
+      90,
+      177
+    ],
+    "verbrauch": [
+      8,
+      7
+    ],
+    "preis": [
+      1550,
+      25000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_Touran_II",
+    "marke": "VW",
+    "modell": "Touran II",
+    "bau": "['2015', 'pro']",
+    "klasse": "['van']",
+    "karosserie": "['kombi']",
+    "benzin": [
+      110,
+      179
+    ],
+    "diesel": [
+      110,
+      190
+    ],
+    "verbrauch": [
+      7,
+      6
+    ],
+    "preis": [
+      5000,
+      50000
+    ]
+  },
+  {
+    "id": "https://de.wikipedia.org/wiki/VW_up!",
+    "marke": "VW",
+    "modell": "up!",
+    "bau": "['2011', 'pro']",
+    "klasse": "['kleinstwagen']",
+    "karosserie": "['kombilimousine']",
+    "benzin": [
+      60,
+      116
+    ],
+    "diesel": [
+      0,
+      0
+    ],
+    "verbrauch": [
+      6,
+      5
+    ],
+    "preis": [
+      3500,
+      29000
+    ]
+  }
+]

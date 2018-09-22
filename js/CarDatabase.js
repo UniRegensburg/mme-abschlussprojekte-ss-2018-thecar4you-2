@@ -9,7 +9,44 @@ CarApp.CarDatabase = function() {
   hardData=[],
   softData=[],
   //CarView, //eslint fehler mit this und that
-  posCarArray=[];
+  posCarArray=[],
+  db;
+  function connect(url, database, user, password) {
+
+    let dbUrl = "http://" + ( user + ":" || "") + (password + "@" || "") + url + "/" + database;
+
+    db = new PouchDB(dbUrl );
+
+}
+
+
+
+function getInfo() {
+
+    db.info().then(function (info) {
+
+                   console.log(info);
+
+    });
+
+}
+connect("132.199.137.35:5984", "car4you", "car4you", "car2018***");
+getInfo();
+db.allDocs().then(function(result){
+  console.log(result);
+});
+
+  /*let localDB = new PouchDB("localDB");
+localDB.put({
+  _id: 'dave@gmail.com',
+  name: 'David',
+  age: 69,
+});
+db.changes().on('change', function() {
+  console.log('Ch-Ch-Changes');
+});
+
+db.replicate.to('http://132.199.137.35:5984/car4you');*/
 
 	function initDB(CarView) { //unnütz?
     loadDbData();
