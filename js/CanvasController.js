@@ -15,7 +15,8 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     kaufG, kaufY, kaufR,
     bildG, bildY, bildR,
     freiG, freiY, freiR,
-    chosenIcon="";
+    chosenIcon="",
+    backGroundImg;
 
   function addIcons() {
     workG = document.getElementById("work-buttonT");
@@ -69,6 +70,11 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     freiR.addEventListener("click", function() {
       chosenIcon = freiR;
     });
+    backGroundImg = new Image();
+    backGroundImg.src="./Pictures/radar-sized.png";
+    backGroundImg.onload = function() {
+      context.drawImage(backGroundImg, 10, 25);
+    };
   }
 
   function setCanvasDel() {
@@ -81,6 +87,7 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     iconArray=[];
     chosenIcon="";
     CarModel.clearDist();
+    context.drawImage(backGroundImg, 10, 25);
   }
 
   function onMouseClickCanvas(event) {
@@ -91,56 +98,42 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
   }
 
   function draw(x, y) {
-    /*
-    switch(chosenIcon) { //gibt declaration eslint fehler
-      case workG:
-        let id = "ctest2",
-        img = document.getElementById(id);
-        context.drawImage(img, x, y);
-        iconArray.push([id, x, y]);
-        console.log(iconArray);
-        break;
-      default:
-        //
-    }
-    */
     if (chosenIcon === workG) {
-      //let id = "ctest1",
-      //img = document.getElementById(id);
-      context.drawImage(workG, x, y);
+      context.drawImage(workG, x-18, y-18);
       iconArray.push(["workG", x, y]);
-      //console.log(iconArray);
     } else if (chosenIcon === workY) {
-      //let id = "ctest2",
-      //img = document.getElementById(id);
-      context.drawImage(workY, x, y);
+      context.drawImage(workY, x-18, y-18);
       iconArray.push(["workY", x, y]);
     } else if (chosenIcon === workR) {
-      //      console.log(1);
+      context.drawImage(workR, x-18, y-18);
+      iconArray.push(["workR", x, y]);
     } else if (chosenIcon === kaufG) {
-      //      console.log(2);
-
+      context.drawImage(kaufG, x-18, y-18);
+      iconArray.push(["kaufG", x, y]);
     } else if (chosenIcon === kaufY) {
-      //      console.log(3);
-
+      context.drawImage(kaufY, x-18, y-18);
+      iconArray.push(["kaufY", x, y]);
     } else if (chosenIcon === kaufR) {
-      //      console.log(4);
-
+      context.drawImage(kaufR, x-18, y-18);
+      iconArray.push(["kaufR", x, y]);
     } else if (chosenIcon === bildG) {
-      //      console.log(5);
-
+      context.drawImage(bildG, x-18, y-18);
+      iconArray.push(["bildG", x, y]);
     } else if (chosenIcon === bildY) {
-      //      console.log(6);
-
+      context.drawImage(bildY, x-18, y-18);
+      iconArray.push(["bildY", x, y]);
     } else if (chosenIcon === bildR) {
-      //      console.log(7);
-
+      context.drawImage(bildR, x-18, y-18);
+      iconArray.push(["bildR", x, y]);
     } else if (chosenIcon === freiG) {
-      //      console.log(8);
+      context.drawImage(freiG, x-18, y-18);
+      iconArray.push(["freiG", x, y]);
     } else if (chosenIcon === freiY) {
-      //      console.log(9);
+      context.drawImage(freiY, x-18, y-18);
+      iconArray.push(["freiY", x, y]);
     } else if (chosenIcon === freiR) {
-      //      console.log(0);
+      context.drawImage(freiR, x-18, y-18);
+      iconArray.push(["freiR", x, y]);
     }
   }
 
@@ -150,6 +143,7 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     canvas.addEventListener("click", onMouseClickCanvas);
     addIcons();
     setCanvasDel();
+
     return that;
   }
 

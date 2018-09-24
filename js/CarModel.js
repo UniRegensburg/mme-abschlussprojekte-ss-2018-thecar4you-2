@@ -63,10 +63,29 @@ CarApp.CarModel = function() {
   function calculateDist(iconArray) {
     let x = Math.abs(550/2 - iconArray[distIndex][1]),
     y = Math.abs(550/2 - iconArray[distIndex][2]),
-    dist = Math.round(Math.sqrt(x*x + y*y)); //dist in pixeln, muss noch zu km gerechnet werden, dazu bild nötig
-    distArray.push(iconArray[distIndex], dist);
+    dist = Math.round(Math.sqrt(x*x + y*y)), //dist in pixeln, muss noch zu km gerechnet werden, dazu bild nötig
+    distkm = distToKm(dist);
+    distArray.push(iconArray[distIndex], distkm);
     distIndex +=1;
     //console.log(distArray);
+  }
+
+  function distToKm(dist) {
+    let km5 = 70,
+    km10 = 130,
+    km50 = 190,
+    km100 = 250,
+    out;
+    if (dist <= km5) {
+      out = (dist/km5)*5;
+    } else if (dist <= km10) {
+      out = 5+((dist-km5)/km10)*10;
+    } else if (dist <= km50) {
+      out = 10+((dist-km10)/km50)*100;
+    } else if (dist > km50) {
+      out = 50+((dist-km50)/km100)*100;
+    }
+    return out;
   }
 
   function clearDist() {

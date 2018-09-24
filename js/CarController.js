@@ -95,20 +95,20 @@ CarApp.CarController = function() {
 
     document.getElementById("tape").addEventListener("click",
     function() {
-      CarModel.updateAlter(2000);
-      alterOut.innerHTML = 2000;
+      CarModel.updateAlter(2003);
+      alterOut.innerHTML = 2003;
     } );
 
     document.getElementById("cd").addEventListener("click",
     function() {
-      CarModel.updateAlter(2002);
-      alterOut.innerHTML = 2002;
+      CarModel.updateAlter(2008);
+      alterOut.innerHTML = 2008;
     } );
 
     document.getElementById("mp3").addEventListener("click",
     function() {
-      CarModel.updateAlter(2004);
-      alterOut.innerHTML = 2004;
+      CarModel.updateAlter(2013);
+      alterOut.innerHTML = 2013;
     } );
 
     document.getElementById("smartspeaker").addEventListener("click",
