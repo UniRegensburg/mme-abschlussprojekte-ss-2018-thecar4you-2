@@ -55,7 +55,7 @@ CarApp.CarView = function() {
     getParent = document.getElementsByClassName(imgClass)[classIndex];
     newImg.src = imgSource;
     newImg.id = imgId;
-    if (imgId.includes("money")) {
+    if (imgId.includes("money") || imgId.includes("work") || imgId.includes("shopping") || imgId.includes("school") || imgId.includes("hobby")) {
       newImg.draggable = "true";
         }
     getParent.appendChild(newImg);
@@ -192,9 +192,9 @@ CarApp.CarView = function() {
     newHeight = parseInt(liter) * 30;
     drop[0].style.height = newHeight + "px";
   }
-  
+
 /*kraftstoff********************************************************************************** */
-  
+
   function setKraftstoffPictures() {
 	spanGenerator("benzin-action", "material-icons benzinPic", 0, "local_gas_station");
 	spanGenerator("diesel-action", "material-icons dieselPic", 0, "local_gas_station");
