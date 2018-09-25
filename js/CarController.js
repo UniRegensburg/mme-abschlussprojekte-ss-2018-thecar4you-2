@@ -4,7 +4,21 @@ var CarApp = CarApp || {};
 CarApp.CarController = function() {
   "use strict";
 
-  var that = {};
+  var that = {},
+    jahrPlatte = 1998,
+    jahrTape = 2003,
+    jahrCD = 2008,
+    jahrMp3 = 2013,
+    jahrSs = 2018,
+    kmMars = 20,
+    kmErde = 40,
+    kmPhobos = 70,
+    kmNeptun = 155,
+    psCorsa = 75,
+    psDreier = 200,
+    psTruck = 400,
+    conVerbrauch,
+    conMoney;
 
   function initCarController(CarView, CarModel, CarDatabase) {
     setStartPageListener(CarView);
@@ -39,40 +53,38 @@ CarApp.CarController = function() {
     moneyDeleteButton = document.getElementsByClassName("material-icons delete-button"),
     moneyBackButton = document.getElementsByClassName("material-icons replay-button");
     fifeC.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",500);
+      e.dataTransfer.setData("amount", 500);
     });
     oneK.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",1000);
+      e.dataTransfer.setData("amount", 1000);
     });
     fifeK.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",5000);
+      e.dataTransfer.setData("amount", 5000);
     });
     tenK.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",10000);
+      e.dataTransfer.setData("amount", 10000);
     });
     fiftyK.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",50000);
+      e.dataTransfer.setData("amount", 50000);
     });
     hundretK.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("amount",100000);
+      e.dataTransfer.setData("amount", 100000);
     });
     pig.addEventListener("dragover", function(e){
       e.preventDefault();
     });
     pig.addEventListener("drop",function(e){
-      //increase sum
       let amount= e.dataTransfer.getData("amount");
-      CarModel.updateMoney(amount);
-      //budget= document.getElementsByClassName("budget");
-      //budget[0].innerHTML =parseInt(budget[0].innerHTML)+parseInt(amount);
-      //console.log(parseInt(budget[0].innerHTML));
-      //console.log("ERFOLGREISCH GEDROPPT MIT "+amount+"GELD!");
+      conMoney = CarModel.updateMoney(amount);
+      CarView.updateViewMoney(conMoney);
     });
     moneyDeleteButton[0].addEventListener("click", function() {
-      CarModel.deleteMoney();
+      conMoney = CarModel.deleteMoney();
+      CarView.updateViewMoney(conMoney);
     });
     moneyBackButton[0].addEventListener("click", function() {
-      CarModel.backMoney();
+      conMoney = CarModel.backMoney();
+      CarView.updateViewMoney(conMoney);
     });
   }
 
@@ -84,37 +96,37 @@ CarApp.CarController = function() {
 
     alterSlider.oninput = function() {
       CarModel.updateAlter(this.value);
-      alterOut.innerHTML = this.value;
+      CarView.updateViewAlter(this.value);
     };
 
     document.getElementById("platte").addEventListener("click",
     function() {
-      CarModel.updateAlter(1998);
-      alterOut.innerHTML = 1998;
+      CarModel.updateAlter(jahrPlatte);
+      CarView.updateViewAlter(jahrPlatte);
     } );
 
     document.getElementById("tape").addEventListener("click",
     function() {
-      CarModel.updateAlter(2003);
-      alterOut.innerHTML = 2003;
+      CarModel.updateAlter(jahrTape);
+      CarView.updateViewAlter(jahrTape);
     } );
 
     document.getElementById("cd").addEventListener("click",
     function() {
-      CarModel.updateAlter(2008);
-      alterOut.innerHTML = 2008;
+      CarModel.updateAlter(jahrCD);
+      CarView.updateViewAlter(jahrCD);
     } );
 
     document.getElementById("mp3").addEventListener("click",
     function() {
-      CarModel.updateAlter(2013);
-      alterOut.innerHTML = 2013;
+      CarModel.updateAlter(jahrMp3);
+      CarView.updateViewAlter(jahrMp3);
     } );
 
     document.getElementById("smartspeaker").addEventListener("click",
     function() {
-      CarModel.updateAlter(2018);
-      alterOut.innerHTML = 2018;
+      CarModel.updateAlter(jahrSs);
+      CarView.updateViewAlter(jahrSs);
       } );
   }
 
@@ -125,38 +137,34 @@ CarApp.CarController = function() {
     kmOut.innerHTML = kmSlider.value;
 
     kmSlider.oninput = function() {
-      CarModel.updateKm(this.value);
-      kmOut.innerHTML = this.value;
+       CarModel.updateKm(this.value);
+       CarView.updateViewKm(this.value);
     };
 
     document.getElementById("mars").addEventListener("click",
     function() {
-      CarModel.updateKm(20);
-      kmOut.innerHTML = 20;
+      CarModel.updateKm(kmMars);
+      CarView.updateViewKm(kmMars);
     } );
 
     document.getElementById("erde").addEventListener("click",
     function() {
-      CarModel.updateKm(40);
-      kmOut.innerHTML = 40;
+      CarModel.updateKm(kmErde);
+      CarView.updateViewKm(kmErde);
     } );
 
     document.getElementById("phobos").addEventListener("click",
     function() {
-      CarModel.updateKm(70);
-      kmOut.innerHTML = 70;
+      CarModel.updateKm(kmPhobos);
+      CarView.updateViewKm(kmPhobos);
     } );
 
     document.getElementById("neptun").addEventListener("click",
     function() {
-      CarModel.updateKm(155);
-      kmOut.innerHTML = 155;
+      CarModel.updateKm(kmNeptun);
+      CarView.updateViewKm(kmNeptun);
     } );
   }
-
-  //function setStep4Listeners(CarView, CarModel) {
-    //TODO Drag&Drop Listener Setzen für die Distanz Icons
-  //}
 
   function setStep5Listeners(CarView, CarModel) {
     let psSlider, psOut;
@@ -166,25 +174,25 @@ CarApp.CarController = function() {
 
     psSlider.oninput = function() {
       CarModel.updatePs(this.value);
-      psOut.innerHTML = this.value;
+      CarView.updateViewPs(this.value);
     };
 
     document.getElementById("corsa").addEventListener("click",
     function() {
-      CarModel.updatePs(75);
-      psOut.innerHTML = 75;
+      CarModel.updatePs(psCorsa);
+      CarView.updateViewPs(psCorsa);
     } );
 
     document.getElementById("bmw").addEventListener("click",
     function() {
-      CarModel.updatePs(200);
-      psOut.innerHTML = 200;
+      CarModel.updatePs(psDreier);
+      CarView.updateViewPs(psDreier);
     } );
 
     document.getElementById("truck").addEventListener("click",
     function() {
-      CarModel.updatePs(400);
-      psOut.innerHTML = 400;
+      CarModel.updatePs(psTruck);
+      CarView.updateViewPs(psTruck);
     } );
   }
 
@@ -198,22 +206,22 @@ CarApp.CarController = function() {
     adultButton = document.getElementsByClassName("material-icons parent-icon")[0],
     childButton = document.getElementsByClassName("material-icons child-icon")[0],
     seatDelete = document.getElementsByClassName("material-icons delete_forever-button")[0],
-    seat2_1 = seats2[1],
-    seat2_2 = seats2[0],
-    seat5_1 = seats5front[1],
-    seat5_2 = seats5front[0],
-    seat5_3 = seats5back[2],
-    seat5_4 = seats5back[1],
-    seat5_5 = seats5back[0],
-    seat7_1 = seats7front[1],
-    seat7_2 = seats7front[0],
-    seat7_3 = seats7middle[1],
-    seat7_4 = seats7middle[0],
-    seat7_5 = seats7back[2],
-    seat7_6 = seats7back[1],
-    seat7_7 = seats7back[0],
-    seatArray=[seat2_1, seat2_2, seat5_1, seat5_2, seat5_3, seat5_4, seat5_5,
-      seat7_1, seat7_2, seat7_3, seat7_4, seat7_5, seat7_6, seat7_7];
+    smallSeat1 = seats2[1],
+    smallSeat2 = seats2[0],
+    midSeat1 = seats5front[1],
+    midSeat2 = seats5front[0],
+    midSeat3 = seats5back[2],
+    midSeat4 = seats5back[1],
+    midSeat5 = seats5back[0],
+    bigSeat1 = seats7front[1],
+    bigSeat2 = seats7front[0],
+    bigSeat3 = seats7middle[1],
+    bigSeat4 = seats7middle[0],
+    bigSeat5 = seats7back[2],
+    bigSeat6 = seats7back[1],
+    bigSeat7 = seats7back[0],
+    seatArray=[smallSeat1, smallSeat2, midSeat1, midSeat2, midSeat3, midSeat4, midSeat5,
+      bigSeat1, bigSeat2, bigSeat3, bigSeat4, bigSeat5, bigSeat6, bigSeat7];
 
     adultButton.addEventListener("dragstart", function(e) {
       e.dataTransfer.setData("type", "adult");
@@ -231,55 +239,55 @@ CarApp.CarController = function() {
   }
 
   function step6DragAndDrop(seatArray, CarView, CarModel) {
-    let seat2_1 = seatArray[0],
-    seat2_2 = seatArray[1],
-    seat5_1 = seatArray[2],
-    seat5_2 = seatArray[3],
-    seat5_3 = seatArray[4],
-    seat5_4 = seatArray[5],
-    seat5_5 = seatArray[6],
-    seat7_1 = seatArray[7],
-    seat7_2 = seatArray[8],
-    seat7_3 = seatArray[9],
-    seat7_4 = seatArray[10],
-    seat7_5 = seatArray[11],
-    seat7_6 = seatArray[12],
-    seat7_7 = seatArray[13];
+    let smallSeat1 = seatArray[0],
+    smallSeat2 = seatArray[1],
+    midSeat1 = seatArray[2],
+    midSeat2 = seatArray[3],
+    midSeat3 = seatArray[4],
+    midSeat4 = seatArray[5],
+    midSeat5 = seatArray[6],
+    bigSeat1 = seatArray[7],
+    bigSeat2 = seatArray[8],
+    bigSeat3 = seatArray[9],
+    bigSeat4 = seatArray[10],
+    bigSeat5 = seatArray[11],
+    bigSeat6 = seatArray[12],
+    bigSeat7 = seatArray[13];
 
-    seat2_1.addEventListener("dragover", function(e) {
+    smallSeat1.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat2_1.addEventListener("drop", function(e) {
+    smallSeat1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       if (type === "adult") {
         CarModel.updateSeat(2, 1, type);
-        CarView.updateSeatPic(seat2_1, type);
+        CarView.updateSeatPic(smallSeat1, type);
         for (let i=2; i<seatArray.length; i++) {
           CarView.deleteSeatSpan(seatArray[i]);
         }
       }
     });
 
-    seat2_2.addEventListener("dragover", function(e) {
+    smallSeat2.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat2_2.addEventListener("drop", function(e) {
+    smallSeat2.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(2, 2, type);
-      CarView.updateSeatPic(seat2_2, type);
+      CarView.updateSeatPic(smallSeat2, type);
       for (let i=2; i<seatArray.length; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat5_1.addEventListener("dragover", function(e) {
+    midSeat1.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat5_1.addEventListener("drop", function(e) {
+    midSeat1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       if (type === "adult") {
         CarModel.updateSeat(5, 1, type);
-        CarView.updateSeatPic(seat5_1, type);
+        CarView.updateSeatPic(midSeat1, type);
         for (let i=0; i<2; i++) {
           CarView.deleteSeatSpan(seatArray[i]);
         }
@@ -289,13 +297,13 @@ CarApp.CarController = function() {
       }
     });
 
-    seat5_2.addEventListener("dragover", function(e) {
+    midSeat2.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat5_2.addEventListener("drop", function(e) {
+    midSeat2.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 2, type);
-      CarView.updateSeatPic(seat5_2, type);
+      CarView.updateSeatPic(midSeat2, type);
       for (let i=0; i<2; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
@@ -304,13 +312,13 @@ CarApp.CarController = function() {
       }
     });
 
-    seat5_3.addEventListener("dragover", function(e) {
+    midSeat3.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat5_3.addEventListener("drop", function(e) {
+    midSeat3.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 3, type);
-      CarView.updateSeatPic(seat5_3, type);
+      CarView.updateSeatPic(midSeat3, type);
       for (let i=0; i<2; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
@@ -319,13 +327,13 @@ CarApp.CarController = function() {
       }
     });
 
-    seat5_4.addEventListener("dragover", function(e) {
+    midSeat4.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat5_4.addEventListener("drop", function(e) {
+    midSeat4.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 4, type);
-      CarView.updateSeatPic(seat5_4, type);
+      CarView.updateSeatPic(midSeat4, type);
       for (let i=0; i<2; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
@@ -334,13 +342,13 @@ CarApp.CarController = function() {
       }
     });
 
-    seat5_5.addEventListener("dragover", function(e) {
+    midSeat5.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat5_5.addEventListener("drop", function(e) {
+    midSeat5.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(5, 5, type);
-      CarView.updateSeatPic(seat5_5, type);
+      CarView.updateSeatPic(midSeat5, type);
       for (let i=0; i<2; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
@@ -349,87 +357,87 @@ CarApp.CarController = function() {
       }
     });
 
-    seat7_1.addEventListener("dragover", function(e) {
+    bigSeat1.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_1.addEventListener("drop", function(e) {
+    bigSeat1.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       if (type === "adult") {
         CarModel.updateSeat(7, 1, type);
-        CarView.updateSeatPic(seat7_1, type);
+        CarView.updateSeatPic(bigSeat1, type);
         for (let i=0; i<7; i++) { //evtl falsch
           CarView.deleteSeatSpan(seatArray[i]);
         }
       }
     });
 
-    seat7_2.addEventListener("dragover", function(e) {
+    bigSeat2.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_2.addEventListener("drop", function(e) {
+    bigSeat2.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 2, type);
-      CarView.updateSeatPic(seat7_2, type);
+      CarView.updateSeatPic(bigSeat2, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat7_3.addEventListener("dragover", function(e) {
+    bigSeat3.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_3.addEventListener("drop", function(e) {
+    bigSeat3.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 3, type);
-      CarView.updateSeatPic(seat7_3, type);
+      CarView.updateSeatPic(bigSeat3, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat7_4.addEventListener("dragover", function(e) {
+    bigSeat4.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_4.addEventListener("drop", function(e) {
+    bigSeat4.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 4, type);
-      CarView.updateSeatPic(seat7_4, type);
+      CarView.updateSeatPic(bigSeat4, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat7_5.addEventListener("dragover", function(e) {
+    bigSeat5.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_5.addEventListener("drop", function(e) {
+    bigSeat5.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 5, type);
-      CarView.updateSeatPic(seat7_5, type);
+      CarView.updateSeatPic(bigSeat5, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat7_6.addEventListener("dragover", function(e) {
+    bigSeat6.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_6.addEventListener("drop", function(e) {
+    bigSeat6.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 6, type);
-      CarView.updateSeatPic(seat7_6, type);
+      CarView.updateSeatPic(bigSeat6, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
     });
 
-    seat7_7.addEventListener("dragover", function(e) {
+    bigSeat7.addEventListener("dragover", function(e) {
       e.preventDefault();
     });
-    seat7_7.addEventListener("drop", function(e) {
+    bigSeat7.addEventListener("drop", function(e) {
       let type = e.dataTransfer.getData("type");
       CarModel.updateSeat(7, 7, type);
-      CarView.updateSeatPic(seat7_7, type);
+      CarView.updateSeatPic(bigSeat7, type);
       for (let i=0; i<7; i++) {
         CarView.deleteSeatSpan(seatArray[i]);
       }
@@ -441,12 +449,12 @@ CarApp.CarController = function() {
     verbrauchIncreaseButton = document.getElementsByClassName("material-icons add-button");
 
     verbrauchDecreaseButton[0].addEventListener("click", function() {
-      CarModel.updateVerbrauch(-1);
-      CarView.adjustDrop();
+      conVerbrauch = CarModel.updateVerbrauch(-1);
+      CarView.adjustDrop(conVerbrauch);
     });
     verbrauchIncreaseButton[0].addEventListener("click", function() {
-      CarModel.updateVerbrauch(1);
-      CarView.adjustDrop();
+      conVerbrauch = CarModel.updateVerbrauch(1);
+      CarView.adjustDrop(conVerbrauch);
     });
   }
 

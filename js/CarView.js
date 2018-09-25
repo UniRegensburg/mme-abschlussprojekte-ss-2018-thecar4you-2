@@ -27,7 +27,7 @@ CarApp.CarView = function() {
     setPsPictures();
     setSeatPictures();
     setVerbrauchPictures();
-	setKraftstoffPictures();
+    setKraftstoffPictures();
   }
 
   //zeigt für jeden Wizardschritt die benötigten User Actions wie Slider, Buttons, Counter etc. an
@@ -87,6 +87,11 @@ CarApp.CarView = function() {
     spanGenerator("user-action-price", "budget", 0, "0", "");
   }
 
+  function updateViewMoney(conMoney) {
+    let budget= document.getElementsByClassName("budget");
+    budget[0].innerHTML = conMoney;
+  }
+
 /*alter************************************************************************************** */
 
   function setAlterPictures() {
@@ -97,6 +102,12 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/Smartspeaker.png", "smartspeaker", "picturesAlter", 0, "Smartspeaker");
   }
 
+  function updateViewAlter(alter) {
+    let alterOut = document.getElementById("alterOut");
+    alterOut.innerHTML = alter;
+    document.getElementById("alterSlider").value = alter;
+  }
+
 /*km**************************************************************************************** */
 
   function setKMPictures() {
@@ -104,6 +115,12 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/PlanetErde3.png", "erde", "picturesKM", 0, "Erde");
     imageGenerator("Pictures/MoonPhobos.png", "phobos", "picturesKM", 0, "Phobos");
     imageGenerator("Pictures/PlanetNeptun.png", "neptun", "picturesKM", 0, "Neptun");
+  }
+
+  function updateViewKm(km) {
+    let kmOut = document.getElementById("kmOut");
+    kmOut.innerHTML = km;
+    document.getElementById("kmSlider").value = km;
   }
 
 /*strecke**************************************************************************************** */
@@ -129,6 +146,12 @@ CarApp.CarView = function() {
     imageGenerator("Pictures/AutoCorsa.jpg", "corsa", "picturesPs", 0, "");
     imageGenerator("Pictures/AutoBMW3er.jpg", "bmw", "picturesPs", 0, "");
     imageGenerator("Pictures/AutoTruck.jpg", "truck", "picturesPs", 0, "");
+  }
+
+  function updateViewPs(ps) {
+    let psOut = document.getElementById("psOut");
+    psOut.innerHTML = ps;
+    document.getElementById("psSlider").value = ps;
   }
 
 /*sitze********************************************************************************** */
@@ -186,13 +209,12 @@ CarApp.CarView = function() {
     spanGenerator("user-action-verbrauch", "verbrauch", 0, "10L/100Km", "");
   }
 
-  function adjustDrop() {
+  function adjustDrop(newVerbrauch) {
     let drop = document.getElementsByClassName("picturesVerbrauch"),
-    liter = document.getElementsByClassName("verbrauch")[0].innerHTML,
-    newHeight;
-    liter = liter.replace("L/100Km");
-    newHeight = parseInt(liter) * 30;
+    verbrauchHTML = document.getElementsByClassName("verbrauch"),
+    newHeight = parseInt(newVerbrauch) * 30;
     drop[0].style.height = newHeight + "px";
+    verbrauchHTML[0].innerHTML = String(newVerbrauch) + "L/100Km";
   }
 
 /*kraftstoff********************************************************************************** */
@@ -210,6 +232,10 @@ CarApp.CarView = function() {
   }
 
 	that.startWizard = startWizard;
+  that.updateViewMoney = updateViewMoney;
+  that.updateViewAlter = updateViewAlter;
+  that.updateViewPs = updateViewPs;
+  that.updateViewKm = updateViewKm;
   that.updateSeatPic = updateSeatPic;
   that.deleteSeatPics = deleteSeatPics;
   that.deleteSeatSpan = deleteSeatSpan;

@@ -10,16 +10,17 @@ CarApp.CarDatabase = function() {
   softData=[],
   //CarView, //eslint fehler mit this und that
   posCarArray=[],
-  db;
+  db,
+  kmMulti = 10000,
+  bjOffset = 1950;
+
   function connect(url, database, user, password) {
 
-    let dbUrl = "http://" + ( user + ":" || "") + (password + "@" || "") + url + "/" + database;
+      let dbUrl = "http://" + ( user + ":" || "") + (password + "@" || "") + url + "/" + database;
 
-    db = new PouchDB(dbUrl );
+      db = new PouchDB(dbUrl );
 
-}
-
-
+  }
 
 function getInfo() {
 
@@ -30,6 +31,7 @@ function getInfo() {
     });
 
 }
+
 connect("132.199.137.35:5984", "car4you", "car4you", "car2018***");
 getInfo();
 db.allDocs().then(function(result){
@@ -213,12 +215,12 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       baujahrMin = baujahrMax - 10;
     }
     //console.log(baujahrMin);
-    bjFaktor = ((hardData[1]-1950) / (((baujahrMax+baujahrMin)/2)-1950)); // abzug um wirkung zu erhöhen
+    bjFaktor = ((hardData[1]-bjOffset) / (((baujahrMax+baujahrMin)/2)-bjOffset)); // abzug um wirkung zu erhöhen
     //problem: hier differenz bei älteren baujahren -> größere faktor, echt: andersrum
     //console.log("bj");
     //console.log(bjFaktor);
 
-    kmFaktor = ((2018-hardData[1])*10000) / (softData[0]*1000);
+    kmFaktor = ((2018-hardData[1])*kmMulti) / (softData[0]*kmMulti);
     //console.log("km");
     //console.log(kmFaktor);
 

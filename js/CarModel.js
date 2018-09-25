@@ -26,38 +26,28 @@ CarApp.CarModel = function() {
 
   function updateAlter(alter) {
     savedAlter = alter;
-    document.getElementById("alterSlider").value = savedAlter; // TODO: in view!!!
-    //if (savedAlter === 1998) {
-    //  savedAlter = 0;
-    //}
   }
 
   function updateKm(alter) {
     savedKm = alter;
-    document.getElementById("kmSlider").value = savedKm; // TODO: in view!!!
   }
 
   function updateMoney(money) {
     lastMoney = parseInt(money);
     savedMoney += lastMoney;
-    updateMoneyInHtml(savedMoney);
+    return(savedMoney);
   }
 
   function deleteMoney() {
     savedMoney = 0;
     lastMoney = 0;
-    updateMoneyInHtml(savedMoney);
+    return(savedMoney);
   }
 
   function backMoney() {
     savedMoney -= lastMoney;
-    lastMoney = 0; // TODO: -> nur einmal nutzen mgl bzw. nicht zurück auf 0 mgl
-    updateMoneyInHtml(savedMoney);
-  }
-
-  function updateMoneyInHtml(money) { // TODO: in view!!!
-    let budget= document.getElementsByClassName("budget");
-    budget[0].innerHTML = money;
+    lastMoney = 0; // TODO: -> nur einmal nutzen mgl bzw. nicht zurück auf 0 mgl - alle steps speichern?
+    return(savedMoney);
   }
 
   function calculateDist(iconArray) {
@@ -81,7 +71,7 @@ CarApp.CarModel = function() {
     } else if (dist <= km10) {
       out = 5+((dist-km5)/km10)*10;
     } else if (dist <= km50) {
-      out = 10+((dist-km10)/km50)*100;
+      out = 10+((dist-km10)/km50)*125;
     } else if (dist > km50) {
       out = 50+((dist-km50)/km100)*100;
     }
@@ -95,7 +85,6 @@ CarApp.CarModel = function() {
 
   function updatePs(ps) {
     savedPs = ps;
-    document.getElementById("psSlider").value = savedPs; // TODO: in view!!!
   }
 
   function updateSeat(car, seat, type) {
@@ -122,14 +111,13 @@ CarApp.CarModel = function() {
   }
 
   function updateVerbrauch(amount) {
-    let newVerbrauch = savedVerbrauch + parseInt(amount),
-    verbrauchHTML;
+    let newVerbrauch = savedVerbrauch + parseInt(amount);
 
     if (newVerbrauch > 4 && newVerbrauch < 17) {
       savedVerbrauch = newVerbrauch;
-      verbrauchHTML= document.getElementsByClassName("verbrauch"); // TODO: in view!!!
-      verbrauchHTML[0].innerHTML = String(savedVerbrauch) + "L/100Km"; // TODO: in view!!!
     }
+
+    return(savedVerbrauch);
   }
 
   function updateFuel(benzinbool, dieselbool) {

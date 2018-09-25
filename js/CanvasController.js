@@ -1,5 +1,4 @@
 /* eslint-env browser  */
-// TODO: kein eraser?
 var CarApp = CarApp || {};
 CarApp.CanvasController = function(canvasNode, CarModel) {
   "use strict";
@@ -16,7 +15,8 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     bildG, bildY, bildR,
     freiG, freiY, freiR,
     chosenIcon="",
-    backGroundImg;
+    backGroundImg,
+    iconOffset = 18;
 
   function addIcons() {
     workG = document.getElementById("work-buttonT");
@@ -99,40 +99,40 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
 
   function draw(x, y) {
     if (chosenIcon === workG) {
-      context.drawImage(workG, x-18, y-18);
+      context.drawImage(workG, x-iconOffset, y-iconOffset);
       iconArray.push(["workG", x, y]);
     } else if (chosenIcon === workY) {
-      context.drawImage(workY, x-18, y-18);
+      context.drawImage(workY, x-iconOffset, y-iconOffset);
       iconArray.push(["workY", x, y]);
     } else if (chosenIcon === workR) {
-      context.drawImage(workR, x-18, y-18);
+      context.drawImage(workR, x-iconOffset, y-iconOffset);
       iconArray.push(["workR", x, y]);
     } else if (chosenIcon === kaufG) {
-      context.drawImage(kaufG, x-18, y-18);
+      context.drawImage(kaufG, x-iconOffset, y-iconOffset);
       iconArray.push(["kaufG", x, y]);
     } else if (chosenIcon === kaufY) {
-      context.drawImage(kaufY, x-18, y-18);
+      context.drawImage(kaufY, x-iconOffset, y-iconOffset);
       iconArray.push(["kaufY", x, y]);
     } else if (chosenIcon === kaufR) {
-      context.drawImage(kaufR, x-18, y-18);
+      context.drawImage(kaufR, x-iconOffset, y-iconOffset);
       iconArray.push(["kaufR", x, y]);
     } else if (chosenIcon === bildG) {
-      context.drawImage(bildG, x-18, y-18);
+      context.drawImage(bildG, x-iconOffset, y-iconOffset);
       iconArray.push(["bildG", x, y]);
     } else if (chosenIcon === bildY) {
-      context.drawImage(bildY, x-18, y-18);
+      context.drawImage(bildY, x-iconOffset, y-iconOffset);
       iconArray.push(["bildY", x, y]);
     } else if (chosenIcon === bildR) {
-      context.drawImage(bildR, x-18, y-18);
+      context.drawImage(bildR, x-iconOffset, y-iconOffset);
       iconArray.push(["bildR", x, y]);
     } else if (chosenIcon === freiG) {
-      context.drawImage(freiG, x-18, y-18);
+      context.drawImage(freiG, x-iconOffset, y-iconOffset);
       iconArray.push(["freiG", x, y]);
     } else if (chosenIcon === freiY) {
-      context.drawImage(freiY, x-18, y-18);
+      context.drawImage(freiY, x-iconOffset, y-iconOffset);
       iconArray.push(["freiY", x, y]);
     } else if (chosenIcon === freiR) {
-      context.drawImage(freiR, x-18, y-18);
+      context.drawImage(freiR, x-iconOffset, y-iconOffset);
       iconArray.push(["freiR", x, y]);
     }
   }
