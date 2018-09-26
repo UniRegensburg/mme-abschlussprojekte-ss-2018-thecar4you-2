@@ -1,12 +1,12 @@
 [
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_147",
-    "marke": "Alfa",
-    "modell": "Romeo 147",
-    "bau": "['2000', '2010']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_147",
+    "_marke": "Alfa",
+    "_modell": "Romeo 147",
+    "_bau": "['2000', '2010']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       105,
       250
     ],
@@ -24,13 +24,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_156",
-    "marke": "Alfa",
-    "modell": "Romeo 156",
-    "bau": "['1997', '2007']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_156",
+    "_marke": "Alfa",
+    "_modell": "Romeo 156",
+    "_bau": "['1997', '2007']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       120,
       250
     ],
@@ -48,13 +48,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_166",
-    "marke": "Alfa",
-    "modell": "Romeo 166",
-    "bau": "['1998', '2007']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_166",
+    "_marke": "Alfa",
+    "_modell": "Romeo 166",
+    "_bau": "['1998', '2007']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       150,
       241
     ],
@@ -72,13 +72,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_Giulietta_(Typ_940)",
-    "marke": "Alfa",
-    "modell": "Romeo Giulietta (Typ 940)",
-    "bau": "['2010', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_Giulietta_(Typ_940)",
+    "_marke": "Alfa",
+    "_modell": "Romeo Giulietta (Typ 940)",
+    "_bau": "['2010', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       105,
       241
     ],
@@ -96,13 +96,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_GT",
-    "marke": "Alfa",
-    "modell": "Romeo GT",
-    "bau": "['2003', '2010']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_GT",
+    "_marke": "Alfa",
+    "_modell": "Romeo GT",
+    "_bau": "['2003', '2010']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe']",
+    "_benzin": [
       140,
       239
     ],
@@ -120,13 +120,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Alfa_Romeo_MiTo",
-    "marke": "Alfa",
-    "modell": "Romeo MiTo",
-    "bau": "['2008', '2018']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Alfa_Romeo_MiTo",
+    "_marke": "Alfa",
+    "_modell": "Romeo MiTo",
+    "_bau": "['2008', '2018']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       69,
       170
     ],
@@ -144,13 +144,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A1_8X",
-    "marke": "Audi",
-    "modell": "A1 8X",
-    "bau": "['2010', '2018']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A1_8X",
+    "_marke": "Audi",
+    "_modell": "A1 8X",
+    "_bau": "['2010', '2018']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       82,
       256
     ],
@@ -168,13 +168,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A2",
-    "marke": "Audi",
-    "modell": "A2",
-    "bau": "['1999', '2002']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A2",
+    "_marke": "Audi",
+    "_modell": "A2",
+    "_bau": "['1999', '2002']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       75,
       110
     ],
@@ -192,13 +192,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A3_8L",
-    "marke": "Audi",
-    "modell": "A3 8L",
-    "bau": "['1996', '2006']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A3_8L",
+    "_marke": "Audi",
+    "_modell": "A3 8L",
+    "_bau": "['1996', '2006']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       101,
       224
     ],
@@ -216,13 +216,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A3_8P",
-    "marke": "Audi",
-    "modell": "A3 8P",
-    "bau": "['2003', '2013']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A3_8P",
+    "_marke": "Audi",
+    "_modell": "A3 8P",
+    "_bau": "['2003', '2013']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'cabriolet']",
+    "_benzin": [
       102,
       340
     ],
@@ -240,13 +240,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A3_8V",
-    "marke": "Audi",
-    "modell": "A3 8V",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A3_8V",
+    "_marke": "Audi",
+    "_modell": "A3 8V",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'cabriolet']",
+    "_benzin": [
       105,
       400
     ],
@@ -264,13 +264,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A4_B5",
-    "marke": "Audi",
-    "modell": "A4 B5",
-    "bau": "['1994', '2001']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A4_B5",
+    "_marke": "Audi",
+    "_modell": "A4 B5",
+    "_bau": "['1994', '2001']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       101,
       381
     ],
@@ -288,13 +288,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A4_B6",
-    "marke": "Audi",
-    "modell": "A4 B6",
-    "bau": "['2000', '2004']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A4_B6",
+    "_marke": "Audi",
+    "_modell": "A4 B6",
+    "_bau": "['2000', '2004']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       102,
       344
     ],
@@ -312,13 +312,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A4_B7",
-    "marke": "Audi",
-    "modell": "A4 B7",
-    "bau": "['2004', '2008']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A4_B7",
+    "_marke": "Audi",
+    "_modell": "A4 B7",
+    "_bau": "['2004', '2008']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       102,
       420
     ],
@@ -336,13 +336,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A4_B8",
-    "marke": "Audi",
-    "modell": "A4 B8",
-    "bau": "['2007', '2015']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A4_B8",
+    "_marke": "Audi",
+    "_modell": "A4 B8",
+    "_bau": "['2007', '2015']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       120,
       450
     ],
@@ -360,13 +360,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A4_B9",
-    "marke": "Audi",
-    "modell": "A4 B9",
-    "bau": "['2015', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A4_B9",
+    "_marke": "Audi",
+    "_modell": "A4 B9",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       150,
       450
     ],
@@ -384,13 +384,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A5_8T",
-    "marke": "Audi",
-    "modell": "A5 8T",
-    "bau": "['2007', '2016']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['coupe', 'cabriolet', 'kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A5_8T",
+    "_marke": "Audi",
+    "_modell": "A5 8T",
+    "_bau": "['2007', '2016']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['coupe', 'cabriolet', 'kombilimousine']",
+    "_benzin": [
       144,
       450
     ],
@@ -408,13 +408,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A5_F5",
-    "marke": "Audi",
-    "modell": "A5 F5",
-    "bau": "['2016', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['coupe', 'kombilimousine', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A5_F5",
+    "_marke": "Audi",
+    "_modell": "A5 F5",
+    "_bau": "['2016', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['coupe', 'kombilimousine', 'cabriolet']",
+    "_benzin": [
       150,
       450
     ],
@@ -432,13 +432,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A6_C5",
-    "marke": "Audi",
-    "modell": "A6 C5",
-    "bau": "['1997', '2005']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A6_C5",
+    "_marke": "Audi",
+    "_modell": "A6 C5",
+    "_bau": "['1997', '2005']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       125,
       480
     ],
@@ -456,13 +456,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A6_C6",
-    "marke": "Audi",
-    "modell": "A6 C6",
-    "bau": "['2004', '2011']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A6_C6",
+    "_marke": "Audi",
+    "_modell": "A6 C6",
+    "_bau": "['2004', '2011']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       170,
       579
     ],
@@ -480,13 +480,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A6_C7",
-    "marke": "Audi",
-    "modell": "A6 C7",
-    "bau": "['2010', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A6_C7",
+    "_marke": "Audi",
+    "_modell": "A6 C7",
+    "_bau": "['2010', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       179,
       560
     ],
@@ -504,13 +504,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A6_C8",
-    "marke": "Audi",
-    "modell": "A6 C8",
-    "bau": "['2018', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A6_C8",
+    "_marke": "Audi",
+    "_modell": "A6 C8",
+    "_bau": "['2018', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       340
     ],
     "diesel": [
@@ -527,13 +527,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A7_C7",
-    "marke": "Audi",
-    "modell": "A7 C7",
-    "bau": "['2010', 'pro']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A7_C7",
+    "_marke": "Audi",
+    "_modell": "A7 C7",
+    "_bau": "['2010', 'pro']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       190,
       605
     ],
@@ -551,13 +551,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_A8_D5",
-    "marke": "Audi",
-    "modell": "A8 D5",
-    "bau": "['2017', 'pro']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_A8_D5",
+    "_marke": "Audi",
+    "_modell": "A8 D5",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       340,
       585
     ],
@@ -575,13 +575,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_Q3_8U",
-    "marke": "Audi",
-    "modell": "Q3 8U",
-    "bau": "['2011', '2018']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_Q3_8U",
+    "_marke": "Audi",
+    "_modell": "Q3 8U",
+    "_bau": "['2011', '2018']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       125,
       367
     ],
@@ -599,13 +599,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_Q5_8R",
-    "marke": "Audi",
-    "modell": "Q5 8R",
-    "bau": "['2008', '2017']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_Q5_8R",
+    "_marke": "Audi",
+    "_modell": "Q5 8R",
+    "_bau": "['2008', '2017']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       179,
       354
     ],
@@ -623,13 +623,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_Q5_FY",
-    "marke": "Audi",
-    "modell": "Q5 FY",
-    "bau": "['2017', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_Q5_FY",
+    "_marke": "Audi",
+    "_modell": "Q5 FY",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       252,
       354
     ],
@@ -647,13 +647,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_Q7_4L",
-    "marke": "Audi",
-    "modell": "Q7 4L",
-    "bau": "['2005', '2015']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_Q7_4L",
+    "_marke": "Audi",
+    "_modell": "Q7 4L",
+    "_bau": "['2005', '2015']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       272,
       349
     ],
@@ -668,13 +668,13 @@
     "preis": "[8000, 62000"
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_TT_8N",
-    "marke": "Audi",
-    "modell": "TT 8N",
-    "bau": "['1998', '2006']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_TT_8N",
+    "_marke": "Audi",
+    "_modell": "TT 8N",
+    "_bau": "['1998', '2006']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       150,
       250
     ],
@@ -692,13 +692,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_TT_8J",
-    "marke": "Audi",
-    "modell": "TT 8J",
-    "bau": "['2006', '2014']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_TT_8J",
+    "_marke": "Audi",
+    "_modell": "TT 8J",
+    "_bau": "['2006', '2014']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       160,
       360
     ],
@@ -715,13 +715,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Audi_TT_FV",
-    "marke": "Audi",
-    "modell": "TT FV",
-    "bau": "['2014', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Audi_TT_FV",
+    "_marke": "Audi",
+    "_modell": "TT FV",
+    "_bau": "['2014', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       179,
       400
     ],
@@ -738,13 +738,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E87",
-    "marke": "BMW",
-    "modell": "E87",
-    "bau": "['2004', '2002']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E87",
+    "_marke": "BMW",
+    "_modell": "E87",
+    "_bau": "['2004', '2002']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'coupe', 'cabriolet']",
+    "_benzin": [
       116,
       340
     ],
@@ -762,13 +762,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F20",
-    "marke": "BMW",
-    "modell": "F20",
-    "bau": "['2011', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F20",
+    "_marke": "BMW",
+    "_modell": "F20",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       102,
       340
     ],
@@ -786,13 +786,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F22/F23",
-    "marke": "BMW",
-    "modell": "F22/F23",
-    "bau": "[''2013 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F22/F23",
+    "_marke": "BMW",
+    "_modell": "F22/F23",
+    "_bau": "[''2013 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -810,13 +810,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_2er_Active_Tourer",
-    "marke": "BMW",
-    "modell": "2er Active Tourer",
-    "bau": "['03/2014', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_2er_Active_Tourer",
+    "_marke": "BMW",
+    "_modell": "2er Active Tourer",
+    "_bau": "['03/2014', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       102,
       231
     ],
@@ -834,13 +834,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_2er_Gran_Tourer",
-    "marke": "BMW",
-    "modell": "2er Gran Tourer",
-    "bau": "['03/2015', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_2er_Gran_Tourer",
+    "_marke": "BMW",
+    "_modell": "2er Gran Tourer",
+    "_bau": "['03/2015', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       102,
       192
     ],
@@ -858,13 +858,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E36",
-    "marke": "BMW",
-    "modell": "E36",
-    "bau": "['1990', '2000']",
-    "klasse": "['mittelklasse', 'kompaktklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E36",
+    "_marke": "BMW",
+    "_modell": "E36",
+    "_bau": "['1990', '2000']",
+    "_klasse": "['mittel_klasse', 'kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "_benzin": [
       82,
       333
     ],
@@ -882,13 +882,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E46",
-    "marke": "BMW",
-    "modell": "E46",
-    "bau": "['1998', '2007']",
-    "klasse": "['mittelklasse', 'kompaktklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E46",
+    "_marke": "BMW",
+    "_modell": "E46",
+    "_bau": "['1998', '2007']",
+    "_klasse": "['mittel_klasse', 'kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "_benzin": [
       105,
       360
     ],
@@ -906,13 +906,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E90",
-    "marke": "BMW",
-    "modell": "E90",
-    "bau": "['2005', '2013']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E90",
+    "_marke": "BMW",
+    "_modell": "E90",
+    "_bau": "['2005', '2013']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'coupe', 'cabriolet']",
+    "_benzin": [
       122,
       420
     ],
@@ -930,13 +930,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F30",
-    "marke": "BMW",
-    "modell": "F30",
-    "bau": "['2013', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F30",
+    "_marke": "BMW",
+    "_modell": "F30",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -954,13 +954,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F32",
-    "marke": "BMW",
-    "modell": "F32",
-    "bau": "['2013', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['coupe', 'cabriolet', 'limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F32",
+    "_marke": "BMW",
+    "_modell": "F32",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['coupe', 'cabriolet', 'limousine']",
+    "_benzin": [
       184,
       500
     ],
@@ -978,13 +978,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E39",
-    "marke": "BMW",
-    "modell": "E39",
-    "bau": "['1995', '2004']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E39",
+    "_marke": "BMW",
+    "_modell": "E39",
+    "_bau": "['1995', '2004']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       150,
       400
     ],
@@ -1002,13 +1002,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E60",
-    "marke": "BMW",
-    "modell": "E60",
-    "bau": "['2003', '2']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E60",
+    "_marke": "BMW",
+    "_modell": "E60",
+    "_bau": "['2003', '2']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       170,
       507
     ],
@@ -1026,13 +1026,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F10",
-    "marke": "BMW",
-    "modell": "F10",
-    "bau": "['2010', '2017']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F10",
+    "_marke": "BMW",
+    "_modell": "F10",
+    "_bau": "['2010', '2017']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       184,
       575
     ],
@@ -1050,13 +1050,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_G30",
-    "marke": "BMW",
-    "modell": "G30",
-    "bau": "['2017', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_G30",
+    "_marke": "BMW",
+    "_modell": "G30",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       184,
       625
     ],
@@ -1074,13 +1074,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E63",
-    "marke": "BMW",
-    "modell": "E63",
-    "bau": "['2003', '2010']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E63",
+    "_marke": "BMW",
+    "_modell": "E63",
+    "_bau": "['2003', '2010']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       258,
       507
     ],
@@ -1097,13 +1097,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F12",
-    "marke": "BMW",
-    "modell": "F12",
-    "bau": "['2011', '2018']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['coupe', 'cabriolet', 'limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F12",
+    "_marke": "BMW",
+    "_modell": "F12",
+    "_bau": "['2011', '2018']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['coupe', 'cabriolet', 'limousine']",
+    "_benzin": [
       320,
       600
     ],
@@ -1120,13 +1120,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_6er_Gran_Turismo",
-    "marke": "BMW",
-    "modell": "6er Gran Turismo",
-    "bau": "['2017', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_6er_Gran_Turismo",
+    "_marke": "BMW",
+    "_modell": "6er Gran Turismo",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       258,
       340
     ],
@@ -1144,13 +1144,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E38",
-    "marke": "BMW",
-    "modell": "E38",
-    "bau": "['1994', '2001']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E38",
+    "_marke": "BMW",
+    "_modell": "E38",
+    "_bau": "['1994', '2001']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       193,
       326
     ],
@@ -1168,13 +1168,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E65",
-    "marke": "BMW",
-    "modell": "E65",
-    "bau": "['2001', '2008']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E65",
+    "_marke": "BMW",
+    "_modell": "E65",
+    "_bau": "['2001', '2008']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       231,
       445
     ],
@@ -1192,13 +1192,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F01",
-    "marke": "BMW",
-    "modell": "F01",
-    "bau": "['2008', '2015']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F01",
+    "_marke": "BMW",
+    "_modell": "F01",
+    "_bau": "['2008', '2015']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       320,
       544
     ],
@@ -1216,13 +1216,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_G11",
-    "marke": "BMW",
-    "modell": "G11",
-    "bau": "['2015', 'pro']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_G11",
+    "_marke": "BMW",
+    "_modell": "G11",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       258,
       609
     ],
@@ -1240,13 +1240,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E84",
-    "marke": "BMW",
-    "modell": "E84",
-    "bau": "['2009', '2015']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E84",
+    "_marke": "BMW",
+    "_modell": "E84",
+    "_bau": "['2009', '2015']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       150,
       258
     ],
@@ -1264,13 +1264,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F48",
-    "marke": "BMW",
-    "modell": "F48",
-    "bau": "['2015', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F48",
+    "_marke": "BMW",
+    "_modell": "F48",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       136,
       231
     ],
@@ -1288,13 +1288,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E83",
-    "marke": "BMW",
-    "modell": "E83",
-    "bau": "['2003', '2010']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E83",
+    "_marke": "BMW",
+    "_modell": "E83",
+    "_bau": "['2003', '2010']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       150,
       272
     ],
@@ -1312,13 +1312,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F25",
-    "marke": "BMW",
-    "modell": "F25",
-    "bau": "['2010', '2017']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F25",
+    "_marke": "BMW",
+    "_modell": "F25",
+    "_bau": "['2010', '2017']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       184,
       306
     ],
@@ -1336,13 +1336,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_G01",
-    "marke": "BMW",
-    "modell": "G01",
-    "bau": "['2017', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_G01",
+    "_marke": "BMW",
+    "_modell": "G01",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       184,
       360
     ],
@@ -1360,13 +1360,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E53",
-    "marke": "BMW",
-    "modell": "E53",
-    "bau": "['1999', '2006']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E53",
+    "_marke": "BMW",
+    "_modell": "E53",
+    "_bau": "['1999', '2006']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       231,
       360
     ],
@@ -1384,13 +1384,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_F15",
-    "marke": "BMW",
-    "modell": "F15",
-    "bau": "['2013', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_F15",
+    "_marke": "BMW",
+    "_modell": "F15",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -1408,13 +1408,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E85",
-    "marke": "BMW",
-    "modell": "E85",
-    "bau": "['2002', '2008']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E85",
+    "_marke": "BMW",
+    "_modell": "E85",
+    "_bau": "['2002', '2008']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       150,
       343
     ],
@@ -1432,13 +1432,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/BMW_E89",
-    "marke": "BMW",
-    "modell": "E89",
-    "bau": "['2009', '2016']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/BMW_E89",
+    "_marke": "BMW",
+    "_modell": "E89",
+    "_bau": "['2009', '2016']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['roadster']",
+    "_benzin": [
       156,
       340
     ],
@@ -1456,13 +1456,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Chevrolet_Captiva",
-    "marke": "Chevrolet",
-    "modell": "Captiva",
-    "bau": "['2006', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Chevrolet_Captiva",
+    "_marke": "Chevrolet",
+    "_modell": "Captiva",
+    "_bau": "['2006', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       136,
       258
     ],
@@ -1480,13 +1480,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Corvette_C5",
-    "marke": "Corvette",
-    "modell": "C5",
-    "bau": "['1997', '2004']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Corvette_C5",
+    "_marke": "Corvette",
+    "_modell": "C5",
+    "_bau": "['1997', '2004']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       349,
       412
     ],
@@ -1504,13 +1504,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Corvette_C6",
-    "marke": "Corvette",
-    "modell": "C6",
-    "bau": "['2005', '2013']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Corvette_C6",
+    "_marke": "Corvette",
+    "_modell": "C6",
+    "_bau": "['2005', '2013']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       405,
       647
     ],
@@ -1528,13 +1528,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Corvette_C7",
-    "marke": "Corvette",
-    "modell": "C7",
-    "bau": "['2013', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Corvette_C7",
+    "_marke": "Corvette",
+    "_modell": "C7",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       455,
       765
     ],
@@ -1552,13 +1552,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Chevrolet_Nubira",
-    "marke": "Chevrolet",
-    "modell": "Nubira",
-    "bau": "['2004', '2010']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Chevrolet_Nubira",
+    "_marke": "Chevrolet",
+    "_modell": "Nubira",
+    "_bau": "['2004', '2010']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       109,
       122
     ],
@@ -1575,13 +1575,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Chrysler_300_(2004)",
-    "marke": "Chrysler",
-    "modell": "300 (2004)",
-    "bau": "['2004', '2010']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Chrysler_300_(2004)",
+    "_marke": "Chrysler",
+    "_modell": "300 (2004)",
+    "_bau": "['2004', '2010']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       193,
       431
     ],
@@ -1598,13 +1598,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Chrysler_PT_Cruiser",
-    "marke": "Chrysler",
-    "modell": "PT Cruiser",
-    "bau": "['2000', '2010']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Chrysler_PT_Cruiser",
+    "_marke": "Chrysler",
+    "_modell": "PT Cruiser",
+    "_bau": "['2000', '2010']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombi', 'cabriolet']",
+    "_benzin": [
       116,
       223
     ],
@@ -1622,13 +1622,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_C2",
-    "marke": "Citro%C3%ABn",
-    "modell": "C2",
-    "bau": "['2003', '2009']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_C2",
+    "_marke": "Citro%C3%ABn",
+    "_modell": "C2",
+    "_bau": "['2003', '2009']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       60,
       122
     ],
@@ -1646,13 +1646,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_DS4",
-    "marke": "Citro%C3%ABn",
-    "modell": "DS4",
-    "bau": "['2011', '2018']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_DS4",
+    "_marke": "Citro%C3%ABn",
+    "_modell": "DS4",
+    "_bau": "['2011', '2018']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       120,
       200
     ],
@@ -1670,13 +1670,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
-    "marke": "Citro%C3%ABn",
-    "modell": "Xsara",
-    "bau": "['1997', '2006']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombicoupe', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+    "_marke": "Citro%C3%ABn",
+    "_modell": "Xsara",
+    "_bau": "['1997', '2006']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombicoupe', 'kombi']",
+    "_benzin": [
       75,
       163
     ],
@@ -1694,13 +1694,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_500_(2007)",
-    "marke": "Fiat",
-    "modell": "500 (2007)",
-    "bau": "['2007', 'pro']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine', 'cabriolimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_500_(2007)",
+    "_marke": "Fiat",
+    "_modell": "500 (2007)",
+    "_bau": "['2007', 'pro']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine', 'cabriolimousine']",
+    "_benzin": [
       69,
       190
     ],
@@ -1718,13 +1718,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_500L",
-    "marke": "Fiat",
-    "modell": "500L",
-    "bau": "['2012', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_500L",
+    "_marke": "Fiat",
+    "_modell": "500L",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       86,
       120
     ],
@@ -1742,13 +1742,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_Barchetta",
-    "marke": "Fiat",
-    "modell": "Barchetta",
-    "bau": "['1995', '2005']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_Barchetta",
+    "_marke": "Fiat",
+    "_modell": "Barchetta",
+    "_bau": "['1995', '2005']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['cabriolet']",
+    "_benzin": [
       131
     ],
     "diesel": [
@@ -1765,13 +1765,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_Croma_(Typ_194)",
-    "marke": "Fiat",
-    "modell": "Croma (Typ 194)",
-    "bau": "['2005', '2010']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_Croma_(Typ_194)",
+    "_marke": "Fiat",
+    "_modell": "Croma (Typ 194)",
+    "_bau": "['2005', '2010']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -1789,13 +1789,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_Stilo",
-    "marke": "Fiat",
-    "modell": "Stilo",
-    "bau": "['2001', '2008']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_Stilo",
+    "_marke": "Fiat",
+    "_modell": "Stilo",
+    "_bau": "['2001', '2008']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       80,
       170
     ],
@@ -1813,13 +1813,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Fiat_Tipo_(Typ_356)",
-    "marke": "Fiat",
-    "modell": "Tipo (Typ 356)",
-    "bau": "['2015', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Fiat_Tipo_(Typ_356)",
+    "_marke": "Fiat",
+    "_modell": "Tipo (Typ 356)",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -1831,13 +1831,13 @@
     "preis": "[, ]"
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Accord_6._Generation",
-    "marke": "Honda",
-    "modell": "Accord 6. Generation",
-    "bau": "['1998', '2002']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Accord_6._Generation",
+    "_marke": "Honda",
+    "_modell": "Accord 6. Generation",
+    "_bau": "['1998', '2002']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe']",
+    "_benzin": [
       116,
       200
     ],
@@ -1854,13 +1854,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Accord_7._Generation",
-    "marke": "Honda",
-    "modell": "Accord 7. Generation",
-    "bau": "['2002', '2008']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Accord_7._Generation",
+    "_marke": "Honda",
+    "_modell": "Accord 7. Generation",
+    "_bau": "['2002', '2008']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'coupe']",
+    "_benzin": [
       155,
       190
     ],
@@ -1877,13 +1877,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Accord_8._Generation",
-    "marke": "Honda",
-    "modell": "Accord 8. Generation",
-    "bau": "['2008', '2015']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Accord_8._Generation",
+    "_marke": "Honda",
+    "_modell": "Accord 8. Generation",
+    "_bau": "['2008', '2015']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'coupe']",
+    "_benzin": [
       156,
       201
     ],
@@ -1901,13 +1901,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Accord_9._Generation",
-    "marke": "Honda",
-    "modell": "Accord 9. Generation",
-    "bau": "['2012', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Accord_9._Generation",
+    "_marke": "Honda",
+    "_modell": "Accord 9. Generation",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'coupe']",
+    "_benzin": [
       150,
       281
     ],
@@ -1925,13 +1925,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Accord_10._Generation",
-    "marke": "Honda",
-    "modell": "Accord 10. Generation",
-    "bau": "['2017', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Accord_10._Generation",
+    "_marke": "Honda",
+    "_modell": "Accord 10. Generation",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       177,
       256
     ],
@@ -1949,13 +1949,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Civic_6._Generation",
-    "marke": "Honda",
-    "modell": "Civic 6. Generation",
-    "bau": "['1995', '2000']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Civic_6._Generation",
+    "_marke": "Honda",
+    "_modell": "Civic 6. Generation",
+    "_bau": "['1995', '2000']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe']",
+    "_benzin": [
       75,
       185
     ],
@@ -1973,13 +1973,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Civic_7._Generation",
-    "marke": "Honda",
-    "modell": "Civic 7. Generation",
-    "bau": "['2000', '2005']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Civic_7._Generation",
+    "_marke": "Honda",
+    "_modell": "Civic 7. Generation",
+    "_bau": "['2000', '2005']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'coupe']",
+    "_benzin": [
       90,
       200
     ],
@@ -1996,13 +1996,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Civic_8._Generation",
-    "marke": "Honda",
-    "modell": "Civic 8. Generation",
-    "bau": "['2005', '2011']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Civic_8._Generation",
+    "_marke": "Honda",
+    "_modell": "Civic 8. Generation",
+    "_bau": "['2005', '2011']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'coupe']",
+    "_benzin": [
       83,
       201
     ],
@@ -2019,13 +2019,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Civic_9._Generation",
-    "marke": "Honda",
-    "modell": "Civic 9. Generation",
-    "bau": "['2011', '2017']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Civic_9._Generation",
+    "_marke": "Honda",
+    "_modell": "Civic 9. Generation",
+    "_bau": "['2011', '2017']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "_benzin": [
       99,
       310
     ],
@@ -2043,13 +2043,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_Civic_10._Generation",
-    "marke": "Honda",
-    "modell": "Civic 10. Generation",
-    "bau": "['2015', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'coupe', 'kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_Civic_10._Generation",
+    "_marke": "Honda",
+    "_modell": "Civic 10. Generation",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'coupe', 'kombilimousine']",
+    "_benzin": [
       125,
       320
     ],
@@ -2066,13 +2066,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Honda_FR-V",
-    "marke": "Honda",
-    "modell": "FR-V",
-    "bau": "['2005', '2009']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Honda_FR-V",
+    "_marke": "Honda",
+    "_modell": "FR-V",
+    "_bau": "['2005', '2009']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       125,
       150
     ],
@@ -2089,13 +2089,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_Getz",
-    "marke": "Hyundai",
-    "modell": "Getz",
-    "bau": "['2002', '2009']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_Getz",
+    "_marke": "Hyundai",
+    "_modell": "Getz",
+    "_bau": "['2002', '2009']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       63,
       106
     ],
@@ -2113,13 +2113,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(FD)",
-    "marke": "Hyundai",
-    "modell": "i30 (FD)",
-    "bau": "['2007', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_i30_(FD)",
+    "_marke": "Hyundai",
+    "_modell": "i30 (FD)",
+    "_bau": "['2007', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       109,
       143
     ],
@@ -2137,13 +2137,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(GD)",
-    "marke": "Hyundai",
-    "modell": "i30 (GD)",
-    "bau": "['2011', '2017']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_i30_(GD)",
+    "_marke": "Hyundai",
+    "_modell": "i30 (GD)",
+    "_bau": "['2011', '2017']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       99,
       186
     ],
@@ -2161,13 +2161,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_i30_(PD)",
-    "marke": "Hyundai",
-    "modell": "i30 (PD)",
-    "bau": "['2017', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_i30_(PD)",
+    "_marke": "Hyundai",
+    "_modell": "i30 (PD)",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       101,
       275
     ],
@@ -2185,13 +2185,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_i40",
-    "marke": "Hyundai",
-    "modell": "i40",
-    "bau": "['2011', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_i40",
+    "_marke": "Hyundai",
+    "_modell": "i40",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       135,
       177
     ],
@@ -2209,13 +2209,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_Matrix",
-    "marke": "Hyundai",
-    "modell": "Matrix",
-    "bau": "['2001', '2010']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_Matrix",
+    "_marke": "Hyundai",
+    "_modell": "Matrix",
+    "_bau": "['2001', '2010']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       103,
       122
     ],
@@ -2233,13 +2233,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Hyundai_Trajet",
-    "marke": "Hyundai",
-    "modell": "Trajet",
-    "bau": "['1999', '2008']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Hyundai_Trajet",
+    "_marke": "Hyundai",
+    "_modell": "Trajet",
+    "_bau": "['1999', '2008']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       136,
       173
     ],
@@ -2257,13 +2257,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_S-Type",
-    "marke": "Jaguar",
-    "modell": "S-Type",
-    "bau": "['1999', '2007']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_S-Type",
+    "_marke": "Jaguar",
+    "_modell": "S-Type",
+    "_bau": "['1999', '2007']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       0,
       0
     ],
@@ -2281,13 +2281,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_X250",
-    "marke": "Jaguar",
-    "modell": "X250",
-    "bau": "['2008', '2015']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_X250",
+    "_marke": "Jaguar",
+    "_modell": "X250",
+    "_bau": "['2008', '2015']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       238,
       551
     ],
@@ -2305,13 +2305,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_X260",
-    "marke": "Jaguar",
-    "modell": "X260",
-    "bau": "['2015', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_X260",
+    "_marke": "Jaguar",
+    "_modell": "X260",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       200,
       381
     ],
@@ -2329,13 +2329,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_X308",
-    "marke": "Jaguar",
-    "modell": "X308",
-    "bau": "['1997', '2003']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_X308",
+    "_marke": "Jaguar",
+    "_modell": "X308",
+    "_bau": "['1997', '2003']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       241,
       363
     ],
@@ -2353,13 +2353,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_X351",
-    "marke": "Jaguar",
-    "modell": "X351",
-    "bau": "['2009', 'pro']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_X351",
+    "_marke": "Jaguar",
+    "_modell": "X351",
+    "_bau": "['2009', 'pro']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       241,
       575
     ],
@@ -2377,13 +2377,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Jaguar_X-Type",
-    "marke": "Jaguar",
-    "modell": "X-Type",
-    "bau": "['2001', '2009']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Jaguar_X-Type",
+    "_marke": "Jaguar",
+    "_modell": "X-Type",
+    "_bau": "['2001', '2009']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       156,
       230
     ],
@@ -2401,13 +2401,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(ED)",
-    "marke": "Kia",
-    "modell": "ceed (ED)",
-    "bau": "['2006', '2']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(ED)",
+    "_marke": "Kia",
+    "_modell": "ceed (ED)",
+    "_bau": "['2006', '2']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       90,
       143
     ],
@@ -2425,13 +2425,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(JD)",
-    "marke": "Kia",
-    "modell": "ceed (JD)",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_cee%E2%80%99d_(JD)",
+    "_marke": "Kia",
+    "_modell": "ceed (JD)",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       99,
       204
     ],
@@ -2449,13 +2449,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_Ceed_(CD)",
-    "marke": "Kia",
-    "modell": "Ceed (CD)",
-    "bau": "['2018', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_Ceed_(CD)",
+    "_marke": "Kia",
+    "_modell": "Ceed (CD)",
+    "_bau": "['2018', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       99,
       140
     ],
@@ -2473,13 +2473,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_BA/SA",
-    "marke": "Kia",
-    "modell": "Picanto BA/SA",
-    "bau": "['2004', '2011']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_Picanto_BA/SA",
+    "_marke": "Kia",
+    "_modell": "Picanto BA/SA",
+    "_bau": "['2004', '2011']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       65
     ],
     "diesel": [
@@ -2495,13 +2495,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_TA",
-    "marke": "Kia",
-    "modell": "Picanto TA",
-    "bau": "['2011', '2017']",
-    "klasse": "['kleintwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_Picanto_TA",
+    "_marke": "Kia",
+    "_modell": "Picanto TA",
+    "_bau": "['2011', '2017']",
+    "_klasse": "['kleintwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       69,
       86
     ],
@@ -2519,13 +2519,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_Picanto_JA",
-    "marke": "Kia",
-    "modell": "Picanto JA",
-    "bau": "['2017', 'pro']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_Picanto_JA",
+    "_marke": "Kia",
+    "_modell": "Picanto JA",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       67,
       101
     ],
@@ -2543,13 +2543,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Kia_Venga",
-    "marke": "Kia",
-    "modell": "Venga",
-    "bau": "['2009', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Kia_Venga",
+    "_marke": "Kia",
+    "_modell": "Venga",
+    "_bau": "['2009', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       90,
       125
     ],
@@ -2567,13 +2567,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lada_Kalina",
-    "marke": "Lada",
-    "modell": "Kalina",
-    "bau": "['2005', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lada_Kalina",
+    "_marke": "Lada",
+    "_modell": "Kalina",
+    "_bau": "['2005', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "_benzin": [
       82,
       136
     ],
@@ -2591,13 +2591,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(843)",
-    "marke": "Lancia",
-    "modell": "Ypsilon (843)",
-    "bau": "['2003', '2011']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(843)",
+    "_marke": "Lancia",
+    "_modell": "Ypsilon (843)",
+    "_bau": "['2003', '2011']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       60,
       95
     ],
@@ -2615,13 +2615,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(846)",
-    "marke": "Lancia",
-    "modell": "Ypsilon (846)",
-    "bau": "['2011', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lancia_Ypsilon_(846)",
+    "_marke": "Lancia",
+    "_modell": "Ypsilon (846)",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       69,
       86
     ],
@@ -2638,13 +2638,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lexus_UCF20",
-    "marke": "Lexus",
-    "modell": "UCF20",
-    "bau": "['1994', '2000']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lexus_UCF20",
+    "_marke": "Lexus",
+    "_modell": "UCF20",
+    "_bau": "['1994', '2000']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       264,
       294
     ],
@@ -2662,13 +2662,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lexus_UCF30",
-    "marke": "Lexus",
-    "modell": "UCF30",
-    "bau": "['2000', '2006']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lexus_UCF30",
+    "_marke": "Lexus",
+    "_modell": "UCF30",
+    "_bau": "['2000', '2006']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       281
     ],
     "diesel": [
@@ -2685,13 +2685,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lexus_USF40",
-    "marke": "Lexus",
-    "modell": "USF40",
-    "bau": "['2006', '2018']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lexus_USF40",
+    "_marke": "Lexus",
+    "_modell": "USF40",
+    "_bau": "['2006', '2018']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       367,
       387
     ],
@@ -2709,13 +2709,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Lexus_USF50",
-    "marke": "Lexus",
-    "modell": "USF50",
-    "bau": "['2018', 'pro']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Lexus_USF50",
+    "_marke": "Lexus",
+    "_modell": "USF50",
+    "_bau": "['2018', 'pro']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       315,
       417
     ],
@@ -2733,13 +2733,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mazda_Xedos_6",
-    "marke": "Mazda",
-    "modell": "Xedos 6",
-    "bau": "['1992', '1999']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mazda_Xedos_6",
+    "_marke": "Mazda",
+    "_modell": "Xedos 6",
+    "_bau": "['1992', '1999']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       107,
       144
     ],
@@ -2757,13 +2757,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mazda_Xedos_9",
-    "marke": "Mazda",
-    "modell": "Xedos 9",
-    "bau": "['1993', '2002']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mazda_Xedos_9",
+    "_marke": "Mazda",
+    "_modell": "Xedos 9",
+    "_bau": "['1993', '2002']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       143,
       213
     ],
@@ -2781,13 +2781,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_168",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 168",
-    "bau": "['1997', '2004']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_168",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 168",
+    "_bau": "['1997', '2004']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       82,
       140
     ],
@@ -2805,13 +2805,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_169",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 169",
-    "bau": "['2004', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_169",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 169",
+    "_bau": "['2004', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       95,
       193
     ],
@@ -2829,13 +2829,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_176",
-    "marke": "Mercedes-Benz",
-    "modell": "W 176",
-    "bau": "['2012', '2018']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_176",
+    "_marke": "Mercedes-Benz",
+    "_modell": "W 176",
+    "_bau": "['2012', '2018']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       102,
       381
     ],
@@ -2853,13 +2853,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_177",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 177",
-    "bau": "['2018', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_177",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 177",
+    "_bau": "['2018', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       109,
       224
     ],
@@ -2876,13 +2876,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_T_245",
-    "marke": "Mercedes-Benz",
-    "modell": "T 245",
-    "bau": "['2005', '2011']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_T_245",
+    "_marke": "Mercedes-Benz",
+    "_modell": "T 245",
+    "_bau": "['2005', '2011']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       95,
       193
     ],
@@ -2900,13 +2900,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_202",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 202",
-    "bau": "['1993', '2001']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_202",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 202",
+    "_bau": "['1993', '2001']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       122,
       347
     ],
@@ -2924,13 +2924,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_203",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 203",
-    "bau": "['2000', '2007']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'kombicoupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_203",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 203",
+    "_bau": "['2000', '2007']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'kombicoupe']",
+    "_benzin": [
       129,
       367
     ],
@@ -2948,13 +2948,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_204",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 204",
-    "bau": "['2007', '2015']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'kombicoupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_204",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 204",
+    "_bau": "['2007', '2015']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'kombicoupe']",
+    "_benzin": [
       0,
       0
     ],
@@ -2972,13 +2972,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_210",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 210",
-    "bau": "['1995', '2002']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_210",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 210",
+    "_bau": "['1995', '2002']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       136,
       405
     ],
@@ -2996,13 +2996,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_211",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 211",
-    "bau": "['2002', '2009']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_211",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 211",
+    "_bau": "['2002', '2009']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       163,
       514
     ],
@@ -3020,13 +3020,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_212",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 212",
-    "bau": "['2009', '2016']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_212",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 212",
+    "_bau": "['2009', '2016']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       156,
       585
     ],
@@ -3044,13 +3044,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_213",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 213",
-    "bau": "['2016', 'pro']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_213",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 213",
+    "_bau": "['2016', 'pro']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       184,
       612
     ],
@@ -3068,13 +3068,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_163",
-    "marke": "Mercedes-Benz",
-    "modell": "W 163",
-    "bau": "['1997', '2005']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_W_163",
+    "_marke": "Mercedes-Benz",
+    "_modell": "W 163",
+    "_bau": "['1997', '2005']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       150,
       347
     ],
@@ -3092,13 +3092,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_251",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 251",
-    "bau": "['2005', '2017']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_251",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 251",
+    "_bau": "['2005', '2017']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       231,
       510
     ],
@@ -3116,13 +3116,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_220",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 220",
-    "bau": "['1998', '2005']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_220",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 220",
+    "_bau": "['1998', '2005']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       204,
       612
     ],
@@ -3140,13 +3140,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_Baureihe_221",
-    "marke": "Mercedes-Benz",
-    "modell": "Baureihe 221",
-    "bau": "['2005', '2013']",
-    "klasse": "['oberklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz__baureihe_221",
+    "_marke": "Mercedes-Benz",
+    "_modell": "_baureihe 221",
+    "_bau": "['2005', '2013']",
+    "_klasse": "['ober_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       231,
       630
     ],
@@ -3164,13 +3164,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_230",
-    "marke": "Mercedes-Benz",
-    "modell": "R 230",
-    "bau": "['2001', '2011']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_230",
+    "_marke": "Mercedes-Benz",
+    "_modell": "R 230",
+    "_bau": "['2001', '2011']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['cabriolet']",
+    "_benzin": [
       231,
       670
     ],
@@ -3188,13 +3188,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_231",
-    "marke": "Mercedes-Benz",
-    "modell": "R 231",
-    "bau": "['2012', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_231",
+    "_marke": "Mercedes-Benz",
+    "_modell": "R 231",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['roadster']",
+    "_benzin": [
       306,
       630
     ],
@@ -3212,13 +3212,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_170",
-    "marke": "Mercedes-Benz",
-    "modell": "R 170",
-    "bau": "['1996', '2004']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_170",
+    "_marke": "Mercedes-Benz",
+    "_modell": "R 170",
+    "_bau": "['1996', '2004']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['roadster']",
+    "_benzin": [
       136,
       354
     ],
@@ -3236,13 +3236,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_171",
-    "marke": "Mercedes-Benz",
-    "modell": "R 171",
-    "bau": "['2004', '2011']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_171",
+    "_marke": "Mercedes-Benz",
+    "_modell": "R 171",
+    "_bau": "['2004', '2011']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['roadster']",
+    "_benzin": [
       163,
       400
     ],
@@ -3260,13 +3260,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_172",
-    "marke": "Mercedes-Benz",
-    "modell": "R 172",
-    "bau": "['2011', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mercedes-Benz_R_172",
+    "_marke": "Mercedes-Benz",
+    "_modell": "R 172",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['roadster']",
+    "_benzin": [
       184,
       421
     ],
@@ -3283,13 +3283,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Mitsubishi_Space_Star",
-    "marke": "Mitsubishi",
-    "modell": "Space Star",
-    "bau": "['1998', '2005']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Mitsubishi_Space_Star",
+    "_marke": "Mitsubishi",
+    "_modell": "Space Star",
+    "_bau": "['1998', '2005']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -3307,13 +3307,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Nissan_350Z",
-    "marke": "Nissan",
-    "modell": "350Z",
-    "bau": "['2002', '2009']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Nissan_350Z",
+    "_marke": "Nissan",
+    "_modell": "350Z",
+    "_bau": "['2002', '2009']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       280,
       313
     ],
@@ -3331,13 +3331,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Nissan_370Z",
-    "marke": "Nissan",
-    "modell": "370Z",
-    "bau": "['2008', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['kombicoupe', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Nissan_370Z",
+    "_marke": "Nissan",
+    "_modell": "370Z",
+    "_bau": "['2008', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['kombicoupe', 'roadster']",
+    "_benzin": [
       328,
       344
     ],
@@ -3355,13 +3355,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Nissan_Juke",
-    "marke": "Nissan",
-    "modell": "Juke",
-    "bau": "['2010', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Nissan_Juke",
+    "_marke": "Nissan",
+    "_modell": "Juke",
+    "_bau": "['2010', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       94,
       218
     ],
@@ -3378,13 +3378,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Nissan_Primera_P12",
-    "marke": "Nissan",
-    "modell": "Primera P12",
-    "bau": "['2002', '2007']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Nissan_Primera_P12",
+    "_marke": "Nissan",
+    "_modell": "Primera P12",
+    "_bau": "['2002', '2007']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "_benzin": [
       109,
       140
     ],
@@ -3402,13 +3402,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Adam",
-    "marke": "Opel",
-    "modell": "Adam",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Adam",
+    "_marke": "Opel",
+    "_modell": "Adam",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       0,
       0
     ],
@@ -3426,13 +3426,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Astra_G",
-    "marke": "Opel",
-    "modell": "Astra G",
-    "bau": "['1998', '2005']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe', 'cabriolet', 'lieferwagen']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Astra_G",
+    "_marke": "Opel",
+    "_modell": "Astra G",
+    "_bau": "['1998', '2005']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi', 'coupe', 'cabriolet', 'lieferwagen']",
+    "_benzin": [
       65,
       200
     ],
@@ -3450,13 +3450,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Astra_H",
-    "marke": "Opel",
-    "modell": "Astra H",
-    "bau": "['2004', '2010']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Astra_H",
+    "_marke": "Opel",
+    "_modell": "Astra H",
+    "_bau": "['2004', '2010']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       75,
       241
     ],
@@ -3474,13 +3474,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Astra_J",
-    "marke": "Opel",
-    "modell": "Astra J",
-    "bau": "['2009', '2015']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Astra_J",
+    "_marke": "Opel",
+    "_modell": "Astra J",
+    "_bau": "['2009', '2015']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "_benzin": [
       87,
       280
     ],
@@ -3498,13 +3498,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Astra_K",
-    "marke": "Opel",
-    "modell": "Astra K",
-    "bau": "['2015', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Astra_K",
+    "_marke": "Opel",
+    "_modell": "Astra K",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       101,
       200
     ],
@@ -3522,13 +3522,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_B",
-    "marke": "Opel",
-    "modell": "Corsa B",
-    "bau": "['1993', '2000']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Corsa_B",
+    "_marke": "Opel",
+    "_modell": "Corsa B",
+    "_bau": "['1993', '2000']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       45,
       109
     ],
@@ -3546,13 +3546,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_C",
-    "marke": "Opel",
-    "modell": "Corsa C",
-    "bau": "['2000', '2006']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Corsa_C",
+    "_marke": "Opel",
+    "_modell": "Corsa C",
+    "_bau": "['2000', '2006']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       58,
       125
     ],
@@ -3570,13 +3570,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_D",
-    "marke": "Opel",
-    "modell": "Corsa D",
-    "bau": "['2006', '2014']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Corsa_D",
+    "_marke": "Opel",
+    "_modell": "Corsa D",
+    "_bau": "['2006', '2014']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       60,
       211
     ],
@@ -3594,13 +3594,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Corsa_E",
-    "marke": "Opel",
-    "modell": "Corsa E",
-    "bau": "['2014', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Corsa_E",
+    "_marke": "Opel",
+    "_modell": "Corsa E",
+    "_bau": "['2014', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       0,
       0
     ],
@@ -3618,13 +3618,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Insignia_A",
-    "marke": "Opel",
-    "modell": "Insignia A",
-    "bau": "['2008', '2017']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Insignia_A",
+    "_marke": "Opel",
+    "_modell": "Insignia A",
+    "_bau": "['2008', '2017']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "_benzin": [
       116,
       325
     ],
@@ -3642,13 +3642,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Insignia_B",
-    "marke": "Opel",
-    "modell": "Insignia B",
-    "bau": "['2017', 'pro']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Insignia_B",
+    "_marke": "Opel",
+    "_modell": "Insignia B",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       140,
       260
     ],
@@ -3666,13 +3666,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Meriva_A",
-    "marke": "Opel",
-    "modell": "Meriva A",
-    "bau": "['2003', '2009']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Meriva_A",
+    "_marke": "Opel",
+    "_modell": "Meriva A",
+    "_bau": "['2003', '2009']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       87,
       179
     ],
@@ -3690,13 +3690,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Meriva_B",
-    "marke": "Opel",
-    "modell": "Meriva B",
-    "bau": "['2010', '2017']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Meriva_B",
+    "_marke": "Opel",
+    "_modell": "Meriva B",
+    "_bau": "['2010', '2017']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       101,
       140
     ],
@@ -3714,13 +3714,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Mokka",
-    "marke": "Opel",
-    "modell": "Mokka",
-    "bau": "['2012', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Mokka",
+    "_marke": "Opel",
+    "_modell": "Mokka",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       116,
       152
     ],
@@ -3738,13 +3738,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Omega_B",
-    "marke": "Opel",
-    "modell": "Omega B",
-    "bau": "['1994', '2003']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Omega_B",
+    "_marke": "Opel",
+    "_modell": "Omega B",
+    "_bau": "['1994', '2003']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       116,
       218
     ],
@@ -3762,13 +3762,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Signum",
-    "marke": "Opel",
-    "modell": "Signum",
-    "bau": "['2003', '2008']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Signum",
+    "_marke": "Opel",
+    "_modell": "Signum",
+    "_bau": "['2003', '2008']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       122,
       250
     ],
@@ -3786,13 +3786,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Vectra_B",
-    "marke": "Opel",
-    "modell": "Vectra B",
-    "bau": "['1995', '2002']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Vectra_B",
+    "_marke": "Opel",
+    "_modell": "Vectra B",
+    "_bau": "['1995', '2002']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "_benzin": [
       75,
       220
     ],
@@ -3810,13 +3810,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Opel_Vectra_C",
-    "marke": "Opel",
-    "modell": "Vectra C",
-    "bau": "['2002', '2008']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Opel_Vectra_C",
+    "_marke": "Opel",
+    "_modell": "Vectra C",
+    "_bau": "['2002', '2008']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi']",
+    "_benzin": [
       101,
       280
     ],
@@ -3834,13 +3834,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_206",
-    "marke": "Peugeot",
-    "modell": 206,
-    "bau": "['1998', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_206",
+    "_marke": "Peugeot",
+    "_modell": 206,
+    "_bau": "['1998', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
+    "_benzin": [
       60,
       177
     ],
@@ -3858,13 +3858,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_207",
-    "marke": "Peugeot",
-    "modell": 207,
-    "bau": "['2006', '2015']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_207",
+    "_marke": "Peugeot",
+    "_modell": 207,
+    "_bau": "['2006', '2015']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'limousine', 'cabriolet', 'kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -3882,13 +3882,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_307",
-    "marke": "Peugeot",
-    "modell": 307,
-    "bau": "['2001', '2009']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_307",
+    "_marke": "Peugeot",
+    "_modell": 307,
+    "_bau": "['2001', '2009']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       75,
       177
     ],
@@ -3906,13 +3906,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_308_I",
-    "marke": "Peugeot",
-    "modell": "308 I",
-    "bau": "['2007', '2015']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_308_I",
+    "_marke": "Peugeot",
+    "_modell": "308 I",
+    "_bau": "['2007', '2015']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       95,
       200
     ],
@@ -3930,13 +3930,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_308_II",
-    "marke": "Peugeot",
-    "modell": "308 II",
-    "bau": "['2013', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_308_II",
+    "_marke": "Peugeot",
+    "_modell": "308 II",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'limousine']",
+    "_benzin": [
       82,
       272
     ],
@@ -3954,13 +3954,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_406",
-    "marke": "Peugeot",
-    "modell": 406,
-    "bau": "['1995', '2005']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_406",
+    "_marke": "Peugeot",
+    "_modell": 406,
+    "_bau": "['1995', '2005']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'coupe']",
+    "_benzin": [
       88,
       207
     ],
@@ -3978,13 +3978,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_407",
-    "marke": "Peugeot",
-    "modell": 407,
-    "bau": "['2004', '2011']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_407",
+    "_marke": "Peugeot",
+    "_modell": 407,
+    "_bau": "['2004', '2011']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi', 'coupe']",
+    "_benzin": [
       116,
       211
     ],
@@ -4002,13 +4002,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Peugeot_607",
-    "marke": "Peugeot",
-    "modell": 607,
-    "bau": "['2000', '2010']",
-    "klasse": "['obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Peugeot_607",
+    "_marke": "Peugeot",
+    "_modell": 607,
+    "_bau": "['2000', '2010']",
+    "_klasse": "['obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       158,
       211
     ],
@@ -4026,13 +4026,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Porsche_996",
-    "marke": "Porsche",
-    "modell": 996,
-    "bau": "['1997', '2006']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Porsche_996",
+    "_marke": "Porsche",
+    "_modell": 996,
+    "_bau": "['1997', '2006']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       300,
       483
     ],
@@ -4050,13 +4050,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Porsche_997",
-    "marke": "Porsche",
-    "modell": 997,
-    "bau": "['2004', '2012']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Porsche_997",
+    "_marke": "Porsche",
+    "_modell": 997,
+    "_bau": "['2004', '2012']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet', 'roadster']",
+    "_benzin": [
       325,
       620
     ],
@@ -4074,13 +4074,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Porsche_991",
-    "marke": "Porsche",
-    "modell": 991,
-    "bau": "['2011', 'pro']",
-    "klasse": "['sportwagen']",
-    "karosserie": "['coupe', 'cabriolet', 'roadster']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Porsche_991",
+    "_marke": "Porsche",
+    "_modell": 991,
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['sportwagen']",
+    "_karosserie": "['coupe', 'cabriolet', 'roadster']",
+    "_benzin": [
       349,
       700
     ],
@@ -4098,13 +4098,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_9PA)",
-    "marke": "Porsche",
-    "modell": "Cayenne (Typ 9PA)",
-    "bau": "['2002', '2010']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_9PA)",
+    "_marke": "Porsche",
+    "_modell": "Cayenne (Typ 9PA)",
+    "_bau": "['2002', '2010']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       250,
       549
     ],
@@ -4121,13 +4121,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_92A)",
-    "marke": "Porsche",
-    "modell": "Cayenne (Typ 92A)",
-    "bau": "['2010', '2017']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Porsche_Cayenne_(Typ_92A)",
+    "_marke": "Porsche",
+    "_modell": "Cayenne (Typ 92A)",
+    "_bau": "['2010', '2017']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       300,
       570
     ],
@@ -4145,13 +4145,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Captur",
-    "marke": "Renault",
-    "modell": "Captur",
-    "bau": "['2013', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Captur",
+    "_marke": "Renault",
+    "_modell": "Captur",
+    "_bau": "['2013', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       90,
       118
     ],
@@ -4169,13 +4169,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Clio_II",
-    "marke": "Renault",
-    "modell": "Clio II",
-    "bau": "['1998', '2004']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Clio_II",
+    "_marke": "Renault",
+    "_modell": "Clio II",
+    "_bau": "['1998', '2004']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       58,
       254
     ],
@@ -4193,13 +4193,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Clio_III",
-    "marke": "Renault",
-    "modell": "Clio III",
-    "bau": "['2005', '2014']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Clio_III",
+    "_marke": "Renault",
+    "_modell": "Clio III",
+    "_bau": "['2005', '2014']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       65,
       201
     ],
@@ -4217,13 +4217,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Clio_IV",
-    "marke": "Renault",
-    "modell": "Clio IV",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Clio_IV",
+    "_marke": "Renault",
+    "_modell": "Clio IV",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       65,
       220
     ],
@@ -4241,13 +4241,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Espace_III",
-    "marke": "Renault",
-    "modell": "Espace III",
-    "bau": "['1996', '2002']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Espace_III",
+    "_marke": "Renault",
+    "_modell": "Espace III",
+    "_bau": "['1996', '2002']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       114,
       190
     ],
@@ -4265,13 +4265,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Espace_IV",
-    "marke": "Renault",
-    "modell": "Espace IV",
-    "bau": "['2002', '2014']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Espace_IV",
+    "_marke": "Renault",
+    "_modell": "Espace IV",
+    "_bau": "['2002', '2014']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       136,
       241
     ],
@@ -4289,13 +4289,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Espace_V",
-    "marke": "Renault",
-    "modell": "Espace V",
-    "bau": "['2015', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Espace_V",
+    "_marke": "Renault",
+    "_modell": "Espace V",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       200,
       224
     ],
@@ -4313,13 +4313,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Laguna_II",
-    "marke": "Renault",
-    "modell": "Laguna II",
-    "bau": "['2001', '2007']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Laguna_II",
+    "_marke": "Renault",
+    "_modell": "Laguna II",
+    "_bau": "['2001', '2007']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       107,
       211
     ],
@@ -4337,13 +4337,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Laguna_III",
-    "marke": "Renault",
-    "modell": "Laguna III",
-    "bau": "['2007', '2015']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'coupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Laguna_III",
+    "_marke": "Renault",
+    "_modell": "Laguna III",
+    "_bau": "['2007', '2015']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'coupe']",
+    "_benzin": [
       110,
       238
     ],
@@ -4361,13 +4361,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_I",
-    "marke": "Renault",
-    "modell": "Megane I",
-    "bau": "['1995', '2003']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_I",
+    "_marke": "Renault",
+    "_modell": "Megane I",
+    "_bau": "['1995', '2003']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombilimousine', 'kombi', 'coupe', 'cabriolet']",
+    "_benzin": [
       69,
       147
     ],
@@ -4385,13 +4385,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_II",
-    "marke": "Renault",
-    "modell": "Megane II",
-    "bau": "['2002', '2009']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_II",
+    "_marke": "Renault",
+    "_modell": "Megane II",
+    "_bau": "['2002', '2009']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       82,
       230
     ],
@@ -4409,13 +4409,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_III",
-    "marke": "Renault",
-    "modell": "Megane III",
-    "bau": "['2008', '2016']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'kombicoupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_III",
+    "_marke": "Renault",
+    "_modell": "Megane III",
+    "_bau": "['2008', '2016']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'kombicoupe', 'cabriolet']",
+    "_benzin": [
       101,
       265
     ],
@@ -4433,13 +4433,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_IV",
-    "marke": "Renault",
-    "modell": "Megane IV",
-    "bau": "['2016', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_M%C3%A9gane_IV",
+    "_marke": "Renault",
+    "_modell": "Megane IV",
+    "_bau": "['2016', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'limousine']",
+    "_benzin": [
       101,
       300
     ],
@@ -4457,13 +4457,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Renault_Modus",
-    "marke": "Renault",
-    "modell": "Modus",
-    "bau": "['2004', '2012']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Renault_Modus",
+    "_marke": "Renault",
+    "_modell": "Modus",
+    "_bau": "['2004', '2012']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       65,
       111
     ],
@@ -4481,13 +4481,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Altea",
-    "marke": "Seat",
-    "modell": "Altea",
-    "bau": "['2004', '2015']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Altea",
+    "_marke": "Seat",
+    "_modell": "Altea",
+    "_bau": "['2004', '2015']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       86,
       211
     ],
@@ -4505,13 +4505,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Arosa",
-    "marke": "Seat",
-    "modell": "Arosa",
-    "bau": "['1997', '2004']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Arosa",
+    "_marke": "Seat",
+    "_modell": "Arosa",
+    "_bau": "['1997', '2004']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       50,
       101
     ],
@@ -4529,13 +4529,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Exeo",
-    "marke": "Seat",
-    "modell": "Exeo",
-    "bau": "['2008', '2013']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Exeo",
+    "_marke": "Seat",
+    "_modell": "Exeo",
+    "_bau": "['2008', '2013']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       102,
       211
     ],
@@ -4553,13 +4553,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Leon_I",
-    "marke": "Seat",
-    "modell": "Leon I",
-    "bau": "['1999', '2006']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Leon_I",
+    "_marke": "Seat",
+    "_modell": "Leon I",
+    "_bau": "['1999', '2006']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       75,
       224
     ],
@@ -4577,13 +4577,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Leon_II",
-    "marke": "Seat",
-    "modell": "Leon II",
-    "bau": "['2005', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Leon_II",
+    "_marke": "Seat",
+    "_modell": "Leon II",
+    "_bau": "['2005', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       86,
       310
     ],
@@ -4601,13 +4601,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Leon_III",
-    "marke": "Seat",
-    "modell": "Leon III",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Leon_III",
+    "_marke": "Seat",
+    "_modell": "Leon III",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -4625,13 +4625,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Mii",
-    "marke": "Seat",
-    "modell": "Mii",
-    "bau": "['2011', 'pro']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Mii",
+    "_marke": "Seat",
+    "_modell": "Mii",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       60,
       75
     ],
@@ -4649,13 +4649,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_II",
-    "marke": "Seat",
-    "modell": "Toledo II",
-    "bau": "['1998', '2004']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Toledo_II",
+    "_marke": "Seat",
+    "_modell": "Toledo II",
+    "_bau": "['1998', '2004']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       75,
       179
     ],
@@ -4673,13 +4673,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_III",
-    "marke": "Seat",
-    "modell": "Toledo III",
-    "bau": "['2004', '2009']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Toledo_III",
+    "_marke": "Seat",
+    "_modell": "Toledo III",
+    "_bau": "['2004', '2009']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       86,
       200
     ],
@@ -4697,13 +4697,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Seat_Toledo_IV",
-    "marke": "Seat",
-    "modell": "Toledo IV",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Seat_Toledo_IV",
+    "_marke": "Seat",
+    "_modell": "Toledo IV",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       75,
       125
     ],
@@ -4721,13 +4721,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_I",
-    "marke": "Skoda",
-    "modell": "Fabia I",
-    "bau": "['1999', '2007']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_I",
+    "_marke": "Skoda",
+    "_modell": "Fabia I",
+    "_bau": "['1999', '2007']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'limousine', 'kombi']",
+    "_benzin": [
       50,
       120
     ],
@@ -4745,13 +4745,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_II",
-    "marke": "Skoda",
-    "modell": "Fabia II",
-    "bau": "['2007', '2014']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_II",
+    "_marke": "Skoda",
+    "_modell": "Fabia II",
+    "_bau": "['2007', '2014']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       60,
       179
     ],
@@ -4769,13 +4769,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_III",
-    "marke": "Skoda",
-    "modell": "Fabia III",
-    "bau": "['2014', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_III",
+    "_marke": "Skoda",
+    "_modell": "Fabia III",
+    "_bau": "['2014', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       60,
       125
     ],
@@ -4793,13 +4793,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_I",
-    "marke": "Skoda",
-    "modell": "Octavia I",
-    "bau": "['1996', '2010']",
-    "klasse": "['kompaktklasse', 'mittelklasse']",
-    "karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_I",
+    "_marke": "Skoda",
+    "_modell": "Octavia I",
+    "_bau": "['1996', '2010']",
+    "_klasse": "['kompakt_klasse', 'mittel_klasse']",
+    "_karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
+    "_benzin": [
       60,
       179
     ],
@@ -4817,13 +4817,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_II",
-    "marke": "Skoda",
-    "modell": "Octavia II",
-    "bau": "['2004', '2013']",
-    "klasse": "['kompaktklasse', 'mittelklasse']",
-    "karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_II",
+    "_marke": "Skoda",
+    "_modell": "Octavia II",
+    "_bau": "['2004', '2013']",
+    "_klasse": "['kompakt_klasse', 'mittel_klasse']",
+    "_karosserie": "['kombilimousine', '', '&#91;2&#93;', 'kombi']",
+    "_benzin": [
       75,
       200
     ],
@@ -4841,13 +4841,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_III",
-    "marke": "Skoda",
-    "modell": "Octavia III",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse', 'mittelklasse']",
-    "karosserie": "['kombilimousine', '', '&#91;1&#93;', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Octavia_III",
+    "_marke": "Skoda",
+    "_modell": "Octavia III",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse', 'mittel_klasse']",
+    "_karosserie": "['kombilimousine', '', '&#91;1&#93;', 'kombi']",
+    "_benzin": [
       86,
       245
     ],
@@ -4865,13 +4865,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Rapid_(2012)",
-    "marke": "Skoda",
-    "modell": "Rapid (2012)",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'flie\\\\xc3\\\\x9fheck', 'kombilimousine', 'schr\\\\xc3\\\\xa4gheck']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Rap_id_(2012)",
+    "_marke": "Skoda",
+    "_modell": "Rap_id (2012)",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'flie\\\\xc3\\\\x9fheck', 'kombilimousine', 'schr\\\\xc3\\\\xa4gheck']",
+    "_benzin": [
       75,
       125
     ],
@@ -4889,13 +4889,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Roomster",
-    "marke": "Skoda",
-    "modell": "Roomster",
-    "bau": "['2006', '2015']",
-    "klasse": "['utilities']",
-    "karosserie": "['hochdachkombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Roomster",
+    "_marke": "Skoda",
+    "_modell": "Roomster",
+    "_bau": "['2006', '2015']",
+    "_klasse": "['utilities']",
+    "_karosserie": "['hochdachkombi']",
+    "_benzin": [
       64,
       105
     ],
@@ -4913,13 +4913,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_I",
-    "marke": "Skoda",
-    "modell": "Superb I",
-    "bau": "['2001', '2008']",
-    "klasse": "['mittelklasse', 'obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_I",
+    "_marke": "Skoda",
+    "_modell": "Superb I",
+    "_bau": "['2001', '2008']",
+    "_klasse": "['mittel_klasse', 'obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       116,
       193
     ],
@@ -4937,13 +4937,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_II",
-    "marke": "Skoda",
-    "modell": "Superb II",
-    "bau": "['2008', '2015']",
-    "klasse": "['mittelklasse', 'obere mittelklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_II",
+    "_marke": "Skoda",
+    "_modell": "Superb II",
+    "_bau": "['2008', '2015']",
+    "_klasse": "['mittel_klasse', 'obere mittel_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       125,
       260
     ],
@@ -4961,13 +4961,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_III",
-    "marke": "Skoda",
-    "modell": "Superb III",
-    "bau": "['2015', 'pro']",
-    "klasse": "['mittelklasse', 'obere mittelklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Superb_III",
+    "_marke": "Skoda",
+    "_modell": "Superb III",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['mittel_klasse', 'obere mittel_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       125,
       280
     ],
@@ -4985,13 +4985,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/%C5%A0koda_Yeti",
-    "marke": "Skoda",
-    "modell": "Yeti",
-    "bau": "['2009', '2017']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/%C5%A0koda_Yeti",
+    "_marke": "Skoda",
+    "_modell": "Yeti",
+    "_bau": "['2009', '2017']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       105,
       160
     ],
@@ -5009,13 +5009,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Volvo_C30",
-    "marke": "Volvo",
-    "modell": "C30",
-    "bau": "['2006', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombicoupe']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Volvo_C30",
+    "_marke": "Volvo",
+    "_modell": "C30",
+    "_bau": "['2006', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombicoupe']",
+    "_benzin": [
       101,
       230
     ],
@@ -5033,13 +5033,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Volvo_S40/V40",
-    "marke": "Volvo",
-    "modell": "S40/V40",
-    "bau": "['1995', '2004']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Volvo_S40/V40",
+    "_marke": "Volvo",
+    "_modell": "S40/V40",
+    "_bau": "['1995', '2004']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       105,
       200
     ],
@@ -5057,13 +5057,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Volvo_S40/V50",
-    "marke": "Volvo",
-    "modell": "S40/V50",
-    "bau": "['2004', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Volvo_S40/V50",
+    "_marke": "Volvo",
+    "_modell": "S40/V50",
+    "_bau": "['2004', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       101,
       230
     ],
@@ -5081,13 +5081,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/Volvo_V40_(2012)",
-    "marke": "Volvo",
-    "modell": "V40 (2012)",
-    "bau": "['2012', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/Volvo_V40_(2012)",
+    "_marke": "Volvo",
+    "_modell": "V40 (2012)",
+    "_bau": "['2012', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       0,
       0
     ],
@@ -5105,13 +5105,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Golf_IV",
-    "marke": "VW",
-    "modell": "Golf IV",
-    "bau": "['1997', '2003']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Golf_IV",
+    "_marke": "VW",
+    "_modell": "Golf IV",
+    "_bau": "['1997', '2003']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       75,
       241
     ],
@@ -5129,13 +5129,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Golf_V",
-    "marke": "VW",
-    "modell": "Golf V",
-    "bau": "['2003', '2008']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Golf_V",
+    "_marke": "VW",
+    "_modell": "Golf V",
+    "_bau": "['2003', '2008']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi']",
+    "_benzin": [
       75,
       250
     ],
@@ -5153,13 +5153,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Golf_VI",
-    "marke": "VW",
-    "modell": "Golf VI",
-    "bau": "['2008', '2012']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Golf_VI",
+    "_marke": "VW",
+    "_modell": "Golf VI",
+    "_bau": "['2008', '2012']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['kombilimousine', 'kombi', 'cabriolet']",
+    "_benzin": [
       80,
       271
     ],
@@ -5177,13 +5177,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Bora",
-    "marke": "VW",
-    "modell": "Bora",
-    "bau": "['2007', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Bora",
+    "_marke": "VW",
+    "_modell": "Bora",
+    "_bau": "['2007', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       0,
       0
     ],
@@ -5201,13 +5201,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Jetta_V",
-    "marke": "VW",
-    "modell": "Jetta V",
-    "bau": "['2005', '2010']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Jetta_V",
+    "_marke": "VW",
+    "_modell": "Jetta V",
+    "_bau": "['2005', '2010']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       101,
       200
     ],
@@ -5225,13 +5225,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Beetle",
-    "marke": "VW",
-    "modell": "Beetle",
-    "bau": "['2011', 'pro']",
-    "klasse": "['kompaktklasse']",
-    "karosserie": "['coupe', 'cabriolet']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Beetle",
+    "_marke": "VW",
+    "_modell": "Beetle",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['kompakt_klasse']",
+    "_karosserie": "['coupe', 'cabriolet']",
+    "_benzin": [
       105,
       220
     ],
@@ -5249,13 +5249,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Passat_B6",
-    "marke": "VW",
-    "modell": "Passat B6",
-    "bau": "['2005', '2010']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Passat_B6",
+    "_marke": "VW",
+    "_modell": "Passat B6",
+    "_bau": "['2005', '2010']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       102,
       299
     ],
@@ -5273,13 +5273,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Passat_B7",
-    "marke": "VW",
-    "modell": "Passat B7",
-    "bau": "['2010', '2014']",
-    "klasse": "['mittelklasse']",
-    "karosserie": "['limousine', 'kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Passat_B7",
+    "_marke": "VW",
+    "_modell": "Passat B7",
+    "_bau": "['2010', '2014']",
+    "_klasse": "['mittel_klasse']",
+    "_karosserie": "['limousine', 'kombi']",
+    "_benzin": [
       122,
       299
     ],
@@ -5297,13 +5297,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_CC",
-    "marke": "VW",
-    "modell": "CC",
-    "bau": "['2008', '2016']",
-    "klasse": "['mittelklasse', 'obere mittelklasse']",
-    "karosserie": "['limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_CC",
+    "_marke": "VW",
+    "_modell": "CC",
+    "_bau": "['2008', '2016']",
+    "_klasse": "['mittel_klasse', 'obere mittel_klasse']",
+    "_karosserie": "['limousine']",
+    "_benzin": [
       150,
       299
     ],
@@ -5321,13 +5321,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Polo_III",
-    "marke": "VW",
-    "modell": "Polo III",
-    "bau": "['1994', '2001']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Polo_III",
+    "_marke": "VW",
+    "_modell": "Polo III",
+    "_bau": "['1994', '2001']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       0,
       0
     ],
@@ -5345,13 +5345,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Polo_V",
-    "marke": "VW",
-    "modell": "Polo V",
-    "bau": "['2008', '2017']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine', 'limousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Polo_V",
+    "_marke": "VW",
+    "_modell": "Polo V",
+    "_bau": "['2008', '2017']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine', 'limousine']",
+    "_benzin": [
       60,
       220
     ],
@@ -5369,13 +5369,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Polo_VI",
-    "marke": "VW",
-    "modell": "Polo VI",
-    "bau": "['2017', 'pro']",
-    "klasse": "['kleinwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Polo_VI",
+    "_marke": "VW",
+    "_modell": "Polo VI",
+    "_bau": "['2017', 'pro']",
+    "_klasse": "['kleinwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       65,
       200
     ],
@@ -5393,13 +5393,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Sharan_II",
-    "marke": "VW",
-    "modell": "Sharan II",
-    "bau": "['2010', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Sharan_II",
+    "_marke": "VW",
+    "_modell": "Sharan II",
+    "_bau": "['2010', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       150,
       220
     ],
@@ -5417,13 +5417,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Tiguan_I",
-    "marke": "VW",
-    "modell": "Tiguan I",
-    "bau": "['2007', '2016']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Tiguan_I",
+    "_marke": "VW",
+    "_modell": "Tiguan I",
+    "_bau": "['2007', '2016']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       122,
       211
     ],
@@ -5441,13 +5441,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Tiguan_II",
-    "marke": "VW",
-    "modell": "Tiguan II",
-    "bau": "['2016', 'pro']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Tiguan_II",
+    "_marke": "VW",
+    "_modell": "Tiguan II",
+    "_bau": "['2016', 'pro']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       125,
       220
     ],
@@ -5465,13 +5465,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Touareg_I",
-    "marke": "VW",
-    "modell": "Touareg I",
-    "bau": "['2002', '2010']",
-    "klasse": "['suv']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Touareg_I",
+    "_marke": "VW",
+    "_modell": "Touareg I",
+    "_bau": "['2002', '2010']",
+    "_klasse": "['suv']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       220,
       450
     ],
@@ -5489,13 +5489,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Touran_I",
-    "marke": "VW",
-    "modell": "Touran I",
-    "bau": "['2003', '2015']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Touran_I",
+    "_marke": "VW",
+    "_modell": "Touran I",
+    "_bau": "['2003', '2015']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       102,
       170
     ],
@@ -5513,13 +5513,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_Touran_II",
-    "marke": "VW",
-    "modell": "Touran II",
-    "bau": "['2015', 'pro']",
-    "klasse": "['van']",
-    "karosserie": "['kombi']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_Touran_II",
+    "_marke": "VW",
+    "_modell": "Touran II",
+    "_bau": "['2015', 'pro']",
+    "_klasse": "['van']",
+    "_karosserie": "['kombi']",
+    "_benzin": [
       110,
       179
     ],
@@ -5537,13 +5537,13 @@
     ]
   },
   {
-    "id": "https://de.wikipedia.org/wiki/VW_up!",
-    "marke": "VW",
-    "modell": "up!",
-    "bau": "['2011', 'pro']",
-    "klasse": "['kleinstwagen']",
-    "karosserie": "['kombilimousine']",
-    "benzin": [
+    "_id": "https://de.wikipedia.org/wiki/VW_up!",
+    "_marke": "VW",
+    "_modell": "up!",
+    "_bau": "['2011', 'pro']",
+    "_klasse": "['kleinstwagen']",
+    "_karosserie": "['kombilimousine']",
+    "_benzin": [
       60,
       116
     ],

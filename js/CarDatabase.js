@@ -31,12 +31,38 @@ function getInfo() {
     });
 
 }
-
 connect("132.199.137.35:5984", "car4you", "car4you", "car2018***");
 getInfo();
-db.allDocs().then(function(result){
+db.allDocs({
+  include_docs: true,
+  attachments: true,
+}).then(function(result){
   console.log(result);
+  console.log(result.rows[0].benzin);
 });
+function deleteDBElement(id){
+      db.get(id).then(function(doc){
+        return db.remove(doc);
+      });
+}
+function deleteWholeDB(){
+  db.allDocs().then(function(result){
+    for (let i =0;i<result.rows.length;i++){
+      console.log(result.rows[i].id);
+      deleteDBElement(result.rows[i].id);
+    }
+  }); 
+}
+
+db.get("https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_I").then(function(doc){
+  console.log(doc);
+});
+function fillDB(docs){
+  for(let i=0;i<docs.length;i++){
+    console.log(docs[i]);
+    db.put(docs[i]);
+  }
+}
 
   /*let localDB = new PouchDB("localDB");
 localDB.put({
