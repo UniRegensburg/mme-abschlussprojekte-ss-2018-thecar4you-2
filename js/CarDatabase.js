@@ -37,8 +37,9 @@ db.allDocs({
   include_docs: true,
   attachments: true,
 }).then(function(result){
-  console.log(result);
-  console.log(result.rows[0].benzin);
+  DbCarArray = result.rows;
+  console.log(DbCarArray[0].doc);
+
 });
 function deleteDBElement(id){
       db.get(id).then(function(doc){
@@ -77,12 +78,12 @@ db.changes().on('change', function() {
 db.replicate.to('http://132.199.137.35:5984/car4you');*/
 
 	function initDB(CarView) { //unnütz?
-    loadDbData();
+    //loadDbData();
     that.CarView = CarView; //that und this mgl?
   }
 
   function wizardDone(CarModel) {
-    loadDbData();
+    //loadDbData();
     loadUserData(CarModel);
     getPossibleCars();
     console.log(posCarArray);
@@ -113,13 +114,13 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     posCarArray = [];
     for (let i=0; i<DbCarArray.length; i++) {
       let calcPrice = adjustPrice(i);
-      //let pMin = parseInt(getFirstIndex(DbCarArray[i][9]));
+      //let pMin = parseInt(DbCarArray[i].doc.preis[0]);
       // TODO: was ^ ist besser?
-      if (hardData[0] >= calcPrice) { //fahrzeugpreis < budget - alt (pMin in if für calcPrice);;; neu: checked auf ca preis
-        let ageMax = getSecondIndex(DbCarArray[i][3]);
+      if (hardData[0] >= calcPrice && calcPrice > 0) { //fahrzeugpreis < budget - alt (pMin in if für calcPrice);;; neu: checked auf ca preis
+        let ageMax = getSecondIndex(DbCarArray[i].doc.bau);
         if (ageMax === "pro" || parseInt(ageMax) >= hardData[1]) { //kfz max baujahr >= max bj
-          let benzinMax = parseInt(getSecondIndex(DbCarArray[i][6])),
-          dieselMax = parseInt(getSecondIndex(DbCarArray[i][7]));
+          let benzinMax = DbCarArray[i].doc.benzin[1],
+          dieselMax = DbCarArray[i].doc.diesel[1];
           if ((hardData[2] <= benzinMax && hardData[4]) || (hardData[2] <= dieselMax && hardData[5])) { //kfz-ps > min user-ps
             adjustVerbrauch(i);
             checkVerbrauch(i);
@@ -133,35 +134,34 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
   }
 
   function checkVerbrauch(index) {
-    let verbrauchBenzin = parseInt(getFirstIndex(DbCarArray[index][8])),
-    verbrauchDiesel = parseInt(getSecondIndex(DbCarArray[index][8]));
+    let verbrauchBenzin = DbCarArray[index].doc.verbrauch[0],
+    verbrauchDiesel = DbCarArray[index].doc.verbrauch[1];
     if (hardData[4] && hardData[5]) { //benzin und diesel
       if (verbrauchBenzin <= hardData[3] || verbrauchDiesel <= hardData[3]) { //ein verbrauch <= user verbrauch
-        posCarArray.push(DbCarArray[index]);
+        posCarArray.push(DbCarArray[index].doc);
       }
     } else if (hardData[4]) { //benzin
         if (verbrauchBenzin <= hardData[3]) {
-          posCarArray.push(DbCarArray[index]);
+          posCarArray.push(DbCarArray[index].doc);
         }
     } else if (hardData[5]) { //diesel
         if (verbrauchDiesel <= hardData[3]) {
-          posCarArray.push(DbCarArray[index]);
+          posCarArray.push(DbCarArray[index].doc);
         }
     }
   }
 
   function adjustVerbrauch(index) {
-    let benzinMax = parseInt(getSecondIndex(DbCarArray[index][6])),
-    dieselMax = parseInt(getSecondIndex(DbCarArray[index][7])),
-    benzinMin = parseInt(getFirstIndex(DbCarArray[index][6])),
-    dieselMin = parseInt(getFirstIndex(DbCarArray[index][7])),
+    let benzinMax = DbCarArray[index].doc.benzin[1],
+    dieselMax = DbCarArray[index].doc.diesel[1],
+    benzinMin = DbCarArray[index].doc.benzin[0],
+    dieselMin = DbCarArray[index].doc.diesel[0],
     benzinFaktor = 1,
     dieselFaktor = 1,
     altBenzin,
     altDiesel,
     neuBenzin,
-    neuDiesel,
-    neuerVerbrauch;
+    neuDiesel;
 
     if (hardData[2] >= benzinMin) { //realistisch halten, 200ps min, corvette avg 550ps, min 400, faktor = 0,3x und corvette verbrauch = 4-5l
       benzinFaktor = hardData[2] / ((benzinMax+benzinMin)/2);
@@ -170,12 +170,12 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       dieselFaktor = hardData[2] / ((dieselMax+dieselMin)/2);
     }
 
-    altBenzin = parseInt(getFirstIndex(DbCarArray[index][8]));
-    altDiesel = parseInt(getSecondIndex(DbCarArray[index][8]));
+    altBenzin = DbCarArray[index].doc.verbrauch[0];
+    altDiesel = DbCarArray[index].doc.verbrauch[1];
     neuBenzin = parseInt(benzinFaktor * altBenzin);
     neuDiesel = parseInt(dieselFaktor * altDiesel);
-    neuerVerbrauch = "["+neuBenzin+", "+neuDiesel+"]";
-    DbCarArray[index][8] = neuerVerbrauch;
+    DbCarArray[index].doc.verbrauch[0] = neuBenzin;
+    DbCarArray[index].doc.verbrauch[1] = neuDiesel;
   }
 
   function checkBodyTyp() {
@@ -184,13 +184,13 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     //console.log(softData[2]);
     for (let i = 0; i<tempArray.length; i++) {
       if (softData[2] === 2) {
-        if (tempArray[i][4].includes("sportwagen") || tempArray[i][5].includes("cabriolet") || tempArray[i][5].includes("roadster")) {
+        if (tempArray[i].klasse.includes("sportwagen") || tempArray[i].karosserie.includes("cabriolet") || tempArray[i].karosserie.includes("roadster")) {
           posCarArray.push(tempArray[i]);
         }
       } else if (softData[2] === 5) {
         posCarArray.push(tempArray[i]);
       } else if (softData[2] === 7) {
-        if (tempArray[i][4].includes("van") || tempArray[i][4].includes("suv")) {
+        if (tempArray[i].klasse.includes("van") || tempArray[i].klasse.includes("suv")) {
           posCarArray.push(tempArray[i]);
         }
       }
@@ -198,20 +198,20 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
   }
 
   function adjustPrice(index) {
-    let benzinMax = parseInt(getSecondIndex(DbCarArray[index][6])),
-    dieselMax = parseInt(getSecondIndex(DbCarArray[index][7])),
-    benzinMin = parseInt(getFirstIndex(DbCarArray[index][6])),
-    dieselMin = parseInt(getFirstIndex(DbCarArray[index][7])),
+    let benzinMax = DbCarArray[index].doc.benzin[1],
+    dieselMax = DbCarArray[index].doc.diesel[1],
+    benzinMin = DbCarArray[index].doc.benzin[0],
+    dieselMin = DbCarArray[index].doc.diesel[0],
     benzinFaktor = 1,
     dieselFaktor = 1,
     psFaktor = 1,
-    baujahrMin = parseInt(getFirstIndex(DbCarArray[index][3])),
-    baujahrMax = getSecondIndex(DbCarArray[index][3]),
+    baujahrMin = parseInt(getFirstIndex(DbCarArray[index].doc.bau)),
+    baujahrMax = getSecondIndex(DbCarArray[index].doc.bau),
     bjFaktor = 1,
     kmFaktor = 1,
     preisFaktor = 0,
-    lowPrice = parseInt(getFirstIndex(DbCarArray[index][9])),
-    highPrice = parseInt(getSecondIndex(DbCarArray[index][9])),
+    lowPrice = DbCarArray[index].doc.preis[0],
+    highPrice = DbCarArray[index].doc.preis[1],
     avgPrice = (2*lowPrice+highPrice)/3,
     calcPrice;
 
@@ -237,11 +237,12 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       baujahrMax = parseInt(baujahrMax);
     }
     //console.log(baujahrMax);
-    if (baujahrMin < 1998) { //fängt buggy csv ab
-      baujahrMin = baujahrMax - 10;
-    }
+    //if (baujahrMin < 1998) { //fängt buggy csv ab
+    //  baujahrMin = baujahrMax - 10;
+    //}
     //console.log(baujahrMin);
     bjFaktor = ((hardData[1]-bjOffset) / (((baujahrMax+baujahrMin)/2)-bjOffset)); // abzug um wirkung zu erhöhen
+    //TODO: 2018-bj für größeren faktor bei neueren autos
     //problem: hier differenz bei älteren baujahren -> größere faktor, echt: andersrum
     //console.log("bj");
     //console.log(bjFaktor);
@@ -275,6 +276,16 @@ soft typ: 2,5,7
 7: klasse = van, suv
 
 soft sitze: eig egal?
+
+ausgabe:
+unsere empfehlung (max ps, bj, bei min verbrauch und km an preisgrenze) <- werten
+während pos price < max (=pos autos)= (2*(max ps / user min + user / adjustetenverbauch + max bj / user) + 1/kmfatkor aus preis)/7 = float, sort max  //km so rum?
+^^viel strecken -> diesel
+
+min preis, min verbrauch, max bj, max ps <- 4 fkt
+
+max 10 erg - fkt die erg array bekomtm und ausgibt
+drunter link
 */
 
   function createMobileLink() {

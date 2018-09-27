@@ -474,6 +474,11 @@ CarApp.CarController = function() {
       ergButton.addEventListener("click", function() {
         CarDatabase.wizardDone(CarModel);
       });
+
+      let haltmal = document.getElementById("EmpfehlungErgebnis");
+      haltmal.addEventListener("click", function() {
+        console.log("haltmal");
+      });
     }
 
   that.initCarController = initCarController;
