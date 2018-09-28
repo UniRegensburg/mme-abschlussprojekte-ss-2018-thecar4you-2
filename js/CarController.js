@@ -470,14 +470,35 @@ CarApp.CarController = function() {
     }
 
     function setStep9Listeners(CarView, CarModel, CarDatabase) {
-      let ergButton = document.getElementById("ergButton");
+      let ergButton = document.getElementById("ergButton"),
+      empfButton = document.getElementById("EmpfehlungErgebnis"),
+      preisButton = document.getElementById("PreisErgebnis"),
+      psButton = document.getElementById("PSErgebnis"),
+      verbrauchButton = document.getElementById("VerbrauchErgebnis"),
+      alterButton = document.getElementById("AlterErgebnis");
+
       ergButton.addEventListener("click", function() {
         CarDatabase.wizardDone(CarModel);
       });
-
-      let haltmal = document.getElementById("EmpfehlungErgebnis");
-      haltmal.addEventListener("click", function() {
-        console.log("haltmal");
+      empfButton = document.getElementById("EmpfehlungErgebnis");
+      empfButton.addEventListener("click", function() {
+        CarDatabase.empfehlung();
+      });
+      preisButton = document.getElementById("PreisErgebnis");
+      preisButton.addEventListener("click", function() {
+        CarDatabase.preisErg();
+      });
+      psButton = document.getElementById("PSErgebnis");
+      psButton.addEventListener("click", function() {
+        CarDatabase.psErg();
+      });
+      verbrauchButton = document.getElementById("VerbrauchErgebnis");
+      verbrauchButton.addEventListener("click", function() {
+        CarDatabase.verbrauchErg();
+      });
+      alterButton = document.getElementById("AlterErgebnis");
+      alterButton.addEventListener("click", function() {
+        CarDatabase.alterErg();
       });
     }
 

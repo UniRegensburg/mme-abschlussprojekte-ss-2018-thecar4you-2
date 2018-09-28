@@ -11,8 +11,14 @@ CarApp.CarDatabase = function() {
   //CarView, //eslint fehler mit this und that
   posCarArray=[],
   db,
+  sortType = "empf",
   kmMulti = 10000,
-  bjOffset = 1950;
+  year = 2018,
+  bjOffset = 0, //alte formel 1950
+  dieselCount=0,
+  benzinCount=0,
+  recDiesel = false,
+  empfArray=[];
 
   function connect(url, database, user, password) {
 
@@ -52,7 +58,7 @@ function deleteWholeDB(){
       console.log(result.rows[i].id);
       deleteDBElement(result.rows[i].id);
     }
-  }); 
+  });
 }
 
 db.get("https://de.wikipedia.org/wiki/%C5%A0koda_Fabia_I").then(function(doc){
@@ -87,6 +93,25 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     loadUserData(CarModel);
     getPossibleCars();
     console.log(posCarArray);
+    switch (sortType) {
+      case "empf":
+        empfehlung();
+        break;
+      case "preis":
+        preisErg();
+        break;
+      case "ps":
+        psErg();
+        break;
+      case "verbrauch":
+        verbrauchErg();
+        break;
+      case "alter":
+        alterErg();
+        break;
+      default:
+        empfehlung();
+    }
   }
 
   function loadDbData() {
@@ -108,6 +133,7 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
   function loadUserData(CarModel) {
     hardData = CarModel.returnHardData(); //preis, alter, ps, verbrauch, benzin, diesel
     softData = CarModel.returnSoftData(); //km, strecken, typ, sitze
+    //console.log(softData[1]);
   }
 
   function getPossibleCars() { //buggy
@@ -172,8 +198,8 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
 
     altBenzin = DbCarArray[index].doc.verbrauch[0];
     altDiesel = DbCarArray[index].doc.verbrauch[1];
-    neuBenzin = parseInt(benzinFaktor * altBenzin);
-    neuDiesel = parseInt(dieselFaktor * altDiesel);
+    neuBenzin = Math.round((benzinFaktor * altBenzin)*100)/100;
+    neuDiesel = Math.round((dieselFaktor * altDiesel)*100)/100;
     DbCarArray[index].doc.verbrauch[0] = neuBenzin;
     DbCarArray[index].doc.verbrauch[1] = neuDiesel;
   }
@@ -188,16 +214,17 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
           posCarArray.push(tempArray[i]);
         }
       } else if (softData[2] === 5) {
-        posCarArray.push(tempArray[i]);
-      } else if (softData[2] === 7) {
-        if (tempArray[i].klasse.includes("van") || tempArray[i].klasse.includes("suv")) {
           posCarArray.push(tempArray[i]);
-        }
+      } else if (softData[2] === 7) {
+          if (tempArray[i].klasse.includes("van") || tempArray[i].klasse.includes("suv")) {
+            posCarArray.push(tempArray[i]);
+          }
       }
     }
   }
 
   function adjustPrice(index) {
+    //console.log(DbCarArray[index].doc);
     let benzinMax = DbCarArray[index].doc.benzin[1],
     dieselMax = DbCarArray[index].doc.diesel[1],
     benzinMin = DbCarArray[index].doc.benzin[0],
@@ -232,22 +259,27 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     //console.log(psFaktor);
 
     if (baujahrMax === "pro") {
-      baujahrMax = 2018;
+      baujahrMax = year;
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
     //console.log(baujahrMax);
-    //if (baujahrMin < 1998) { //fängt buggy csv ab
-    //  baujahrMin = baujahrMax - 10;
-    //}
+    if (baujahrMin < 1998) { //fängt buggy csv ab
+      baujahrMin = baujahrMax - 10;
+    }
     //console.log(baujahrMin);
-    bjFaktor = ((hardData[1]-bjOffset) / (((baujahrMax+baujahrMin)/2)-bjOffset)); // abzug um wirkung zu erhöhen
-    //TODO: 2018-bj für größeren faktor bei neueren autos
-    //problem: hier differenz bei älteren baujahren -> größere faktor, echt: andersrum
-    //console.log("bj");
-    //console.log(bjFaktor);
+    if (baujahrMin <= hardData[1]) {
+      //let bjFaktor2 = ((hardData[1]-1950) / (((baujahrMax+baujahrMin)/2)-1950)); // abzug um wirkung zu erhöhen
+      bjFaktor = ((year-((baujahrMax+baujahrMin)/2)+bjOffset) / ((year-hardData[1])+bjOffset)); //hohe werte für alte autos bei neuem bj, werden aber eh aussortiert
+      //console.log(bjFaktor2);
+      //console.log(bjFaktor);
+      //TODO: 2018-bj für größeren faktor bei neueren autos ^ gemacht
+      //problem: hier differenz bei älteren baujahren -> größere faktor, echt: andersrum - fixed
+      //console.log("bj");
+      //console.log(bjFaktor);
+    }
 
-    kmFaktor = ((2018-hardData[1])*kmMulti) / (softData[0]*kmMulti);
+    kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
     //console.log("km");
     //console.log(kmFaktor);
 
@@ -295,7 +327,7 @@ drunter link
     verbrauch = hardData[3],
     benzin = hardData[4],
     diesel = hardData[5],
-    km = softData[0]*1000,
+    km = softData[0]*1000, //100 entspricht 100.000km
     typ = softData[2],
     str="";
 
@@ -331,6 +363,113 @@ drunter link
     return(str);
   }
 
+  function empfehlung() {
+    //unsere empfehlung (max ps, bj, bei min verbrauch und km an preisgrenze) <- werten
+    //während pos price < max (=pos autos)= (2*(max ps / user min + user / adjustetenverbauch + max bj / user) + 1/kmfatkor aus preis)/7 = float, sort max  //km so rum?
+    //^^viel strecken -> diesel - passt
+    let userPs = parseInt(hardData[2]),
+    userVerbrauch = hardData[3],
+    userbj = hardData[1],
+    kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
+    sortType = "empf";
+    console.log("empf");
+    benzinCount = 0;
+    dieselCount = 0;
+    empfArray = [];
+    recDiesel = false;
+
+    if (hardData[2] > 300) {
+      benzinCount += 1;
+    }
+    for (let i = 0; i<softData[1].length; i++) {
+      if ((softData[1][i][0].includes("G") && softData[1][i][3]>50) || (softData[1][i][0].includes("Y") && softData[1][i][3]>80)) {
+        dieselCount += 1;
+      }
+    }
+    if (benzinCount > dieselCount) {
+      //console.log("benzin");
+    } else if (dieselCount > benzinCount) {
+      //console.log("diesel");
+      recDiesel = true;
+    }
+    if (!recDiesel) {
+      for (let i = 0; i<posCarArray.length; i++) {
+        let benzinMax = posCarArray[i].benzin[1],
+        adjustedVerbrauch = posCarArray[i].verbrauch[0], // TODO: ruft fkt erneut auf...
+        baujahrMax = getSecondIndex(posCarArray[i].bau),
+        empfFaktor=0,
+        list=[];
+
+        //console.log(benzinMax);
+        console.log(adjustVerbrauch);
+        //console.log(baujahrMax);
+
+        if (baujahrMax === "pro") {
+          baujahrMax = year;
+        } else {
+          baujahrMax = parseInt(baujahrMax);
+        }
+
+        empfFaktor = (2*(benzinMax/userPs + userVerbrauch/adjustedVerbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+        list.push(posCarArray[i]);
+        list.push(empfFaktor);
+        empfArray.push(list);
+      }
+    } else if (recDiesel) {
+      for (let i = 0; i<posCarArray.length; i++) {
+        let dieselMax = posCarArray[i].diesel[1],
+        adjustedVerbrauch = posCarArray[i].verbrauch[1], // TODO: ruft fkt erneut auf...
+        baujahrMax = getSecondIndex(posCarArray[i].bau),
+        empfFaktor=0,
+        list=[];
+
+        //console.log(benzinMax);
+        console.log(adjustVerbrauch);
+        //console.log(baujahrMax);
+
+        if (baujahrMax === "pro") {
+          baujahrMax = year;
+        } else {
+          baujahrMax = parseInt(baujahrMax);
+        }
+
+        empfFaktor = (2*(dieselMax/userPs + userVerbrauch/adjustedVerbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+        list.push(posCarArray[i]);
+        list.push(empfFaktor);
+        empfArray.push(list);
+      }
+    }
+
+    console.log(empfArray);
+  }
+
+  function preisErg() {
+    sortType = "preis";
+    console.log("preis");
+
+  }
+
+  function psErg() {
+    //
+    sortType = "ps";
+    console.log("ps");
+
+  }
+
+  function verbrauchErg() {
+    //
+    sortType = "verbrauch";
+    console.log("verbrauch");
+
+  }
+
+  function alterErg() {
+    //
+    sortType = "alter";
+    console.log("alter");
+
+  }
+
   function getFirstIndex(arrString) {
     let min = arrString.split(", ")[0];
     min = min.replace("[", "");
@@ -348,6 +487,11 @@ drunter link
   }
 
   that.initDB = initDB;
+  that.empfehlung = empfehlung;
+  that.preisErg = preisErg;
+  that.psErg = psErg;
+  that.verbrauchErg = verbrauchErg;
+  that.alterErg = alterErg;
   that.wizardDone = wizardDone;
   return that;
 };

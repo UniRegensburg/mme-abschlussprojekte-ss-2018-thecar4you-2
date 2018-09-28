@@ -55,7 +55,8 @@ CarApp.CarModel = function() {
     y = Math.abs(550/2 - iconArray[distIndex][2]),
     dist = Math.round(Math.sqrt(x*x + y*y)), //dist in pixeln, muss noch zu km gerechnet werden, dazu bild nötig
     distkm = distToKm(dist);
-    distArray.push(iconArray[distIndex], distkm);
+    iconArray[distIndex].push(distkm);
+    distArray.push(iconArray[distIndex]);
     distIndex +=1;
     //console.log(distArray);
   }
@@ -73,7 +74,7 @@ CarApp.CarModel = function() {
     } else if (dist <= km50) {
       out = 10+((dist-km10)/km50)*125;
     } else if (dist > km50) {
-      out = 50+((dist-km50)/km100)*100;
+      out = 50+((dist-km50)/km100)*200;
     }
     return out;
   }
