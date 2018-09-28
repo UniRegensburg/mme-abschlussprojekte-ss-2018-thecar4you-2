@@ -32,7 +32,7 @@ function getInfo() {
 
     db.info().then(function (info) {
 
-                   console.log(info);
+                   //console.log(info);
 
     });
 
@@ -89,6 +89,16 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
   }
 
   function wizardDone(CarModel) {
+    connect("132.199.137.35:5984", "car4you", "car4you", "car2018***");
+    getInfo();
+    db.allDocs({
+      include_docs: true,
+      attachments: true,
+    }).then(function(result){
+      DbCarArray = result.rows;
+      //console.log(DbCarArray[0].doc);
+
+    });
     //loadDbData();
     loadUserData(CarModel);
     getPossibleCars();
@@ -400,10 +410,6 @@ drunter link
         empfFaktor=0,
         list=[];
 
-        //console.log(benzinMax);
-        console.log(adjustVerbrauch);
-        //console.log(baujahrMax);
-
         if (baujahrMax === "pro") {
           baujahrMax = year;
         } else {
@@ -422,10 +428,6 @@ drunter link
         baujahrMax = getSecondIndex(posCarArray[i].bau),
         empfFaktor=0,
         list=[];
-
-        //console.log(benzinMax);
-        console.log(adjustVerbrauch);
-        //console.log(baujahrMax);
 
         if (baujahrMax === "pro") {
           baujahrMax = year;
