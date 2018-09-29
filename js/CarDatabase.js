@@ -157,7 +157,9 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       //let pMin = parseInt(DbCarArray[i].doc.preis[0]);
       // TODO: was ^ ist besser?
       if (hardData[0] >= calcPrice && calcPrice > 0) { //fahrzeugpreis < budget - alt (pMin in if für calcPrice);;; neu: checked auf ca preis
-        let ageMax = getSecondIndex(DbCarArray[i].doc.bau);
+        parseAge(i);
+        //let ageMax = getSecondIndex(DbCarArray[i].doc.bau);
+        let ageMax = DbCarArray[i].doc.bau[1];
         if (ageMax === "pro" || parseInt(ageMax) >= hardData[1]) { //kfz max baujahr >= max bj
           let benzinMax = DbCarArray[i].doc.benzin[1],
           dieselMax = DbCarArray[i].doc.diesel[1];
@@ -170,6 +172,23 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     }
     //console.log(posCarArray);
     checkBodyTyp(); //unschön
+  }
+
+  function parseAge(index) {
+    let org = DbCarArray[index].doc.bau,
+    baustart = parseInt(getFirstIndex(org)),
+    bauende = getSecondIndex(org),
+    list=[];
+
+    if (bauende === "pro") {
+      bauende = year;
+    } else {
+      bauende = parseInt(bauende);
+    }
+
+    list.push(baustart);
+    list.push(bauende);
+    DbCarArray[index].doc.bau = list;
   }
 
   function checkVerbrauch(index) {
@@ -245,8 +264,10 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     benzinFaktor = 1,
     dieselFaktor = 1,
     psFaktor = 1,
-    baujahrMin = parseInt(getFirstIndex(DbCarArray[index].doc.bau)),
-    baujahrMax = getSecondIndex(DbCarArray[index].doc.bau),
+    //baujahrMin = parseInt(getFirstIndex(DbCarArray[index].doc.bau)),
+    //baujahrMax = getSecondIndex(DbCarArray[index].doc.bau),
+    baujahrMin = DbCarArray[index].doc.bau[0],
+    baujahrMax = DbCarArray[index].doc.bau[1],
     bjFaktor = 1,
     kmFaktor = 1,
     preisFaktor = 0,
@@ -270,12 +291,13 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     psFaktor = (benzinFaktor+dieselFaktor)/2;
     //console.log("ps");
     //console.log(psFaktor);
-
+    /*
     if (baujahrMax === "pro") {
       baujahrMax = year;
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
+    */
     //console.log(baujahrMax);
     if (baujahrMin < 1998) { //fängt buggy csv ab
       baujahrMin = baujahrMax - 10;
@@ -444,26 +466,31 @@ drunter link
 
   function recBenzinTrue(adverbrauch, entry, userPs, userbj, userVerbrauch) {
     let benzinMax = entry.benzin[1],
-    baujahrMax = getSecondIndex(entry.bau),
+    //baujahrMax = getSecondIndex(entry.bau),
+    baujahrMax = entry.bau[1],
     empfFaktor=0;
+    /*
     if (baujahrMax === "pro") {
       baujahrMax = year;
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
+    */
     empfFaktor = (benzinMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)/3;
     return(empfFaktor);
   }
 
   function recDieselTrue(adverbrauch, entry, userPs, userbj, userVerbrauch) {
     let dieselMax = entry.diesel[1],
-    baujahrMax = getSecondIndex(entry.bau),
+    baujahrMax = entry.bau[1],
     empfFaktor=0;
+    /*
     if (baujahrMax === "pro") {
       baujahrMax = year;
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
+    */
     empfFaktor = (dieselMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)/3;
     return(empfFaktor);
   }
@@ -489,7 +516,7 @@ drunter link
 
   function alterErg() {
     empfArray.sort(function(a,b){
-      return a[0].bau-b[0].bau;
+      return b[0].bau[1]-a[0].bau[1];
     });
   }
 
