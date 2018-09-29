@@ -233,7 +233,6 @@ CarApp.CarView = function() {
     if(empfArray.length<listLength){
       listLength=empfArray.length;
     }
-    console.log(listLength);
     for (let i=0; i<listLength;i++){
       let liItem= document.createElement("li");
       liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell));

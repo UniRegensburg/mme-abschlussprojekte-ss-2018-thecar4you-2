@@ -25,8 +25,7 @@ CarApp.CarController = function() {
     setStep1Listeners(CarView, CarModel); //Preis
     setStep2Listeners(CarView, CarModel); //Alter
     setStep3Listeners(CarView, CarModel); //KM
-    //setStep4Listeners(CarView, CarModel); //Strecken
-    //Canvas für step4
+    //Step 4 Listeners für Strecken im CanvasController
     setStep5Listeners(CarView, CarModel); //Leistung
     setStep6Listeners(CarView, CarModel); //Sitzplätze
     setStep7Listeners(CarView, CarModel); //Verbrauch

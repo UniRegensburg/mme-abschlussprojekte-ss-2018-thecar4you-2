@@ -46,19 +46,18 @@ CarApp.CarModel = function() {
 
   function backMoney() {
     savedMoney -= lastMoney;
-    lastMoney = 0; // TODO: -> nur einmal nutzen mgl bzw. nicht zurück auf 0 mgl - alle steps speichern?
+    lastMoney = 0;
     return(savedMoney);
   }
 
   function calculateDist(iconArray) {
     let x = Math.abs(550/2 - iconArray[distIndex][1]),
     y = Math.abs(550/2 - iconArray[distIndex][2]),
-    dist = Math.round(Math.sqrt(x*x + y*y)), //dist in pixeln, muss noch zu km gerechnet werden, dazu bild nötig
-    distkm = distToKm(dist);
+    dist = Math.round(Math.sqrt(x*x + y*y)), //dist in pixeln
+    distkm = distToKm(dist); //dist in km
     iconArray[distIndex].push(distkm);
     distArray.push(iconArray[distIndex]);
     distIndex +=1;
-    //console.log(distArray);
   }
 
   function distToKm(dist) {
@@ -91,8 +90,6 @@ CarApp.CarModel = function() {
   function updateSeat(car, seat, type) {
     savedCarType = car; //2=small, 5=normal, 7=van
     savedSeats[seat-1][1] = type;
-    //console.log(savedCarType);
-    //console.log(savedSeats);
   }
 
   function deleteSeats() {
@@ -138,8 +135,6 @@ CarApp.CarModel = function() {
     hardData.push(savedVerbrauch);
     hardData.push(benzin, diesel);
 
-    console.log(hardData);
-
     return(hardData);
   }
 
@@ -149,8 +144,6 @@ CarApp.CarModel = function() {
     softData.push(distArray);
     softData.push(savedCarType);
     softData.push(savedSeats);
-
-    console.log(softData);
 
     return(softData);
   }
