@@ -173,15 +173,15 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     let verbrauchBenzin = DbCarArray[index].doc.verbrauch[0],
     verbrauchDiesel = DbCarArray[index].doc.verbrauch[1];
     if (hardData[4] && hardData[5]) { //benzin und diesel
-      if (verbrauchBenzin <= hardData[3] || verbrauchDiesel <= hardData[3]) { //ein verbrauch <= user verbrauch
+      if ((verbrauchBenzin > 0 && verbrauchBenzin <= hardData[3]) || (verbrauchDiesel > 0 && verbrauchDiesel <= hardData[3])) { //ein verbrauch <= user verbrauch
         posCarArray.push(DbCarArray[index].doc);
       }
     } else if (hardData[4]) { //benzin
-        if (verbrauchBenzin <= hardData[3]) {
+        if (verbrauchBenzin > 0 && verbrauchBenzin <= hardData[3]) {
           posCarArray.push(DbCarArray[index].doc);
         }
     } else if (hardData[5]) { //diesel
-        if (verbrauchDiesel <= hardData[3]) {
+        if (verbrauchDiesel > 0 && verbrauchDiesel <= hardData[3]) {
           posCarArray.push(DbCarArray[index].doc);
         }
     }
