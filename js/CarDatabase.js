@@ -489,7 +489,7 @@ drunter link
 
   function alterErg() {
     empfArray.sort(function(a,b){
-      return b[0].bau-a[0].bau;
+      return a[0].bau-b[0].bau;
     });
   }
 
