@@ -14,7 +14,7 @@ CarApp.CarDatabase = function() {
   sortType = "empf",
   kmMulti = 10000,
   year = 2018,
-  bjOffset = 0, //alte formel 1950
+  bjOffset = 10, //alte formel 1950
   dieselCount=0,
   benzinCount=0,
   recDiesel = false,
@@ -199,10 +199,10 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     neuBenzin,
     neuDiesel;
 
-    if (hardData[2] >= benzinMin) { //realistisch halten, 200ps min, corvette avg 550ps, min 400, faktor = 0,3x und corvette verbrauch = 4-5l
+    if (hardData[2] >= benzinMin && benzinMin > 0) { //realistisch halten, 200ps min, corvette avg 550ps, min 400, faktor = 0,3x und corvette verbrauch = 4-5l
       benzinFaktor = hardData[2] / ((benzinMax+benzinMin)/2);
     }
-    if (hardData[2] >= dieselMin) {
+    if (hardData[2] >= dieselMin && dieselMin > 0) {
       dieselFaktor = hardData[2] / ((dieselMax+dieselMin)/2);
     }
 
@@ -289,9 +289,11 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       //console.log(bjFaktor);
     }
 
-    kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
-    //console.log("km");
-    //console.log(kmFaktor);
+    if (hardData[1]<year) {
+      kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
+      //console.log("km");
+      //console.log(kmFaktor);
+    }
 
     preisFaktor = (2*psFaktor + 2*bjFaktor + kmFaktor) / 3; //mit faktoren spielen
     //console.log(preisFaktor);
@@ -379,8 +381,7 @@ drunter link
     //^^viel strecken -> diesel - passt
     let userPs = parseInt(hardData[2]),
     userVerbrauch = hardData[3],
-    userbj = hardData[1],
-    kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
+    userbj = hardData[1];
     sortType = "empf";
     console.log("empf");
     benzinCount = 0;
@@ -406,10 +407,11 @@ drunter link
     if (!recDiesel) {
       for (let i = 0; i<posCarArray.length; i++) {
         let adjustedVerbrauch = posCarArray[i].verbrauch[0],
+        bps = posCarArray[i].benzin[0],
         empfFaktor=0,
         list=[];
-        if (adjustedVerbrauch > 0) {
-          empfFaktor = recBenzinTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch, kmFaktor);
+        if (adjustedVerbrauch > 0 && bps > 0) {
+          empfFaktor = recBenzinTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch);
           list.push(posCarArray[i]);
           list.push(empfFaktor);
           empfArray.push(list);
@@ -418,10 +420,11 @@ drunter link
     } else if (recDiesel) {
       for (let i = 0; i<posCarArray.length; i++) {
         let adjustedVerbrauch = posCarArray[i].verbrauch[1],
+        dps = posCarArray[i].diesel[0],
         empfFaktor=0,
         list=[];
-        if (adjustedVerbrauch > 0) {
-          empfFaktor = recDieselTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch, kmFaktor);
+        if (adjustedVerbrauch > 0 && dps > 0) {
+          empfFaktor = recDieselTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch);
           list.push(posCarArray[i]);
           list.push(empfFaktor);
           empfArray.push(list);
@@ -431,7 +434,7 @@ drunter link
     console.log(empfArray);
   }
 
-  function recBenzinTrue(adverbrauch, entry, userPs, userbj, userVerbrauch, kmFaktor) {
+  function recBenzinTrue(adverbrauch, entry, userPs, userbj, userVerbrauch) {
     let benzinMax = entry.benzin[1],
     baujahrMax = getSecondIndex(entry.bau),
     empfFaktor=0;
@@ -440,11 +443,11 @@ drunter link
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
-    empfFaktor = (2*(benzinMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+    empfFaktor = (benzinMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)/3;
     return(empfFaktor);
   }
 
-  function recDieselTrue(adverbrauch, entry, userPs, userbj, userVerbrauch, kmFaktor) {
+  function recDieselTrue(adverbrauch, entry, userPs, userbj, userVerbrauch) {
     let dieselMax = entry.diesel[1],
     baujahrMax = getSecondIndex(entry.bau),
     empfFaktor=0;
@@ -453,7 +456,7 @@ drunter link
     } else {
       baujahrMax = parseInt(baujahrMax);
     }
-    empfFaktor = (2*(dieselMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+    empfFaktor = (dieselMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)/3;
     return(empfFaktor);
   }
 
