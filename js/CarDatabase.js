@@ -122,6 +122,7 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
       default:
         empfehlung();
     }
+    sortResult();
   }
 
   function loadDbData() {
@@ -432,6 +433,11 @@ drunter link
       }
     }
     console.log(empfArray);
+  }
+  function sortResult(){
+    empfArray.sort(function(a,b){
+      return b[1]-a[1];
+    });
   }
 
   function recBenzinTrue(adverbrauch, entry, userPs, userbj, userVerbrauch) {
