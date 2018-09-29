@@ -319,11 +319,13 @@ CarApp.CarDatabase = function() {
         dieselCount += 1;
       }
     }
-    if (benzinCount > dieselCount) {
-      //console.log("benzin");
+    if (benzinCount >= dieselCount) {
+      console.log("benzin");
+      that.CarView.fuelRec(false);
     } else if (dieselCount > benzinCount) {
       //console.log("diesel");
       recDiesel = true;
+      that.CarView.fuelRec(true);
     }
 
     if (!recDiesel) {
