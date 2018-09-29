@@ -470,7 +470,7 @@ drunter link
 
   function preisErg() {
     empfArray.sort(function(a,b){
-      return b[0].preis[0]-a[0].preis[0];
+      return a[0].preis[0]-b[0].preis[0];
     });
 
   }
@@ -483,7 +483,7 @@ drunter link
 
   function verbrauchErg() {
     empfArray.sort(function(a,b){
-      return b[0].verbrauch[0]-a[0].verbrauch[0];
+      return a[0].verbrauch[0]-b[0].verbrauch[0];
     });
   }
 
