@@ -226,9 +226,26 @@ CarApp.CarView = function() {
 
 /*erg*************************************************************************************** */
 
-  function setErgLink(str) {
-    let link = document.getElementById("ergLink");
+  function setErgLink(str,empfArray) {
+    let link = document.getElementById("ergLink"),
+    eList= document.getElementById("ergList"),
+    listLength=10;
+    if(empfArray.length<listLength){
+      listLength=empfArray.length;
+    }
+    console.log(listLength);
+    for (let i=0; i<listLength;i++){
+      let liItem= document.createElement("li");
+      liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell));
+      eList.appendChild(liItem);
+    }
     link.setAttribute("href", str);
+  }
+  function clearList(){
+    let list= document.getElementById("ergList");
+    for (let i=list.childNodes.length-1;i>=0;i--){
+      list.removeChild(list.childNodes[i]);
+    }
   }
 
 	that.startWizard = startWizard;
@@ -241,6 +258,7 @@ CarApp.CarView = function() {
   that.deleteSeatSpan = deleteSeatSpan;
   that.adjustDrop = adjustDrop;
   that.setErgLink = setErgLink;
+  that.clearList = clearList;
 	that.initCarView = initCarView;
   return that;
 };

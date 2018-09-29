@@ -478,27 +478,32 @@ CarApp.CarController = function() {
       alterButton = document.getElementById("AlterErgebnis");
 
       ergButton.addEventListener("click", function() {
-        CarDatabase.wizardDone(CarModel);
+        CarDatabase.wizardDone(CarModel,"empf");
       });
       empfButton = document.getElementById("EmpfehlungErgebnis");
       empfButton.addEventListener("click", function() {
-        CarDatabase.empfehlung();
+        CarView.clearList();
+        CarDatabase.wizardDone(CarModel,"empf");
       });
       preisButton = document.getElementById("PreisErgebnis");
       preisButton.addEventListener("click", function() {
-        CarDatabase.preisErg();
+        CarView.clearList();
+        CarDatabase.wizardDone(CarModel,"preis");
       });
       psButton = document.getElementById("PSErgebnis");
       psButton.addEventListener("click", function() {
-        CarDatabase.psErg();
+        CarView.clearList();
+        CarDatabase.wizardDone(CarModel,"ps");
       });
       verbrauchButton = document.getElementById("VerbrauchErgebnis");
       verbrauchButton.addEventListener("click", function() {
-        CarDatabase.verbrauchErg();
+        CarView.clearList();
+        CarDatabase.wizardDone(CarModel,"verbrauch");
       });
       alterButton = document.getElementById("AlterErgebnis");
       alterButton.addEventListener("click", function() {
-        CarDatabase.alterErg();
+        CarView.clearList();
+        CarDatabase.wizardDone(CarModel,"alter");
       });
     }
 

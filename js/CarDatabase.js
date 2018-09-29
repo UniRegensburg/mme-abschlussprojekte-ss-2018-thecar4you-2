@@ -88,7 +88,7 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     that.CarView = CarView; //that und this mgl?
   }
 
-  function wizardDone(CarModel) {
+  function wizardDone(CarModel,sortBy) {
     connect("132.199.137.35:5984", "car4you", "car4you", "car2018***");
     getInfo();
     db.allDocs({
@@ -102,10 +102,12 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     //loadDbData();
     loadUserData(CarModel);
     getPossibleCars();
-    console.log(posCarArray);
-    switch (sortType) {
+    empfehlung();
+    console.log(empfArray);
+    switch (sortBy) {
       case "empf":
-        empfehlung();
+        sortResult();
+        console.log(empfArray);
         break;
       case "preis":
         preisErg();
@@ -120,9 +122,10 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
         alterErg();
         break;
       default:
-        empfehlung();
+        sortResult();
     }
-    sortResult();
+    console.log(empfArray);
+    createMobileLink();
   }
 
   function loadDbData() {
@@ -167,7 +170,6 @@ db.replicate.to('http://132.199.137.35:5984/car4you');*/
     }
     //console.log(posCarArray);
     checkBodyTyp(); //unschön
-    createMobileLink();
   }
 
   function checkVerbrauch(index) {
@@ -370,7 +372,7 @@ drunter link
       }
     }
 
-    that.CarView.setErgLink(str); //nur that
+    that.CarView.setErgLink(str,empfArray); //nur that
 
     //console.log(str);
     return(str);
@@ -467,30 +469,28 @@ drunter link
   }
 
   function preisErg() {
-    sortType = "preis";
-    console.log("preis");
+    empfArray.sort(function(a,b){
+      return b[0].preis[0]-a[0].preis[0];
+    });
 
   }
 
   function psErg() {
-    //
-    sortType = "ps";
-    console.log("ps");
-
+    empfArray.sort(function(a,b){
+      return b[0].benzin[1]-a[0].benzin[1];
+    });
   }
 
   function verbrauchErg() {
-    //
-    sortType = "verbrauch";
-    console.log("verbrauch");
-
+    empfArray.sort(function(a,b){
+      return b[0].verbrauch[0]-a[0].verbrauch[0];
+    });
   }
 
   function alterErg() {
-    //
-    sortType = "alter";
-    console.log("alter");
-
+    empfArray.sort(function(a,b){
+      return b[0].bau-a[0].bau;
+    });
   }
 
   function getFirstIndex(arrString) {
