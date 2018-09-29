@@ -402,47 +402,59 @@ drunter link
       //console.log("diesel");
       recDiesel = true;
     }
+
     if (!recDiesel) {
       for (let i = 0; i<posCarArray.length; i++) {
-        let benzinMax = posCarArray[i].benzin[1],
-        adjustedVerbrauch = posCarArray[i].verbrauch[0], // TODO: ruft fkt erneut auf...
-        baujahrMax = getSecondIndex(posCarArray[i].bau),
+        let adjustedVerbrauch = posCarArray[i].verbrauch[0],
         empfFaktor=0,
         list=[];
-
-        if (baujahrMax === "pro") {
-          baujahrMax = year;
-        } else {
-          baujahrMax = parseInt(baujahrMax);
+        if (adjustedVerbrauch > 0) {
+          empfFaktor = recBenzinTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch, kmFaktor);
+          list.push(posCarArray[i]);
+          list.push(empfFaktor);
+          empfArray.push(list);
         }
-
-        empfFaktor = (2*(benzinMax/userPs + userVerbrauch/adjustedVerbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
-        list.push(posCarArray[i]);
-        list.push(empfFaktor);
-        empfArray.push(list);
       }
     } else if (recDiesel) {
       for (let i = 0; i<posCarArray.length; i++) {
-        let dieselMax = posCarArray[i].diesel[1],
-        adjustedVerbrauch = posCarArray[i].verbrauch[1], // TODO: ruft fkt erneut auf...
-        baujahrMax = getSecondIndex(posCarArray[i].bau),
+        let adjustedVerbrauch = posCarArray[i].verbrauch[1],
         empfFaktor=0,
         list=[];
-
-        if (baujahrMax === "pro") {
-          baujahrMax = year;
-        } else {
-          baujahrMax = parseInt(baujahrMax);
+        if (adjustedVerbrauch > 0) {
+          empfFaktor = recDieselTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch, kmFaktor);
+          list.push(posCarArray[i]);
+          list.push(empfFaktor);
+          empfArray.push(list);
         }
-
-        empfFaktor = (2*(dieselMax/userPs + userVerbrauch/adjustedVerbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
-        list.push(posCarArray[i]);
-        list.push(empfFaktor);
-        empfArray.push(list);
       }
     }
-
     console.log(empfArray);
+  }
+
+  function recBenzinTrue(adverbrauch, entry, userPs, userbj, userVerbrauch, kmFaktor) {
+    let benzinMax = entry.benzin[1],
+    baujahrMax = getSecondIndex(entry.bau),
+    empfFaktor=0;
+    if (baujahrMax === "pro") {
+      baujahrMax = year;
+    } else {
+      baujahrMax = parseInt(baujahrMax);
+    }
+    empfFaktor = (2*(benzinMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+    return(empfFaktor);
+  }
+
+  function recDieselTrue(adverbrauch, entry, userPs, userbj, userVerbrauch, kmFaktor) {
+    let dieselMax = entry.diesel[1],
+    baujahrMax = getSecondIndex(entry.bau),
+    empfFaktor=0;
+    if (baujahrMax === "pro") {
+      baujahrMax = year;
+    } else {
+      baujahrMax = parseInt(baujahrMax);
+    }
+    empfFaktor = (2*(dieselMax/userPs + userVerbrauch/adverbrauch + baujahrMax/userbj)+1/kmFaktor)/7;
+    return(empfFaktor);
   }
 
   function preisErg() {
