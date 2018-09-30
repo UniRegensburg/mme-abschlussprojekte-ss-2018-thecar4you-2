@@ -408,12 +408,22 @@ h1{
 	margin-bottom: 0.5%;
 }
 
+#EmpfehlungErgebnis, #PreisErgebnis, #PSErgebnis, #VerbrauchErgebnis, #AlterErgebnis {
+	margin-left: 2%;
+	margin-top: 1%;
+}
+
 #ergList {
 	list-style-type: none;
 	border-width: 8px;
-	width: 33%;
+	width: 50%;
 	margin: 2% auto 1% auto;
-	padding: 0.5%;
+	padding: 0 0.5%;
+}
+
+#ergList li {
+	margin: 2% 0;
+	font-size: 80%;
 }
 
 .text-info {
@@ -442,4 +452,17 @@ h1{
 	left: 0;
 	right: 0;
 	top: 780%;
+}
+
+.btn-toolbar > .btn, .btn-toolbar > .btn-group, .btn-toolbar > .input-group {
+	width: 100%;
+}
+
+.btn.btn-secondary.sw-btn-next {
+	float: right;
+	margin-right: 1%;
+}
+
+.btn.btn-secondary.sw-btn-next, .btn.btn-secondary.sw-btn-prev {
+	font-size: 130%;
 }
