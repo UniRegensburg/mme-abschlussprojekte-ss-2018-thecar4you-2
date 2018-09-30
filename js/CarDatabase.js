@@ -100,8 +100,6 @@ CarApp.CarDatabase = function() {
       default:
         sortResult();
     }
-    console.log(empfArray);
-
     show(empfArray,createMobileLink(),sortBy);
     that.CarView.setResultBorder();
   }
