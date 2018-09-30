@@ -13,6 +13,7 @@ import time     #For Delay
 import urllib.request    #Extracting web pages
 import re
 import numpy as np
+import csv
 #import json
 
 #def pages array
@@ -23,7 +24,9 @@ linkArray = np.load("links.npy")
 
 carArray = [[0 for x in range(10)] for y in range(len(linkArray))] 
 """
-array aufbau: id(link), marke, modell, beginn bau, ende bau, klasse, karosserie, benzin min leistung, max, diesel min leistung, max, verbrauch min, max, preis min, max
+array aufbau: id(link), marke, modell, beginn bau, ende bau, klasse, karosserie, benzin min leistung, max, diesel min leistung, max, verbrauch avg benzin, diesel, preis min, max
+verbrauch von https://www.spritmonitor.de/
+preise von https://www.mobile.de/
 """
 
 def download_page(url):
@@ -110,10 +113,18 @@ def extract_klasse(box):
     #print(klasse)
     if len(klasse) == 1:
         #print("len klasse = 1") #theortischer fix: if twagen = sportwagen
-        if "twagen" in klasse:
+        if "twagen" in klasse[0]:
             klasse[0] = "sportwagen"
-        #if "utility" in klasse:
-            #klasse[0] = "suv"
+        elif "utility" in klasse[0]:
+            klasse[0] = "suv"
+        elif "nwagen" in klasse[0]:
+            klasse[0] = "kleinwagen"
+        #elif "ttelklasseobere mittelklasse" == klasse[0]:
+            #klasse[0] = "obere mittelklasse"
+        elif "van" in klasse[0]:
+            klasse[0] = "van"
+        elif "klasse" == klasse[0]:
+            klasse[0] = "oberklasse"
         else:
             klasse[0] = klasse[0].replace("\\'", "")  #\'">
             klasse[0] = klasse[0].replace('"', "")  #\'">
@@ -261,9 +272,14 @@ def web_crawl():
         
 print (web_crawl())
 
-#np.save('db', out)
-#db = np.load('db.npy')
-#print(out)
+
+#with open('outArray.csv', 'w') as output:
+ #   writer = csv.writer(output, lineterminator='\n')
+  #  writer.writerows(out)
+    
+with open('outArray.csv', 'r') as f:
+    reader = csv.reader(f)
+    csvfile = list(reader)
 
 t1 = time.time()
 total_time = t1-t0

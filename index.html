@@ -4,7 +4,8 @@
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="node_modules/smartwizard/dist/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
 	<link href="node_modules/smartwizard/dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css"/>
-	<link href="node_modules/smartwizard/dist/css/s" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="utf-8">
 		<title>TheCar4You</title>
 		<meta name="author" content="Lucas Haberl, Monika Richter, Fabian Feldmeier">
@@ -13,34 +14,175 @@
 		<link rel="stylesheet" href="css/layout.css">
 	</head>
 	<body class="">
-		<header>
-			<h1>TheCar4You</h1>
-		</header>
 		<main>
+				<div class="start-page">
+					<p>Herzlich Willkommen <br> bei </p>
+					<p id="page-name">TheCar4You</p>
+					<div class="picturesStart"></div>
+					<p id="start-info">Dieser Assistent hilft Ihnen bei der Wahl des richtigen Autos für Ihr Fahrverhalten und Ihre ganz persönlichen Ansprüche.<br>
+					Wir wünschen Ihnen viel Erfolg bei der Autoauswahl und allzeit gute Fahrt!</p>
+					<span class="start-button">Start</span>
+				</div>
 				<div id="smartwizard">
+					<h1>TheCar4You</h1>
 						<ul>
-							<li><a href="#step-1">Step Title<br /><small>Step description</small></a></li>
-							<li><a href="#step-2">Step Title<br /><small>Step description</small></a></li>
-							<li><a href="#step-3">Step Title<br /><small>Step description</small></a></li>
-							<li><a href="#step-4">Step Title<br /><small>Step description</small></a></li>
-							<li><a href="#step-5">Step Title<br /><small>Step description</small></a></li>
+							<li><a href="#step-1">Preis<br /></a></li>
+							<li><a href="#step-2">Alter<br /></a></li>
+							<li><a href="#step-3">Kilometerangabe<br /></a></li>
+							<li><a href="#step-4">Strecken<br /></a></li>
+							<li><a href="#step-5">Leistung<br /></a></li>
+							<li><a href="#step-6">Sitzplätze<br /></a></li>
+							<li><a href="#step-7">Verbrauch<br /></a></li>
+							<li><a href="#step-8">Kraftstoff<br /></a></li>
+							<li><a href="#step-9">Ergebnis<br /></a></li>
 						</ul>
-					 
-						<div>
+						<div class="wizard-content">
 							<div id="step-1" class="">
-								Step Content hallo i bims 1 neue seite
+								<div class="step-description">
+									<p>Ziehen Sie die Geldscheine auf das Sparschwein um die maximalen Kosten in € (EUR) für Ihr Wunschauto zu addieren.<br>
+										Mit Klick auf den <b>Pfeil</b> können Sie Ihre letzte Eingabe rückgängig machen. Mit Klick auf die <b>Mülltonne</b> setzen Sie den Preis auf 0 zurück.</p>
+								</div>
+								<div class="user-interface">
+									<div class="pictures">
+										<div class="lowMoney" draggable="true"></div>
+										<div class="highMoney" draggable="true"></div>
+										<div class="bank"></div>
+									</div>
+									<div class="user-action-price"></div>
+								</div>
 							</div>
 							<div id="step-2" class="">
-								Step Content
+								<div class="step-description">
+									<p>Wählen Sie das älteste Baujahr des Fahrzeugs durch Klick auf die Audiomedien. <br> Durch verschieben des Reglers können Sie das Baujahr genauer anpassen.</p>
+								</div>
+								<div class="user-interface">
+									<div class="picturesAlter"></div>
+									<div class="user-action">
+										<div class="slidecontainer">
+											<input type="range" min="1998" max="2018" value="2013" class="slider" id="alterSlider">
+												<p>Baujahr: <span id="alterOut"></span></p>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div id="step-3" class="">
-								Step Content
+								<div class="step-description">
+									<p>Wählen Sie die maximalen KM des Fahrzeugs durch Klick auf die Planeten bzw. den Mond. <br>
+										Durch verschieben des Reglers können Sie die maximalen KM genauer anpassen.</p>
+								</div>
+								<div class="user-interface">
+									<div class="picturesKM"></div>
+									<div class="user-action">
+										<div class="slidecontainer">
+											<input type="range" min="0" max="200" value="100" class="slider" id="kmSlider">
+											<p>Kilometer: <span id="kmOut"></span>.000KM</p>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div id="step-4" class="">
-								Step Content
+								<div class="step-description">
+									<p>Geben Sie Ihre üblichen Fahrstrecken an. Die Icons geben dabei den Typ und die Farben die Häufigkeit mit Grün für täglich bis Rot für selten an.<br>
+									Um die Fahrstrecken anzugeben, klicken Sie zuerst auf das jeweilige Icon und anschließend auf die gewünschte Stelle im Radar.</p>
+								</div>
+								<div class="user-interface">
+									<div class="cdiv">
+										<canvas class="canvas" width="550" height="550"></canvas>
+										<button type="button" id="canvasDel">Clear</button>
+									</div>
+									<div class="user-action">
+										<div class="work-strecke" draggable="true"></div>
+										<div class="shopping-strecke" draggable="true"></div>
+										<div class="school-strecke" draggable="true"></div>
+										<div class="hobby-strecke" draggable="true"></div>
+									</div>
+								</div>
 							</div>
 							<div id="step-5" class="">
-								StepContent
+								<div class="step-description">
+									<p>Wählen Sie die minimale Leistung des Fahrzeugs durch Klick auf die abgebildeten Autos aus. <br>
+										Durch verschieben des Reglers können Sie die minimale Leistung genauer anpassen.</p>
+								</div>
+								<div class="user-interface">
+									<div class="picturesPs"></div>
+									<div class="user-action">
+										<div class="slidecontainer">
+											<input type="range" min="0" max="400" value="100" class="slider" id="psSlider">
+											<p>minimale Ps: <span id="psOut"></span>Ps</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="step-6" class="">
+								<div class="step-description">
+									<p>Bitte wählen Sie die Zahl der benötigten Sitzplätze und prinzipiellen Fahrzeugtyp durch <br>
+									Ziehen der Erwachsenen- und Kinder-Icons auf die Rechtecke über den Sitzplätzen.<br>
+									Bei Leerangabe werden alle möglichen Fahrzeuge in Betracht gezogen.<br>
+									Die Mülltonne setzt Ihre Eingabe zurück.</p>
+								</div>
+								<div class="user-interface-seats">
+									<div class="picturesSitze">
+										<div class="zwei-sitzer">
+											<div class="ZweiSitz-icons"></div>
+										</div><div class="fünf-sitzer">
+											<div class="FünfSitz-front-icons"></div>
+											<div class="FünfSitz-back-icons"></div>
+										</div><div class="sieben-sitzer">
+											<div class="SiebenSitz-front-icons"></div>
+											<div class="SiebenSitz-middle-icons"></div>
+											<div class="SiebenSitz-back-icons"></div>
+										</div>
+									</div>
+									<div class="user-action-seats">
+										<div class="person-icons"></div>
+									</div>
+								</div>
+								<p id="copyright"><br>Autodarstellungen von <a href="http://autoautomobiles.narod.ru/english/">Catalog of automobiles</a></p>
+							</div>
+							<div id="step-7" class="">
+								<div class="step-description">
+									<p>Geben Sie den maximalen Verbrauch in Liter/100KM an <br>
+										Durch Klick auf <b>Minus</b> und <b>Plus</b> können Sie den Verbrauch verringern bzw. erhöhen.</p>
+								</div>
+								<div class="user-interface">
+									<div class="verbrauchSpace">
+										<div class="picturesVerbrauch"></div>
+									</div>
+									<div class="user-action-verbrauch"></div>
+								</div>
+							</div>
+							<div id="step-8" class="">
+								<div class="step-description">
+									<p>Wählen Sie Ihren bevorzugten Kraftstoff aus.<br>
+									Bei Leerangabe werden beide Typen akzeptiert.</p>
+								</div>
+								<div class="user-interface">
+									<div class="user-action">
+										<div class ="benzin-action">
+											<p class = "fuel"> Benzin: <input type="checkbox" id="benzinCheck"></p>
+										</div>
+										<div class = "diesel-action">
+											<p class = "fuel"> Diesel: <input type="checkbox" id="dieselCheck"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="step-9" class="">
+								<div class="step-description">
+									<p id="result_title">Ergebnis:</p>
+									<button type="button" id="ergButton">Eingaben auswerten</button><br>
+									<p id="fuelRecomendation"></p>
+									<input type="radio" name="Ergebnis" id="EmpfehlungErgebnis" checked="checked"> Empfehlung
+									<input type="radio" name="Ergebnis" id="PreisErgebnis"> Preis
+									<input type="radio" name="Ergebnis" id="PSErgebnis"> PS
+									<input type="radio" name="Ergebnis" id="VerbrauchErgebnis"> Verbrauch
+									<input type="radio" name="Ergebnis" id="AlterErgebnis"> Alter
+								<p></p>
+								<ul id="ergList">
+
+								</ul>
+								<p><a target="_blank" rel="noopener noreferrer" href="" id="ergLink">Suche auf mobile.de</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -51,11 +193,21 @@
 		<!-- Skripte-->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/smartwizard/dist/js/jquery.smartWizard.min.js"></script>
+		<script src="node_modules/pouchdb/dist/pouchdb.min.js"></script>
+		<script src="node_modules/pouchdb-authentication/dist/pouchdb.authentication.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 			  $('#smartwizard').smartWizard();
 			});
-			</script>
-
+		</script>
+		<script src="js/CarApp.js"></script>
+		<script src="js/CarController.js"></script>
+		<script src="js/CarModel.js"></script>
+		<script src="js/CarView.js"></script>
+		<script src="js/CarDatabase.js"></script>
+		<script src="js/CanvasController.js"></script>
+		<script>
+			CarApp.init();
+		</script>
 	</body>
 </html>
