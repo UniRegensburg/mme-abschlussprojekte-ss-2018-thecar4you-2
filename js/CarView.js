@@ -233,11 +233,9 @@ CarApp.CarView = function() {
       if(empfArray.length<listLength){
         listLength=empfArray.length;
       }
-      console.log(listLength);
       clearList();
       for (let i=0; i<listLength;i++){
         let liItem= document.createElement("li");
-        console.log(i);
         switch (sortBy) {
           case "empf":
             //clearList();
@@ -246,17 +244,17 @@ CarApp.CarView = function() {
             continue;
           case "preis":
            //clearList();
-            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" von "+empfArray[i][0].preis[0]+"€ bis "+empfArray[i][0].preis[empfArray[i][0].preis.length-1]+"€"));
+            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit einem hochgerechneten Preis von ca. "+empfArray[i][0].preis[empfArray[i][0].preis.length-1]+"€"));
             eList.appendChild(liItem);
             continue;
           case "ps":
            // clearList();
-            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit bis zu"+empfArray[i][0].benzin[1]+"PS (Benziner)"));
+            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit bis zu "+empfArray[i][0].benzin[1]+"PS (Benzin)"));
             eList.appendChild(liItem);
             continue;
           case "verbrauch":
             //clearList();
-            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit einem Verbrauch von "+empfArray[i][0].verbrauch[0]+" l/100km (Benzin) "+empfArray[i][0].verbrauch[1]+" l/100km (Diesel"));
+            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit einem hochgerechneten Verbrauch von "+empfArray[i][0].verbrauch[0]+" l/100km Benzin bzw. "+empfArray[i][0].verbrauch[1]+" l/100km Diesel"));
             eList.appendChild(liItem);
             continue;
           case "alter":
@@ -269,15 +267,14 @@ CarApp.CarView = function() {
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell));
             eList.appendChild(liItem);
         }
-        
+
       }
       link.setAttribute("href", str);
     }
   function fuelRec(bool){
-    console.log("HELLO NICE PERSON!");
     let line= document.getElementById("fuelRecomendation");
     if(bool){
-      line.innerHTML= "Wir empfehlen auf Grund der gewünschten Leistung "+"Diesel.".bold();
+      line.innerHTML= "Wir empfehlen auf Grund der angegebenen Fahrtstrecken "+"Diesel.".bold();
     }
     else{
       line.innerHTML="Wir empfehlen auf Grund der gewünschten Leistung "+"Benzin.".bold();
@@ -287,17 +284,22 @@ CarApp.CarView = function() {
     let line = document.getElementById("fuelRecomendation");
     line.innerHTML="";
   }
-  
+
   function clearList(){
     let list= document.getElementById("ergList");
     for (let i=list.childNodes.length-1;i>=0;i--){
       list.removeChild(list.childNodes[i]);
     }
   }
-  
+
   function setResultBorder() {
 	let resultList= document.getElementById("ergList");
 	resultList.style.borderStyle = "double";
+  }
+
+  function resetRadio() {
+    let empfButton = document.getElementById("EmpfehlungErgebnis");
+    empfButton.checked = true;
   }
 
 	that.startWizard = startWizard;
@@ -312,8 +314,9 @@ CarApp.CarView = function() {
   that.setErgLink = setErgLink;
   that.clearList = clearList;
   that.setResultBorder = setResultBorder;
-  that.fuelRec=fuelRec;
-  that.clearFuelRec=clearFuelRec;
+  that.fuelRec = fuelRec;
+  that.clearFuelRec = clearFuelRec;
+  that.resetRadio = resetRadio;
 	that.initCarView = initCarView;
   return that;
 };

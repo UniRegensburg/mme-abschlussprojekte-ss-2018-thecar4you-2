@@ -97,14 +97,15 @@ CarApp.CarDatabase = function() {
       case "alter":
         alterErg();
         break;
-        default:
+      default:
         sortResult();
     }
     console.log(empfArray);
-    
+
     show(empfArray,createMobileLink(),sortBy);
-	that.CarView.setResultBorder();
+    that.CarView.setResultBorder();
   }
+
   function show(empfArray,str,sort){
     that.CarView.setErgLink(str,empfArray,sort); //nur that
   }
@@ -321,7 +322,7 @@ CarApp.CarDatabase = function() {
       }
     }
     if (benzinCount > dieselCount) {
-      console.log("benzin");
+      //console.log("benzin");
       that.CarView.fuelRec(false);
     } else if (dieselCount > benzinCount) {
       //console.log("diesel");
