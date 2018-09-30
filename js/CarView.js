@@ -238,32 +238,26 @@ CarApp.CarView = function() {
         let liItem= document.createElement("li");
         switch (sortBy) {
           case "empf":
-            //clearList();
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell));
             eList.appendChild(liItem);
             continue;
           case "preis":
-           //clearList();
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit einem hochgerechneten Preis von ca. "+empfArray[i][0].preis[empfArray[i][0].preis.length-1]+"€"));
             eList.appendChild(liItem);
             continue;
           case "ps":
-           // clearList();
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit bis zu "+empfArray[i][0].benzin[1]+"PS (Benzin)"));
             eList.appendChild(liItem);
             continue;
           case "verbrauch":
-            //clearList();
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" mit einem hochgerechneten Verbrauch von "+empfArray[i][0].verbrauch[0]+" l/100km Benzin bzw. "+empfArray[i][0].verbrauch[1]+" l/100km Diesel"));
             eList.appendChild(liItem);
             continue;
           case "alter":
-            //clearList();
            liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell+" gebaut von/bis "+empfArray[i][0].bau));
            eList.appendChild(liItem);
            continue;
           default:
-            //clearList();
             liItem.appendChild(document.createTextNode(empfArray[i][0].marke +" "+ empfArray[i][0].modell));
             eList.appendChild(liItem);
         }

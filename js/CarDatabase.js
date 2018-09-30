@@ -37,7 +37,7 @@ CarApp.CarDatabase = function() {
   }).then(function(result){
     DbCarArray = result.rows;
   });
-  /*
+  /* //code currently not needed
   function deleteDBElement(id){
         db.get(id).then(function(doc){
           return db.remove(doc);
@@ -81,7 +81,7 @@ CarApp.CarDatabase = function() {
     loadUserData(CarModel);
     getPossibleCars();
     empfehlung();
-    switch (sortBy) {
+    switch (sortBy) { //switches between different sorting options
       case "empf":
         sortResult();
         break;
@@ -107,7 +107,7 @@ CarApp.CarDatabase = function() {
   }
 
   function show(empfArray,str,sort){
-    that.CarView.setErgLink(str,empfArray,sort); //nur that
+    that.CarView.setErgLink(str,empfArray,sort);
   }
 
   function loadUserData(CarModel) {
@@ -115,7 +115,7 @@ CarApp.CarDatabase = function() {
     softData = CarModel.returnSoftData(); //km, strecken, typ, sitze
   }
 
-  function getPossibleCars() { //buggy
+  function getPossibleCars() {
     posCarArray = [];
     for (let i=0; i<DbCarArray.length; i++) {
       let calcPrice = adjustPrice(i);
@@ -125,7 +125,7 @@ CarApp.CarDatabase = function() {
         if (ageMax === "pro" || parseInt(ageMax) >= hardData[1]) { //kfz max baujahr >= max bj
           let benzinMax = DbCarArray[i].doc.benzin[1],
           dieselMax = DbCarArray[i].doc.diesel[1];
-          if ((hardData[2] <= benzinMax && hardData[4]) || (hardData[2] <= dieselMax && hardData[5])) { //kfz-ps > min user-ps
+          if ((hardData[2] <= benzinMax && hardData[4]) || (hardData[2] <= dieselMax && hardData[5])) { //kfz-ps >= min user-ps
             adjustVerbrauch(i);
             checkVerbrauch(i);
           }
@@ -135,7 +135,7 @@ CarApp.CarDatabase = function() {
     checkBodyTyp();
   }
 
-  function parseAge(index) {
+  function parseAge(index) { //parses age from database to usable int
     let org = DbCarArray[index].doc.bau,
     baustart = parseInt(getFirstIndex(org)),
     bauende = getSecondIndex(org),
@@ -170,7 +170,7 @@ CarApp.CarDatabase = function() {
     }
   }
 
-  function adjustVerbrauch(index) {
+  function adjustVerbrauch(index) { //adjusts cars gas milage to chosen hp
     let benzinMax = DbCarArray[index].doc.benzin[1],
     dieselMax = DbCarArray[index].doc.diesel[1],
     benzinMin = DbCarArray[index].doc.benzin[0],
@@ -191,7 +191,7 @@ CarApp.CarDatabase = function() {
 
     altBenzin = DbCarArray[index].doc.verbrauch[0];
     altDiesel = DbCarArray[index].doc.verbrauch[1];
-    neuBenzin = Math.round((benzinFaktor * altBenzin)*100)/100;
+    neuBenzin = Math.round((benzinFaktor * altBenzin)*100)/100; //round to two decimals
     neuDiesel = Math.round((dieselFaktor * altDiesel)*100)/100;
     DbCarArray[index].doc.verbrauch[0] = neuBenzin;
     DbCarArray[index].doc.verbrauch[1] = neuDiesel;
@@ -230,7 +230,7 @@ CarApp.CarDatabase = function() {
     preisFaktor = 0,
     lowPrice = DbCarArray[index].doc.preis[0],
     highPrice = DbCarArray[index].doc.preis[1],
-    avgPrice = (2*lowPrice+highPrice)/3,
+    avgPrice = (3*lowPrice+highPrice)/4, //avg price for a car with a medium trim and decent condition
     calcPrice,
     list=[];
 
@@ -246,7 +246,7 @@ CarApp.CarDatabase = function() {
       bjFaktor = ((year-((baujahrMax+baujahrMin)/2)+bjOffset) / ((year-hardData[1])+bjOffset)); //hohe werte für alte autos bei neuem bj, werden aber aussortiert
     }
 
-    if (hardData[1]<year) {
+    if (hardData[1]<year) { //for every car same, compares users max kms to average
       kmFaktor = ((year-hardData[1])*kmMulti) / (softData[0]*kmMulti);
     }
 
@@ -271,9 +271,12 @@ CarApp.CarDatabase = function() {
     diesel = hardData[5],
     km = softData[0]*1000, //100 entspricht 100.000km
     typ = softData[2],
-    str="";
+    str="",
+    typeS = 2,
+    typeM = 5,
+    typeL = 7;
 
-    if (typ === 5) {
+    if (typ === typeM) {
       if (benzin && diesel) {
         str = "https://suchen.mobile.de/fahrzeuge/search.html?damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
       } else if (benzin) {
@@ -281,7 +284,7 @@ CarApp.CarDatabase = function() {
       } else if (diesel) {
         str = "https://suchen.mobile.de/fahrzeuge/search.html?damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=DIESEL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
       }
-    } else if (typ === 7) {
+    } else if (typ === typeL) {
       if (benzin && diesel) {
         str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=OffRoad&categories=Van&damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
       } else if (benzin) {
@@ -289,7 +292,7 @@ CarApp.CarDatabase = function() {
       } else if (diesel) {
         str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=OffRoad&categories=Van&damageUnrepaired=NO_DAMAGE_UNREPAIRED&fuels=DIESEL&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
       }
-    } else if (typ === 2) {
+    } else if (typ === typeS) {
       if (benzin && diesel) {
         str = "https://suchen.mobile.de/fahrzeuge/search.html?categories=Cabrio&categories=SportsCar&damageUnrepaired=NO_DAMAGE_UNREPAIRED&isSearchRequest=true&maxConsumptionCombined="+verbrauch+"&maxMileage="+km+"&maxPrice="+preis+"&minFirstRegistrationDate="+bj+"&minHu=3&minPowerAsArray="+ps+"&minPowerAsArray=PS&readyToDrive=ONLY_READY_TO_DRIVE&scopeId=C";
       } else if (benzin) {
@@ -307,50 +310,51 @@ CarApp.CarDatabase = function() {
   function empfehlung() {
     let userPs = parseInt(hardData[2]),
     userVerbrauch = hardData[3],
+    psGrenze = 300,
+    gGrenze = 50,
+    yGrenze = 80,
     userbj = hardData[1];
     benzinCount = 0;
     dieselCount = 0;
     empfArray = [];
     recDiesel = false;
 
-    if (hardData[2] > 300) {
+    if (hardData[2] > psGrenze) { //viel ps -> benzin
       benzinCount += 1;
     }
-    for (let i = 0; i<softData[1].length; i++) {
-      if ((softData[1][i][0].includes("G") && softData[1][i][3]>50) || (softData[1][i][0].includes("Y") && softData[1][i][3]>80)) {
+    for (let i = 0; i<softData[1].length; i++) { //viel langstrecke -> diesel
+      if ((softData[1][i][0].includes("G") && softData[1][i][3]>gGrenze) || (softData[1][i][0].includes("Y") && softData[1][i][3]>yGrenze)) {
         dieselCount += 1;
       }
     }
     if (benzinCount > dieselCount) {
-      //console.log("benzin");
       that.CarView.fuelRec(false);
     } else if (dieselCount > benzinCount) {
-      //console.log("diesel");
       recDiesel = true;
       that.CarView.fuelRec(true);
     }
 
-    if (!recDiesel) {
+    if (!recDiesel) { //rec for benzin
       for (let i = 0; i<posCarArray.length; i++) {
         let adjustedVerbrauch = posCarArray[i].verbrauch[0],
         bps = posCarArray[i].benzin[0],
         empfFaktor,
         list=[];
         if (adjustedVerbrauch > 0 && bps > 0) {
-          empfFaktor = recBenzinTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch);
+          empfFaktor = recBenzinTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch); //value for each car
           list.push(posCarArray[i]);
           list.push(empfFaktor);
           empfArray.push(list);
         }
       }
-    } else if (recDiesel) {
+    } else if (recDiesel) { //rec for diesel
       for (let i = 0; i<posCarArray.length; i++) {
         let adjustedVerbrauch = posCarArray[i].verbrauch[1],
         dps = posCarArray[i].diesel[0],
         empfFaktor,
         list=[];
         if (adjustedVerbrauch > 0 && dps > 0) {
-          empfFaktor = recDieselTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch);
+          empfFaktor = recDieselTrue(adjustedVerbrauch, posCarArray[i], userPs, userbj, userVerbrauch); //value for each car
           list.push(posCarArray[i]);
           list.push(empfFaktor);
           empfArray.push(list);
@@ -380,7 +384,7 @@ CarApp.CarDatabase = function() {
 
   function preisErg() {
     empfArray.sort(function(a,b){
-      return a[0].preis[2]-b[0].preis[2]; //0 = min preis oder 2 = calc preis
+      return a[0].preis[2]-b[0].preis[2]; //2 = calc preis
     });
 
   }
@@ -403,7 +407,7 @@ CarApp.CarDatabase = function() {
     });
   }
 
-  function getFirstIndex(arrString) {
+  function getFirstIndex(arrString) { //for parsing
     let min = arrString.split(", ")[0];
     min = min.replace("[", "");
     min = min.replace("'", "");
@@ -411,7 +415,7 @@ CarApp.CarDatabase = function() {
     return(min);
   }
 
-  function getSecondIndex(arrString) {
+  function getSecondIndex(arrString) { //for parsing
     let max = arrString.split(", ")[1];
     max = max.replace("]", "");
     max = max.replace("'", "");

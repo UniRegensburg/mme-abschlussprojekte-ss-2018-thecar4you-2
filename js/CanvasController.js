@@ -16,9 +16,11 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     freiG, freiY, freiR,
     chosenIcon="",
     backGroundImg,
-    iconOffset = 18;
+    iconOffset = 18,
+    backGroundOffsetX = 10,
+    backGroundOffsetY = 25;
 
-  function addIcons() {
+  function addIcons() { //sets listeners
     workG = document.getElementById("work-buttonT");
     workG.addEventListener("click", function() {
       chosenIcon = workG;
@@ -73,7 +75,7 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     backGroundImg = new Image();
     backGroundImg.src="./Pictures/radar-sized.png";
     backGroundImg.onload = function() {
-      context.drawImage(backGroundImg, 10, 25);
+      context.drawImage(backGroundImg, backGroundOffsetX, backGroundOffsetY);
     };
   }
 
@@ -87,7 +89,7 @@ CarApp.CanvasController = function(canvasNode, CarModel) {
     iconArray=[];
     chosenIcon="";
     CarModel.clearDist();
-    context.drawImage(backGroundImg, 10, 25);
+    context.drawImage(backGroundImg, backGroundOffsetX, backGroundOffsetY);
   }
 
   function onMouseClickCanvas(event) {

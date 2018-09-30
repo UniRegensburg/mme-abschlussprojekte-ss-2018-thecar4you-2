@@ -18,7 +18,8 @@ CarApp.CarModel = function() {
   distArray=[],
   distIndex=0,
   hardData=[],
-  softData=[];
+  softData=[],
+  canvasSize = 550;
 
 	function initCarModel() {
     createSavedSeats();
@@ -44,15 +45,15 @@ CarApp.CarModel = function() {
     return(savedMoney);
   }
 
-  function backMoney() {
+  function backMoney() { //lets user reverse one money drop
     savedMoney -= lastMoney;
     lastMoney = 0;
     return(savedMoney);
   }
 
   function calculateDist(iconArray) {
-    let x = Math.abs(550/2 - iconArray[distIndex][1]),
-    y = Math.abs(550/2 - iconArray[distIndex][2]),
+    let x = Math.abs(canvasSize/2 - iconArray[distIndex][1]),
+    y = Math.abs(canvasSize/2 - iconArray[distIndex][2]),
     dist = Math.round(Math.sqrt(x*x + y*y)), //dist in pixeln
     distkm = distToKm(dist); //dist in km
     iconArray[distIndex].push(distkm);
@@ -111,7 +112,7 @@ CarApp.CarModel = function() {
   function updateVerbrauch(amount) {
     let newVerbrauch = savedVerbrauch + parseInt(amount);
 
-    if (newVerbrauch > 4 && newVerbrauch < 17) {
+    if (newVerbrauch > 4 && newVerbrauch < 17) { //limits fuel milage to reasonable amounts
       savedVerbrauch = newVerbrauch;
     }
 
@@ -127,7 +128,7 @@ CarApp.CarModel = function() {
     }
   }
 
-  function returnHardData() {
+  function returnHardData() { //data thats also in database
     hardData=[];
     hardData.push(savedMoney);
     hardData.push(savedAlter);
@@ -138,7 +139,7 @@ CarApp.CarModel = function() {
     return(hardData);
   }
 
-  function returnSoftData() {
+  function returnSoftData() { //data used for further calculations
     softData=[];
     softData.push(savedKm);
     softData.push(distArray);
