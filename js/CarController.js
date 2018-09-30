@@ -478,6 +478,7 @@ CarApp.CarController = function() {
 
       ergButton.addEventListener("click", function() {
         CarView.clearList();
+        CarView.clearFuelRec();
         CarDatabase.wizardDone(CarModel,"empf");
       });
       empfButton = document.getElementById("EmpfehlungErgebnis");

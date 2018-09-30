@@ -283,6 +283,10 @@ CarApp.CarView = function() {
       line.innerHTML="Wir empfehlen auf Grund der gewünschten Leistung Benzin.";
     }
   }
+  function clearFuelRec(){
+    let line = document.getElementById("fuelRecomendation");
+    line.innerHTML="";
+  }
   
   function clearList(){
     let list= document.getElementById("ergList");
@@ -303,6 +307,7 @@ CarApp.CarView = function() {
   that.setErgLink = setErgLink;
   that.clearList = clearList;
   that.fuelRec=fuelRec;
+  that.clearFuelRec=clearFuelRec;
 	that.initCarView = initCarView;
   return that;
 };
