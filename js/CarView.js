@@ -274,13 +274,13 @@ CarApp.CarView = function() {
       link.setAttribute("href", str);
     }
   function fuelRec(bool){
-    console.log("HELLO MOTHERFUCKER");
+    console.log("HELLO NICE PERSON!");
     let line= document.getElementById("fuelRecomendation");
     if(bool){
-      line.innerHTML= "Wir empfehlen auf Grund der gewünschten Leistung Diesel.";
+      line.innerHTML= "Wir empfehlen auf Grund der gewünschten Leistung "+"Diesel.".bold();
     }
     else{
-      line.innerHTML="Wir empfehlen auf Grund der gewünschten Leistung Benzin.";
+      line.innerHTML="Wir empfehlen auf Grund der gewünschten Leistung "+"Benzin.".bold();
     }
   }
   
@@ -289,6 +289,11 @@ CarApp.CarView = function() {
     for (let i=list.childNodes.length-1;i>=0;i--){
       list.removeChild(list.childNodes[i]);
     }
+  }
+  
+  function setResultBorder() {
+	let resultList= document.getElementById("ergList");
+	resultList.style.borderStyle = "double";
   }
 
 	that.startWizard = startWizard;
@@ -302,6 +307,7 @@ CarApp.CarView = function() {
   that.adjustDrop = adjustDrop;
   that.setErgLink = setErgLink;
   that.clearList = clearList;
+  that.setResultBorder = setResultBorder;
   that.fuelRec=fuelRec;
 	that.initCarView = initCarView;
   return that;

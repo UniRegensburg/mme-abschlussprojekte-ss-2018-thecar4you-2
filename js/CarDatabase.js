@@ -103,6 +103,7 @@ CarApp.CarDatabase = function() {
     console.log(empfArray);
     
     show(empfArray,createMobileLink(),sortBy);
+	that.CarView.setResultBorder();
   }
   function show(empfArray,str,sort){
     that.CarView.setErgLink(str,empfArray,sort); //nur that

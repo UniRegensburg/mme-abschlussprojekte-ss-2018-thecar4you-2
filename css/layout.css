@@ -15,7 +15,7 @@ h1{
 }
 
 #page-name {
-	font-size: 200%;
+	font-size: 350%;
 	margin: 0 auto 2% auto;
 	font-family: 'Lobster', cursive;
 }
@@ -25,8 +25,8 @@ h1{
 }
 
 #start-info {
-	font-size: 80%;
-	text-align: justify;
+	font-size: 100%;
+	text-align: center;
 	margin: 3% 5% 1% 5%;
 }
 
@@ -396,8 +396,24 @@ h1{
   cursor: pointer;
 }
 
+#result_title {
+	font-size: 150%;
+	width: 10%;
+	margin: 1% auto 2% auto;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+#ergButton {
+	margin-bottom: 0.5%;
+}
+
 #ergList {
 	list-style-type: none;
+	border-width: 8px;
+	width: 33%;
+	margin: 2% auto 1% auto;
+	padding: 0.5%;
 }
 
 .text-info {
